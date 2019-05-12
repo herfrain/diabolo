@@ -90,8 +90,8 @@
     "relativePath": "scripts\\touch.js"
   },
   "980ab8e1-9607-4191-a269-49e5a1b27afa": {
-    "asset": 1557642642987,
-    "meta": 1557642643022,
+    "asset": 1557642954734,
+    "meta": 1557642954757,
     "relativePath": "game.fire"
   },
   "208f5cf0-bea5-4a52-9abd-82007fca2201": {
@@ -324,14 +324,14 @@
     "meta": 1557640827745,
     "relativePath": "prefab\\webview.prefab"
   },
-  "465ad91b-b49f-4859-9684-5c8ca32d3bc6": {
-    "asset": 1557638239010,
-    "meta": 1557640891639,
-    "relativePath": "scripts\\rope.js"
-  },
   "b1ca5256-b013-4d9c-8d83-48da07008e4e": {
     "asset": 1557638239010,
     "meta": 1557640891577,
     "relativePath": "scripts\\diabolo.js"
+  },
+  "465ad91b-b49f-4859-9684-5c8ca32d3bc6": {
+    "asset": 1557642952829,
+    "meta": 1557642954514,
+    "relativePath": "scripts\\rope.js"
   }
 }
