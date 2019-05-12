@@ -1,0 +1,7 @@
+﻿#忽略所有.meta文件
+*.meta
+
+#忽略三个文件夹
+library/
+local/
+temp/
