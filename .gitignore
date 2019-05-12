@@ -2,6 +2,6 @@
 *.meta
 
 #忽略三个文件夹
-library/
-local/
-temp/
+/library/
+/local/
+/temp/
