@@ -50,6 +50,8 @@ cc.Class({
         //绑定左右distanceJoint组件
         this.leftJoint=this.leftNode.getComponent(cc.DistanceJoint)
         this.rightJoint=this.rightNode.getComponent(cc.DistanceJoint)
+        this.leftJoint.connectedBody=this.rigidbody
+        this.rightJoint.connectedBody=this.rigidbody
         //绑定mouseJoint
         this.mouseJoint=this.node.getComponent(cc.MouseJoint)
         //绑定物理碰撞
@@ -188,7 +190,7 @@ cc.Class({
         //console.info(this.rigidbody.getWorldPosition())
         //this.rigidbody.linearVelocity = cc.v2(0,0);
         //console.info(this.rigidbody.linearVelocity)
-
+        
         
 
         //如果检测到与绳子发生碰撞，则建立两边点的链接，并将绑定mousejoint，飞行状态设为false

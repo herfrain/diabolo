@@ -56,6 +56,8 @@ cc.Class({
         //绑定左右distanceJoint组件
         this.leftJoint = this.leftNode.getComponent(cc.DistanceJoint);
         this.rightJoint = this.rightNode.getComponent(cc.DistanceJoint);
+        this.leftJoint.connectedBody = this.rigidbody;
+        this.rightJoint.connectedBody = this.rigidbody;
         //绑定mouseJoint
         this.mouseJoint = this.node.getComponent(cc.MouseJoint);
         //绑定物理碰撞
