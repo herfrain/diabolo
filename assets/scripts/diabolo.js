@@ -29,6 +29,7 @@ cc.Class({
         rightNode:null,//右连接点
         leftJoint:null,//左distanceJoint组件
         leftJoint:null,//右distanceJoint组件
+        camera:null,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -50,18 +51,17 @@ cc.Class({
         //绑定左右distanceJoint组件
         this.leftJoint=this.leftNode.getComponent(cc.DistanceJoint)
         this.rightJoint=this.rightNode.getComponent(cc.DistanceJoint)
-        this.leftJoint.connectedBody=this.rigidbody
-        this.rightJoint.connectedBody=this.rigidbody
+        // this.leftJoint.connectedBody=this.rigidbody
+        // this.rightJoint.connectedBody=this.rigidbody
         //绑定mouseJoint
         this.mouseJoint=this.node.getComponent(cc.MouseJoint)
         //绑定物理碰撞
         this.physicsBoxCollider=this.rope.getComponent(cc.PhysicsBoxCollider)
         this.physicsBoxCollider.enabled=true
-        cc.log("mouseJoint是否可用："+this.mouseJoint.enabled)
-        cc.log(this.mouseJoint)
-        cc.log(this.rigidbody)
-        cc.log(this.leftNode)
-        cc.log(this.leftJoint)
+        //
+        this.camera=cc.find("Canvas/Main Camera")
+        cc.log(this.rope)
+        cc.log(this.physicsBoxCollider)
     },
 
     touchBegin:function(event){
@@ -164,6 +164,7 @@ cc.Class({
         cc.log('enter')
     },
 
+    //如果检测到与绳子发生碰撞，则建立两边点的链接，并将绑定mousejoint，飞行状态设为false
     //结束碰撞时，如果空竹是往下落的，则添加绳子
     onCollisionExit: function (other, self) {
         console.log('on collision enter');
@@ -184,15 +185,16 @@ cc.Class({
 
     },
 
-    //在飞行时判断，如果落在另一条绳子上，则建立连接
     update (dt) {
-        //var velocity = this.rigidbody.linearVelocity;
-        //console.info(this.rigidbody.getWorldPosition())
-        //this.rigidbody.linearVelocity = cc.v2(0,0);
-        //console.info(this.rigidbody.linearVelocity)
-        
-        
+        // cc.log(this.node.convertToWorldSpaceAR(cc.v2(0,0)))
+        // if(this.node.convertToWorldSpaceAR(cc.v2(0,0))){
 
-        //如果检测到与绳子发生碰撞，则建立两边点的链接，并将绑定mousejoint，飞行状态设为false
+        // }
+        if(this.node.isValid){
+            if(this.node.y<this.camera.y-this.camera.parent.height/2){
+                this.node.destroy()
+            }
+        }
+        
     },
 });

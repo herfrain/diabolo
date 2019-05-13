@@ -25,7 +25,7 @@
     "relativePath": "prefab"
   },
   "ad1e9310-961e-43bd-b995-9f163644ef24": {
-    "asset": 1557645053227,
+    "asset": 1557651218925,
     "meta": 1557638238995,
     "relativePath": "scripts"
   },
@@ -39,16 +39,6 @@
     "meta": 1557640891764,
     "relativePath": "textures\\star.png"
   },
-  "2a8866f6-7457-47f0-9371-30c9598eef20": {
-    "asset": 1557638238995,
-    "meta": 1557640891436,
-    "relativePath": "rope.prefab"
-  },
-  "01b9133d-00eb-4116-8daf-12c4cb6c3204": {
-    "asset": 1557638239010,
-    "meta": 1557640891671,
-    "relativePath": "star.prefab"
-  },
   "44f50c7f-285a-40c3-9768-af5ccb611978": {
     "asset": 1557638238995,
     "meta": 1557640891546,
@@ -59,40 +49,15 @@
     "meta": 1557640891264,
     "relativePath": "scripts\\background.js"
   },
-  "cb1d648f-5499-4c5e-98b5-029ed7e6fe2e": {
-    "asset": 1557638238995,
-    "meta": 1557640890929,
-    "relativePath": "label.prefab"
-  },
-  "a8534dbf-0fd3-4e2a-85ac-5a8b9fc5fc07": {
-    "asset": 1557638238979,
-    "meta": 1557640890859,
-    "relativePath": "background.prefab"
-  },
   "eeb9a9e8-4ee1-4bf2-8963-9e842b00de7a": {
     "asset": 1557638239010,
     "meta": 1557640891717,
     "relativePath": "textures\\Circle40.png"
   },
-  "67298723-2e69-4124-9884-afd69688ed29": {
-    "asset": 1557638238995,
-    "meta": 1557640890859,
-    "relativePath": "diabolo.prefab"
-  },
-  "6a4d0ca3-8ada-4208-9fbe-6ff4cef7154e": {
-    "asset": 1557638239010,
-    "meta": 1557640891592,
-    "relativePath": "scripts\\game.js"
-  },
   "2e84b87f-d6e3-4b50-9021-af4f83f86f28": {
     "asset": 1557638239010,
     "meta": 1557640891655,
     "relativePath": "scripts\\touch.js"
-  },
-  "980ab8e1-9607-4191-a269-49e5a1b27afa": {
-    "asset": 1557649203518,
-    "meta": 1557649203563,
-    "relativePath": "game.fire"
   },
   "208f5cf0-bea5-4a52-9abd-82007fca2201": {
     "asset": 1557638239026,
@@ -324,24 +289,74 @@
     "meta": 1557640827745,
     "relativePath": "prefab\\webview.prefab"
   },
-  "465ad91b-b49f-4859-9684-5c8ca32d3bc6": {
-    "asset": 1557642952829,
-    "meta": 1557642954514,
-    "relativePath": "scripts\\rope.js"
+  "fb2941f6-1689-4712-bada-5ed03f9961ef": {
+    "asset": 1557735288192,
+    "meta": 1557735288216,
+    "relativePath": "diabolo.prefab"
   },
-  "a41b5773-722a-4f54-b2d8-6e6f32719748": {
-    "asset": 1557646089817,
-    "meta": 1557646091544,
-    "relativePath": "scripts\\ropes.js"
+  "daa38660-20e6-412a-9b82-5a6e1360a07b": {
+    "asset": 1557735601964,
+    "meta": 1557735601981,
+    "relativePath": "background.prefab"
   },
-  "b1ca5256-b013-4d9c-8d83-48da07008e4e": {
-    "asset": 1557647821120,
-    "meta": 1557647860877,
-    "relativePath": "scripts\\diabolo.js"
+  "7b780ef0-d59c-443b-8e4f-d37fd8d80ea8": {
+    "asset": 1557735606603,
+    "meta": 1557735606620,
+    "relativePath": "label.prefab"
+  },
+  "a4b46203-b56c-45c8-aa46-685d0d037267": {
+    "asset": 1557735826153,
+    "meta": 1557735826168,
+    "relativePath": "resources\\rope.prefab"
+  },
+  "980ab8e1-9607-4191-a269-49e5a1b27afa": {
+    "asset": 1557763572544,
+    "meta": 1557763572577,
+    "relativePath": "game.fire"
+  },
+  "de43d354-197c-4b51-a3dc-95a00ae4aedc": {
+    "asset": 1557750324045,
+    "meta": 1557750324059,
+    "relativePath": "star.prefab"
   },
   "f2960583-e4bd-4bdf-a388-10afb0fbab4d": {
-    "asset": 1557649392424,
-    "meta": 1557649404678,
+    "asset": 1557756275382,
+    "meta": 1557756276637,
     "relativePath": "scripts\\label.js"
+  },
+  "1edd546b-806c-46a3-9cfd-d38c1d6a68c5": {
+    "asset": 1557760265268,
+    "meta": 1557760271656,
+    "relativePath": "scripts\\random.js"
+  },
+  "1008385d-8301-492c-a85d-354cf4e88218": {
+    "asset": 1557761331599,
+    "meta": 1557761331605,
+    "relativePath": "resources"
+  },
+  "6a4d0ca3-8ada-4208-9fbe-6ff4cef7154e": {
+    "asset": 1557763396513,
+    "meta": 1557763474467,
+    "relativePath": "scripts\\game.js"
+  },
+  "465ad91b-b49f-4859-9684-5c8ca32d3bc6": {
+    "asset": 1557763474095,
+    "meta": 1557763474470,
+    "relativePath": "scripts\\rope.js"
+  },
+  "b1ca5256-b013-4d9c-8d83-48da07008e4e": {
+    "asset": 1557763517464,
+    "meta": 1557763521359,
+    "relativePath": "scripts\\diabolo.js"
+  },
+  "9cce8fa1-7cd3-42a7-8c83-37ae95442ac0": {
+    "asset": 1557764028046,
+    "meta": 1557764028843,
+    "relativePath": "scripts\\camera.js"
+  },
+  "a41b5773-722a-4f54-b2d8-6e6f32719748": {
+    "asset": 1557764087267,
+    "meta": 1557764088851,
+    "relativePath": "scripts\\ropes.js"
   }
 }

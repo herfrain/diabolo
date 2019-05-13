@@ -1,69 +1,437 @@
-2019-05-12T07:14:51.243Z - normal: Load ~/.CocosCreator/settings.json
-2019-05-12T07:14:52.447Z - normal: Initializing Asset Database
-2019-05-12T07:14:52.447Z - normal: checking language setting...
-2019-05-12T07:14:52.447Z - normal: Language: zh
-2019-05-12T07:14:53.619Z - success: preview server running at http://localhost:7456
-2019-05-12T07:14:53.619Z - success: protocol editor-framework registered
-2019-05-12T07:14:53.619Z - success: protocol app registered
-2019-05-12T07:14:53.619Z - success: protocol theme registered
-2019-05-12T07:14:53.619Z - success: protocol packages registered
-2019-05-12T07:14:53.619Z - success: protocol uuid registerred
-2019-05-12T07:14:53.619Z - success: protocol db registerred
-2019-05-12T07:14:53.619Z - success: protocol thumbnail registerred
-2019-05-12T07:14:53.619Z - success: protocol unpack registerred
-2019-05-12T07:14:53.619Z - success: protocol disable-commonjs registerred
-2019-05-12T07:14:53.806Z - normal: connected!
-2019-05-12T07:14:53.806Z - normal: Check project G:\github repository\diabolo
-2019-05-12T07:14:53.822Z - normal: Initializing project G:\github repository\diabolo
-2019-05-12T07:14:54.540Z - normal: Initializing Cocos2d
-2019-05-12T07:14:55.774Z - normal: Initializing engine extends
-2019-05-12T07:14:55.806Z - success: asset-db-debugger loaded
-2019-05-12T07:14:55.806Z - success: baidu-adapter loaded
-2019-05-12T07:14:55.806Z - success: code-editor loaded
-2019-05-12T07:14:55.806Z - success: color-picker loaded
-2019-05-12T07:14:55.978Z - success: fb-audience-network loaded
-2019-05-12T07:14:56.087Z - success: fb-live-stream loaded
-2019-05-12T07:14:56.087Z - success: google-play-instant loaded
-2019-05-12T07:14:56.102Z - success: huawei-runtime loaded
-2019-05-12T07:14:56.102Z - success: jsb-adapter loaded
-2019-05-12T07:14:56.118Z - success: oppo-runtime loaded
-2019-05-12T07:14:56.118Z - success: package-manager loaded
-2019-05-12T07:14:56.321Z - success: qqplay-adapter loaded
-2019-05-12T07:14:56.321Z - success: runtime-dev-tools loaded
-2019-05-12T07:14:56.321Z - success: sdkbox loaded
-2019-05-12T07:14:56.337Z - success: tester loaded
-2019-05-12T07:14:56.337Z - success: ui-grid loaded
-2019-05-12T07:14:56.337Z - success: ui-kit-preview-extra loaded
-2019-05-12T07:14:56.337Z - success: ui-kit-preview loaded
-2019-05-12T07:14:56.352Z - success: ui-kit loaded
-2019-05-12T07:14:56.352Z - success: ui-tree loaded
-2019-05-12T07:14:56.352Z - success: vivo-runtime loaded
-2019-05-12T07:14:56.352Z - success: weapp-adapter loaded
-2019-05-12T07:14:56.415Z - success: assets loaded
-2019-05-12T07:14:56.431Z - success: builder loaded
-2019-05-12T07:14:56.930Z - success: cocos-services loaded
-2019-05-12T07:14:56.946Z - success: console loaded
-2019-05-12T07:14:57.008Z - success: fb-instant-games loaded
-2019-05-12T07:14:57.008Z - success: google-instant-games loaded
-2019-05-12T07:14:57.024Z - success: hierarchy loaded
-2019-05-12T07:14:57.024Z - success: inspector loaded
-2019-05-12T07:14:57.040Z - success: keystore loaded
-2019-05-12T07:14:57.040Z - success: node-library loaded
-2019-05-12T07:14:57.055Z - success: package-asset loaded
-2019-05-12T07:14:57.055Z - success: preferences loaded
-2019-05-12T07:14:57.071Z - success: project-exporter loaded
-2019-05-12T07:14:57.071Z - success: project-importer loaded
-2019-05-12T07:14:57.087Z - success: project-settings loaded
-2019-05-12T07:14:57.102Z - success: scene loaded
-2019-05-12T07:14:57.118Z - success: simulator-debugger loaded
-2019-05-12T07:14:57.118Z - success: sprite-editor loaded
-2019-05-12T07:14:57.133Z - success: store loaded
-2019-05-12T07:14:57.133Z - success: timeline loaded
-2019-05-12T07:14:59.126Z - normal: Loading packages
-2019-05-12T07:14:59.137Z - normal: Watching packages
-2019-05-12T07:15:00.071Z - info: Cocos Services load base data!
-2019-05-12T07:15:00.788Z - normal: Run Application
-2019-05-12T08:00:17.205Z - error: getComponent: Type must be non-nil
+2019-05-13T07:42:06.233Z - normal: Load ~/.CocosCreator/settings.json
+2019-05-13T07:42:07.719Z - normal: Initializing Asset Database
+2019-05-13T07:42:07.745Z - normal: checking language setting...
+2019-05-13T07:42:07.745Z - normal: Language: zh
+2019-05-13T07:42:13.101Z - success: preview server running at http://localhost:7456
+2019-05-13T07:42:13.101Z - success: protocol editor-framework registered
+2019-05-13T07:42:13.101Z - success: protocol app registered
+2019-05-13T07:42:13.101Z - success: protocol theme registered
+2019-05-13T07:42:13.101Z - success: protocol packages registered
+2019-05-13T07:42:13.101Z - success: protocol uuid registerred
+2019-05-13T07:42:13.101Z - success: protocol db registerred
+2019-05-13T07:42:13.101Z - success: protocol thumbnail registerred
+2019-05-13T07:42:13.101Z - success: protocol unpack registerred
+2019-05-13T07:42:13.101Z - success: protocol disable-commonjs registerred
+2019-05-13T07:42:13.289Z - normal: connected!
+2019-05-13T07:42:13.289Z - normal: Check project G:\github repository\diabolo
+2019-05-13T07:42:13.289Z - normal: Initializing project G:\github repository\diabolo
+2019-05-13T07:42:14.505Z - normal: Initializing Cocos2d
+2019-05-13T07:42:18.763Z - normal: Initializing engine extends
+2019-05-13T07:42:18.986Z - success: asset-db-debugger loaded
+2019-05-13T07:42:18.991Z - success: baidu-adapter loaded
+2019-05-13T07:42:19.006Z - success: code-editor loaded
+2019-05-13T07:42:19.022Z - success: color-picker loaded
+2019-05-13T07:42:19.357Z - success: fb-audience-network loaded
+2019-05-13T07:42:19.581Z - success: fb-live-stream loaded
+2019-05-13T07:42:19.612Z - success: google-play-instant loaded
+2019-05-13T07:42:19.680Z - success: huawei-runtime loaded
+2019-05-13T07:42:19.686Z - success: jsb-adapter loaded
+2019-05-13T07:42:19.754Z - success: oppo-runtime loaded
+2019-05-13T07:42:19.792Z - success: package-manager loaded
+2019-05-13T07:42:20.551Z - success: qqplay-adapter loaded
+2019-05-13T07:42:20.566Z - success: runtime-dev-tools loaded
+2019-05-13T07:42:20.629Z - success: sdkbox loaded
+2019-05-13T07:42:20.645Z - success: tester loaded
+2019-05-13T07:42:20.645Z - success: ui-grid loaded
+2019-05-13T07:42:20.676Z - success: ui-kit-preview-extra loaded
+2019-05-13T07:42:20.707Z - success: ui-kit-preview loaded
+2019-05-13T07:42:20.707Z - success: ui-kit loaded
+2019-05-13T07:42:20.723Z - success: ui-tree loaded
+2019-05-13T07:42:20.778Z - success: vivo-runtime loaded
+2019-05-13T07:42:20.784Z - success: weapp-adapter loaded
+2019-05-13T07:42:20.866Z - success: assets loaded
+2019-05-13T07:42:20.869Z - success: builder loaded
+2019-05-13T07:42:21.791Z - success: cocos-services loaded
+2019-05-13T07:42:21.823Z - success: console loaded
+2019-05-13T07:42:21.869Z - success: fb-instant-games loaded
+2019-05-13T07:42:21.885Z - success: google-instant-games loaded
+2019-05-13T07:42:21.885Z - success: hierarchy loaded
+2019-05-13T07:42:21.885Z - success: inspector loaded
+2019-05-13T07:42:21.901Z - success: keystore loaded
+2019-05-13T07:42:21.901Z - success: node-library loaded
+2019-05-13T07:42:21.934Z - success: package-asset loaded
+2019-05-13T07:42:21.937Z - success: preferences loaded
+2019-05-13T07:42:21.940Z - success: project-exporter loaded
+2019-05-13T07:42:21.943Z - success: project-importer loaded
+2019-05-13T07:42:21.946Z - success: project-settings loaded
+2019-05-13T07:42:21.954Z - success: scene loaded
+2019-05-13T07:42:21.956Z - success: simulator-debugger loaded
+2019-05-13T07:42:21.959Z - success: sprite-editor loaded
+2019-05-13T07:42:21.961Z - success: store loaded
+2019-05-13T07:42:21.961Z - success: timeline loaded
+2019-05-13T07:42:26.239Z - normal: Loading packages
+2019-05-13T07:42:26.286Z - normal: Watching packages
+2019-05-13T07:42:26.536Z - info: Cocos Services load base data!
+2019-05-13T07:42:27.787Z - normal: Run Application
+2019-05-13T08:08:30.827Z - error: Reference "diabolo" of "rope<rope>" to external scene object "diabolo" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-13T08:08:52.073Z - error: Reference "diabolo" of "rope<rope>" to external scene object "diabolo" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-13T08:09:04.802Z - warn: The Prefab used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "da6e986f-1f9e-4a0b-ac83-1f0e982f04e6"
+
+2019-05-13T08:09:39.298Z - warn: The Prefab used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "da6e986f-1f9e-4a0b-ac83-1f0e982f04e6"
+
+2019-05-13T08:10:33.558Z - warn: The Prefab used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "da6e986f-1f9e-4a0b-ac83-1f0e982f04e6"
+
+2019-05-13T08:12:04.675Z - error: Reference "diabolo" of "rope<rope>" to external scene object "diabolo" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-13T08:12:52.466Z - error: Reference "diabolo" of "rope<rope>" to external scene object "diabolo" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-13T08:14:06.487Z - error: Reference "diabolo" of "rope<rope>" to external scene object "diabolo" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-13T08:14:48.181Z - error: Reference "ropes" of "diabolo<diabolo>" to external scene object "ropes" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-13T08:14:58.732Z - error: [db-task][delete] Failed to delete asset undefined, messages: Error: Asset G:\github repository\diabolo\assets\.prefab is not exists
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17143
+    at i.each (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17570)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:181:20
+    at Object.async.forEachOf.async.eachOf (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:233:13)
+    at Object.async.forEach.async.each (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:209:22)
+    at u.delete (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17073)
+    at _tasks.r.queue (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\index.js:1:2264)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:987:13
+    at Immediate.process (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:953:21)
+    at runCallback (timers.js:672:20)
+    at u.o.error (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\utils.js:1:2250)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17622
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17141
+    at i.each (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17570)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:181:20
+    at Object.async.forEachOf.async.eachOf (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:233:13)
+    at Object.async.forEach.async.each (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:209:22)
+    at u.delete (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17073)
+    at _tasks.r.queue (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\index.js:1:2264)
+2019-05-13T08:17:06.654Z - error: Reference "diabolo" of "rope<rope>" to external scene object "diabolo" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-13T08:19:13.211Z - warn: The Asset used by node "rope" is missing. Detailed information:
+Node path: "rope"
+Missing uuid: "2a8866f6-7457-47f0-9371-30c9598eef20"
+
+2019-05-13T08:19:13.216Z - warn: The Asset used by node "background" is missing. Detailed information:
+Node path: "Canvas/background"
+Missing uuid: "a8534dbf-0fd3-4e2a-85ac-5a8b9fc5fc07"
+
+2019-05-13T08:19:13.216Z - warn: The Asset used by node "star" is missing. Detailed information:
+Node path: "Canvas/star"
+Missing uuid: "01b9133d-00eb-4116-8daf-12c4cb6c3204"
+
+2019-05-13T08:19:13.222Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "2ce0396a-ceb5-4a38-97ef-af7e2bb2aaaa"
+
+2019-05-13T08:19:13.222Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "2ce0396a-ceb5-4a38-97ef-af7e2bb2aaaa"
+
+2019-05-13T08:19:13.222Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "2ce0396a-ceb5-4a38-97ef-af7e2bb2aaaa"
+
+2019-05-13T08:19:13.227Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "2ce0396a-ceb5-4a38-97ef-af7e2bb2aaaa"
+
+2019-05-13T08:19:13.228Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "2ce0396a-ceb5-4a38-97ef-af7e2bb2aaaa"
+
+2019-05-13T08:19:13.229Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "2ce0396a-ceb5-4a38-97ef-af7e2bb2aaaa"
+
+2019-05-13T08:19:13.231Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "da6e986f-1f9e-4a0b-ac83-1f0e982f04e6"
+
+2019-05-13T08:19:13.234Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "da6e986f-1f9e-4a0b-ac83-1f0e982f04e6"
+
+2019-05-13T08:19:13.235Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "da6e986f-1f9e-4a0b-ac83-1f0e982f04e6"
+
+2019-05-13T08:19:13.236Z - warn: The Asset used by node "label" is missing. Detailed information:
+Node path: "Canvas/label"
+Missing uuid: "cb1d648f-5499-4c5e-98b5-029ed7e6fe2e"
+
+2019-05-13T08:19:13.248Z - warn: The Asset used by node "left" is missing. Detailed information:
+Node path: "rope/left"
+Missing uuid: "3659cb94-e1b4-46db-9366-bea7d7fe5625"
+
+2019-05-13T08:19:13.248Z - warn: The Asset used by node "right" is missing. Detailed information:
+Node path: "rope/right"
+Missing uuid: "3659cb94-e1b4-46db-9366-bea7d7fe5625"
+
+2019-05-13T08:19:13.249Z - warn: The Asset used by node "rope" is missing. Detailed information:
+Node path: "rope"
+Missing uuid: "3659cb94-e1b4-46db-9366-bea7d7fe5625"
+
+2019-05-13T08:19:13.250Z - warn: The Asset used by node "left" is missing. Detailed information:
+Node path: "rope/left"
+Missing uuid: "3659cb94-e1b4-46db-9366-bea7d7fe5625"
+
+2019-05-13T08:19:13.251Z - warn: The Asset used by node "right" is missing. Detailed information:
+Node path: "rope/right"
+Missing uuid: "3659cb94-e1b4-46db-9366-bea7d7fe5625"
+
+2019-05-13T08:19:13.251Z - warn: The Asset used by node "rope" is missing. Detailed information:
+Node path: "rope"
+Missing uuid: "3659cb94-e1b4-46db-9366-bea7d7fe5625"
+
+2019-05-13T08:20:06.593Z - error: Reference "diabolo" of "label<label>" to external scene object "diabolo" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-13T08:21:00.381Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "0583c848-7598-4b53-9776-99d304e76323"
+
+2019-05-13T08:21:00.381Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "0583c848-7598-4b53-9776-99d304e76323"
+
+2019-05-13T08:21:00.419Z - warn: The Asset used by component "diabolo" is missing. Detailed information:
+Node path: "Canvas/diabolo"
+Missing uuid: "0583c848-7598-4b53-9776-99d304e76323"
+
+2019-05-13T08:24:11.988Z - error: TypeError: Cannot read property '_uuid' of null
+    at Object.c.linkPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4250)
+    at cc_Node._onHierarchyChanged (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:611:45)
+    at cc_Node._onHierarchyChanged (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCNode.js:728:22)
+    at cc_Node.setParent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:213:30)
+    at e.forEach.e (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:3807)
+    at Array.forEach (native)
+    at Object.moveNodes (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:3607)
+    at HTMLElement.move-nodes (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2481)
+    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+2019-05-13T08:28:47.221Z - warn: Error: Ipc will not have a callback. message: scene@renderer:20248
+2019-05-13T08:28:47.259Z - error: Failed to reset layout: Error: Failed to close panel scene
+    at Object.e._unloadAll (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:2087)
+    at r.waterfall.e (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\dock-utils.js:1:5916)
+    at fn (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:746:34)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:1213:16
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:166:37
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:706:43
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:167:37
+    at Object.async.waterfall (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:710:44)
+    at Object.e.reset (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\dock-utils.js:1:5899)
+    at EventEmitter.t.ipcRenderer.on (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\dock-utils.js:1:8429)
+    at e.reset.e (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\dock-utils.js:1:8453)
+    at r.waterfall.e (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\dock-utils.js:1:7375)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:52:16
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:696:30
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:167:37
+    at Immediate.<anonymous> (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:1206:34)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+2019-05-13T08:28:47.287Z - warn: Error: Ipc will not have a callback. message: scene@renderer:20249
+2019-05-13T08:28:47.302Z - warn: Failed to send ipc message scene:query-hierarchy to panel scene, panel not found
+2019-05-13T08:36:49.890Z - normal: Introduced global variable while editing: CocosServicesUpdate
+2019-05-13T11:53:15.569Z - error: Property 'camera.myCamera' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:215:36)
+    at declareProperties (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
+    at Object.CCClass [as Class] (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
+    at __define (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\camera.js:17:4)
+    at G:\github repository\diabolo\temp\quick-scripts\assets\scripts\camera.js:40:13
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\camera.js:47:11)
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\camera.js:50:3)
+    at Module._compile (module.js:571:32)
+2019-05-13T12:25:43.666Z - warn: The Asset used by component "cc.Sprite" is missing. Detailed information:
+Node path: "star"
+Missing uuid: "537313e9-4461-4178-8829-8e2f0c7a90d2"
+
+2019-05-13T12:25:43.668Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "537313e9-4461-4178-8829-8e2f0c7a90d2"
+
+2019-05-13T13:50:42.926Z - failed: [db-task][sync-changes] Failed to import asset G:\github repository\diabolo\assets\scripts\ropes.js, message: Compile error: SyntaxError: G:/github repository/diabolo/assets/scripts/ropes.js: Unexpected token (74:8)
+  72 |         for(var i=0;i<this.ropes.length;i++){
+  73 |             if(this.ropes[i]<0)
+> 74 |         }
+     |         ^
+  75 |     },
+  76 | });
+  77 | 
+    at Parser.pp$5.raise (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp$3.parseExprAtom (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3750:12)
+    at Parser.pp$3.parseExprSubscripts (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+    at Parser.pp$3.parseExpression (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3306:19)
+    at Parser.pp$1.parseStatement (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1906:19)
+2019-05-13T14:26:49.398Z - failed: [db-task][sync-changes] Failed to import asset G:\github repository\diabolo\assets\scripts\random.js, message: Compile error: SyntaxError: G:/github repository/diabolo/assets/scripts/random.js: Unexpected token, expected ; (2:24)
+  1 | // LIFE-CYCLE CALLBACKS:
+> 2 | getRndInteger(min, max) {
+    |                         ^
+  3 |     if(Math.random()<0.5){//左边
+  4 |         return Math.floor(Math.random() * (-this.m - min + 1) ) + min;
+  5 |     }else{
+    at Parser.pp$5.raise (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.semicolon (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1742:38)
+    at Parser.pp$1.parseExpressionStatement (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2236:8)
+    at Parser.pp$1.parseStatement (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1911:17)
+    at Parser.pp$1.parseBlockBody (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
+    at Parser.pp$1.parseTopLevel (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1778:8)
+    at Parser.parse (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1673:17)
+    at parse (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:7305:37)
+    at File.parse (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babel-core\lib\transformation\file\index.js:527:15)
+2019-05-13T14:27:26.570Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/scripts/random.js.meta
+2019-05-13T14:27:32.211Z - error: TypeError: Cannot read property 'parent' of null
+    at Object.exports.remove (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\assets\panel\utils\cache.js:1:1888)
+    at Object.exports.remove (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\assets\panel\utils\operation.js:1:2749)
+    at t.forEach.e (eval at s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1), <anonymous>:1:4240)
+    at Array.forEach (native)
+    at HTMLElement.asset-db:assets-deleted (eval at s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1), <anonymous>:1:4226)
+    at EventEmitter.i.function.t.on.e (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\panel\frame.js:1:3303)
+    at emitTwo (events.js:111:20)
+    at EventEmitter.emit (events.js:194:7)
+2019-05-13T14:41:56.452Z - failed: load script [random] failed : ReferenceError: random is not defined
+    at __define (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:20:18)
+    at G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:25:13
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:32:11)
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:35:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-05-13T14:41:56.458Z - failed: load script [G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js] failed : ReferenceError: random is not defined
+    at __define (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:20:18)
+    at G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:25:13
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:32:11)
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:35:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-05-13T14:41:56.460Z - failed: load script [random] failed : ReferenceError: random is not defined
+    at __define (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:20:18)
+    at G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:25:13
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:32:11)
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\random.js:35:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-05-13T14:41:56.466Z - error: A Class already exists with the same __classname__ : "random".
+    at F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:256:32
+    at Object.js.setClassName (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:266:17)
+    at doDefine (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:279:16)
+    at define (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:295:23)
+    at Object.CCClass [as Class] (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
+    at __define (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\ropes.js:21:4)
+    at G:\github repository\diabolo\temp\quick-scripts\assets\scripts\ropes.js:88:13
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\ropes.js:95:11)
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\ropes.js:98:3)
+2019-05-13T14:41:56.471Z - error: A Class already exists with the same __cid__ : "1edd5RrgGxGo5z904wdamjF".
+    at Object._setClassId (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\js.js:256:32)
+    at define (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:300:28)
+    at Object.CCClass [as Class] (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:662:23)
+    at __define (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\ropes.js:21:4)
+    at G:\github repository\diabolo\temp\quick-scripts\assets\scripts\ropes.js:88:13
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\ropes.js:95:11)
+    at Object.<anonymous> (G:\github repository\diabolo\temp\quick-scripts\assets\scripts\ropes.js:98:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+2019-05-13T15:57:45.707Z - failed: [db-task][sync-changes] Failed to import asset G:\github repository\diabolo\assets\scripts\diabolo.js, message: Compile error: SyntaxError: G:/github repository/diabolo/assets/scripts/diabolo.js: Unexpected token, expected , (192:4)
+  190 |     }
+  191 | 
+> 192 |     update (dt) {
+      |     ^
+  193 |         // cc.log(this.node.convertToWorldSpaceAR(cc.v2(0,0)))
+  194 |         // if(this.node.convertToWorldSpaceAR(cc.v2(0,0))){
+  195 | 
+    at Parser.pp$5.raise (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2019-05-13T16:05:55.974Z - error: getComponent: Type must be non-nil
     at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
     at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
     at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
@@ -72,3 +440,22 @@
     at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
     at emitMany (events.js:127:13)
     at EventEmitter.emit (events.js:204:7)
+2019-05-13T16:06:02.581Z - error: getComponent: Type must be non-nil
+    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
+    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
+    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
+    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-05-13T16:06:08.724Z - error: getComponent: Type must be non-nil
+    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
+    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
+    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
+    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-05-13T16:16:48.370Z - info: shutdown preview server

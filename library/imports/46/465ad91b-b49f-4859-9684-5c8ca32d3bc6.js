@@ -19,20 +19,21 @@ cc.Class({
 
     properties: {
         physicsBoxCollider: null, //物理碰撞
-        diabolo: {
-            default: null,
-            type: cc.Node
-        }, //空竹
-        diaboloComponent: null
+        diabolo: null, //空竹
+        diaboloComponent: null,
+        used: false, //是否使用过
+        camera: null
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
+        this.diabolo = cc.find("Canvas/diabolo");
         //
         this.physicsBoxCollider = this.node.getComponent(cc.PhysicsBoxCollider);
         //
         this.diaboloComponent = this.diabolo.getComponent("diabolo");
+        this.camera = cc.find("Canvas/Main Camera");
     },
     start: function start() {},
     update: function update(dt) {
@@ -40,12 +41,19 @@ cc.Class({
         //空竹弹出后，开门
         //其他情况，关门
         //cc.log(this.diabolo.isFly)
-        if (this.node.y < this.diabolo.y && this.physicsBoxCollider.enabled) {
-            //cc.log(1)
-            this.physicsBoxCollider.enabled = false;
-        } else if (this.node.y > this.diabolo.y && !this.diaboloComponent.isFly) {
-            //cc.log(3)
-            this.physicsBoxCollider.enabled = true;
+        //if(this.on)
+        // cc.log(this.node.isValid)
+        if (this.node.isValid) {
+            if (this.node.y < this.diabolo.y && this.physicsBoxCollider.enabled && this.diaboloComponent.isFly) {
+                //cc.log(1)
+                this.physicsBoxCollider.enabled = false;
+            } else if (!this.diaboloComponent.isFly && !this.physicsBoxCollider.enabled) {
+                this.physicsBoxCollider.enabled = true;
+            }
+            if (this.node.y < this.camera.y - this.camera.parent.height / 2) {
+                // cc.log(2)
+                this.node.destroy();
+            }
         }
     }
 });

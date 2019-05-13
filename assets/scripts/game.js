@@ -12,30 +12,28 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        diabolo:{
+            default:null,
+            type:cc.Node
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {},
 
+    //
+    gameOver: function () {
+        cc.director.loadScene('game');//重新加载游戏场景
+    },
+
     start () {
         
     },
 
-    // update (dt) {},
+    update (dt) {
+        if(!this.diabolo.isValid){//如果空竹消失，则游戏结束
+            this.gameOver()
+        }
+    },
 });

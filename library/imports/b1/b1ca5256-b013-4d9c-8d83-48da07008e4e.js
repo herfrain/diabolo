@@ -4,6 +4,8 @@ cc._RF.push(module, 'b1ca5JWsBNNnI2DSNoHAI5O', 'diabolo');
 
 "use strict";
 
+var _properties;
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 // Learn cc.Class:
@@ -19,7 +21,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 cc.Class({
     extends: cc.Component,
 
-    properties: _defineProperty({
+    properties: (_properties = {
         x: 0, //x坐标
         y: 0, //y坐标
         x_speed: 0, //x轴方向速度
@@ -35,7 +37,7 @@ cc.Class({
         physicsBoxCollider: null, //物理墙
         leftNode: null, //左连接点
         rightNode: null, //右连接点
-        leftJoint: null }, "leftJoint", null),
+        leftJoint: null }, _defineProperty(_properties, "leftJoint", null), _defineProperty(_properties, "camera", null), _properties),
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -56,18 +58,17 @@ cc.Class({
         //绑定左右distanceJoint组件
         this.leftJoint = this.leftNode.getComponent(cc.DistanceJoint);
         this.rightJoint = this.rightNode.getComponent(cc.DistanceJoint);
-        this.leftJoint.connectedBody = this.rigidbody;
-        this.rightJoint.connectedBody = this.rigidbody;
+        // this.leftJoint.connectedBody=this.rigidbody
+        // this.rightJoint.connectedBody=this.rigidbody
         //绑定mouseJoint
         this.mouseJoint = this.node.getComponent(cc.MouseJoint);
         //绑定物理碰撞
         this.physicsBoxCollider = this.rope.getComponent(cc.PhysicsBoxCollider);
         this.physicsBoxCollider.enabled = true;
-        cc.log("mouseJoint是否可用：" + this.mouseJoint.enabled);
-        cc.log(this.mouseJoint);
-        cc.log(this.rigidbody);
-        cc.log(this.leftNode);
-        cc.log(this.leftJoint);
+        //
+        this.camera = cc.find("Canvas/Main Camera");
+        cc.log(this.rope);
+        cc.log(this.physicsBoxCollider);
     },
 
 
@@ -167,6 +168,7 @@ cc.Class({
         cc.log('enter');
     },
 
+    //如果检测到与绳子发生碰撞，则建立两边点的链接，并将绑定mousejoint，飞行状态设为false
     //结束碰撞时，如果空竹是往下落的，则添加绳子
     onCollisionExit: function onCollisionExit(other, self) {
         console.log('on collision enter');
@@ -185,15 +187,16 @@ cc.Class({
         }
     },
 
-    //在飞行时判断，如果落在另一条绳子上，则建立连接
     update: function update(dt) {
-        //var velocity = this.rigidbody.linearVelocity;
-        //console.info(this.rigidbody.getWorldPosition())
-        //this.rigidbody.linearVelocity = cc.v2(0,0);
-        //console.info(this.rigidbody.linearVelocity)
+        // cc.log(this.node.convertToWorldSpaceAR(cc.v2(0,0)))
+        // if(this.node.convertToWorldSpaceAR(cc.v2(0,0))){
 
-
-        //如果检测到与绳子发生碰撞，则建立两边点的链接，并将绑定mousejoint，飞行状态设为false
+        // }
+        if (this.node.isValid) {
+            if (this.node.y < this.camera.y - this.camera.parent.height / 2) {
+                this.node.destroy();
+            }
+        }
     }
 });
 
