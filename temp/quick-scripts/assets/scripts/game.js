@@ -53,6 +53,7 @@ cc.Class({
     update: function update(dt) {
         if (!this.diabolo.isValid) {
             //如果空竹消失，则游戏结束
+            // cc.log(this.diabolo.isValid)
             this.gameOver();
             return;
         }

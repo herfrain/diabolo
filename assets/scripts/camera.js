@@ -15,13 +15,23 @@ cc.Class({
         label:{
             default:null,
             type:cc.Node
-        }
+        },
+        labelComponent:null,
+        diabolo:{
+            default:null,
+            type:cc.Node
+        },//空竹对象
+        diaboloComponent:null,
+        once:true,
+        preH:0,
+        heightDifference:0,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         // this.enabled=false
+        this.diaboloComponent=this.diabolo.getComponent("diabolo")//获取组件
     },
 
     start () {
@@ -34,7 +44,22 @@ cc.Class({
 
         //其实只要改变画布canvas的位置，就会一直往上运动
         // this.node.parent.y++
+        // cc.log(this.node.y)
 
-        
+        // if(this.diabolo.y>this.node.y+this.node.parent.height/2){
+        //     this.node.y+=this.diabolo.y-(this.node.y+this.node.parent.height/2)
+        // }
+
+        //如果高度差大于0，即往上运动时，摄像机跟随移动
+        if(this.diaboloComponent.y-this.preH>0){
+            // cc.log(this.diaboloComponent.y)
+            var h=this.diaboloComponent.y-this.preH
+            this.preH=this.diaboloComponent.y
+            // cc.log()
+            // this.node.y+=this.heightDifference
+            //缓动效果
+            var moveAction=cc.moveBy(1,cc.v2(0,h)).easing(cc.easeCubicActionOut())
+            this.node.runAction(moveAction)
+        }
     },
 });

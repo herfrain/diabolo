@@ -14,6 +14,7 @@ cc.Class({
     properties: {
         height:0,//高度
         preH:0,//前一个绳子的高度
+        heightDifference:0,//每次的高度差
         once:true,//限制只变化一次
         label:null,
         diabolo:{
@@ -21,6 +22,11 @@ cc.Class({
             type:cc.Node
         },//空竹对象
         diaboloComponent:null,//空竹组件
+        camera:{
+            default:null,
+            type:cc.Node
+        },
+        cameraComponent:null,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -29,6 +35,7 @@ cc.Class({
         this.diaboloComponent=this.diabolo.getComponent("diabolo")//获取组件
         this.label=this.node.getComponent(cc.Label)//获取label组件
         this.label.string=0
+        this.cameraComponent=this.camera.getComponent("camera")
     },
 
     start () {
@@ -40,6 +47,8 @@ cc.Class({
         if(!this.diaboloComponent.isFly&&this.once){//只进入一次
             this.once=false
             var h=this.diaboloComponent.rope.convertToWorldSpaceAR(cc.v2(0,0)).y-this.preH//高度差，这个绳子高度-之前绳子的高度
+            this.cameraComponent.heightDifference=h//设置camera里的高度差属性
+            // this.node.y+=h//label的高度也要对应改变
             this.height+=h//把高度差相加
             this.preH=this.diaboloComponent.rope.convertToWorldSpaceAR(cc.v2(0,0)).y//这个绳子变为前一个绳子
             // this.label.string=parseInt(this.height)+"m"//更改label的string显示

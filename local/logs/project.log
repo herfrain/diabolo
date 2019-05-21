@@ -1,69 +1,69 @@
-2019-05-21T10:27:51.023Z - normal: Load ~/.CocosCreator/settings.json
-2019-05-21T10:27:52.366Z - normal: Initializing Asset Database
-2019-05-21T10:27:52.382Z - normal: checking language setting...
-2019-05-21T10:27:52.382Z - normal: Language: zh
-2019-05-21T10:27:56.101Z - success: preview server running at http://localhost:7456
-2019-05-21T10:27:56.101Z - success: protocol editor-framework registered
-2019-05-21T10:27:56.101Z - success: protocol app registered
-2019-05-21T10:27:56.101Z - success: protocol theme registered
-2019-05-21T10:27:56.101Z - success: protocol packages registered
-2019-05-21T10:27:56.101Z - success: protocol uuid registerred
-2019-05-21T10:27:56.101Z - success: protocol db registerred
-2019-05-21T10:27:56.101Z - success: protocol thumbnail registerred
-2019-05-21T10:27:56.101Z - success: protocol unpack registerred
-2019-05-21T10:27:56.101Z - success: protocol disable-commonjs registerred
-2019-05-21T10:27:56.305Z - normal: connected!
-2019-05-21T10:27:56.305Z - normal: Check project F:\CocosWorkPlace\diabolo
-2019-05-21T10:27:56.305Z - normal: Initializing project F:\CocosWorkPlace\diabolo
-2019-05-21T10:27:57.554Z - normal: Initializing Cocos2d
-2019-05-21T10:28:02.494Z - normal: Initializing engine extends
-2019-05-21T10:28:03.087Z - success: asset-db-debugger loaded
-2019-05-21T10:28:03.103Z - success: baidu-adapter loaded
-2019-05-21T10:28:03.118Z - success: code-editor loaded
-2019-05-21T10:28:03.134Z - success: color-picker loaded
-2019-05-21T10:28:03.478Z - success: fb-audience-network loaded
-2019-05-21T10:28:03.665Z - success: fb-live-stream loaded
-2019-05-21T10:28:03.696Z - success: google-play-instant loaded
-2019-05-21T10:28:03.790Z - success: huawei-runtime loaded
-2019-05-21T10:28:03.790Z - success: jsb-adapter loaded
-2019-05-21T10:28:03.868Z - success: oppo-runtime loaded
-2019-05-21T10:28:03.900Z - success: package-manager loaded
-2019-05-21T10:28:04.681Z - success: qqplay-adapter loaded
-2019-05-21T10:28:04.712Z - success: runtime-dev-tools loaded
-2019-05-21T10:28:04.774Z - success: sdkbox loaded
-2019-05-21T10:28:04.837Z - success: tester loaded
-2019-05-21T10:28:04.868Z - success: ui-grid loaded
-2019-05-21T10:28:04.899Z - success: ui-kit-preview-extra loaded
-2019-05-21T10:28:04.931Z - success: ui-kit-preview loaded
-2019-05-21T10:28:04.931Z - success: ui-kit loaded
-2019-05-21T10:28:04.946Z - success: ui-tree loaded
-2019-05-21T10:28:05.009Z - success: vivo-runtime loaded
-2019-05-21T10:28:05.009Z - success: weapp-adapter loaded
-2019-05-21T10:28:05.087Z - success: assets loaded
-2019-05-21T10:28:05.102Z - success: builder loaded
-2019-05-21T10:28:06.042Z - success: cocos-services loaded
-2019-05-21T10:28:06.073Z - success: console loaded
-2019-05-21T10:28:06.135Z - success: fb-instant-games loaded
-2019-05-21T10:28:06.151Z - success: google-instant-games loaded
-2019-05-21T10:28:06.151Z - success: hierarchy loaded
-2019-05-21T10:28:06.151Z - success: inspector loaded
-2019-05-21T10:28:06.151Z - success: keystore loaded
-2019-05-21T10:28:06.167Z - success: node-library loaded
-2019-05-21T10:28:06.198Z - success: package-asset loaded
-2019-05-21T10:28:06.198Z - success: preferences loaded
-2019-05-21T10:28:06.198Z - success: project-exporter loaded
-2019-05-21T10:28:06.198Z - success: project-importer loaded
-2019-05-21T10:28:06.198Z - success: project-settings loaded
-2019-05-21T10:28:06.213Z - success: scene loaded
-2019-05-21T10:28:06.213Z - success: simulator-debugger loaded
-2019-05-21T10:28:06.213Z - success: sprite-editor loaded
-2019-05-21T10:28:06.229Z - success: store loaded
-2019-05-21T10:28:06.229Z - success: timeline loaded
-2019-05-21T10:28:10.839Z - normal: Loading packages
-2019-05-21T10:28:10.839Z - normal: Watching packages
-2019-05-21T10:28:11.590Z - info: Cocos Services load base data!
-2019-05-21T10:28:12.449Z - normal: Run Application
-2019-05-21T12:31:35.909Z - error: getComponent: Type must be non-nil
+2019-05-21T13:27:59.363Z - normal: Load ~/.CocosCreator/settings.json
+2019-05-21T13:28:00.574Z - normal: Initializing Asset Database
+2019-05-21T13:28:00.579Z - normal: checking language setting...
+2019-05-21T13:28:00.580Z - normal: Language: zh
+2019-05-21T13:28:01.735Z - success: preview server running at http://localhost:7456
+2019-05-21T13:28:01.738Z - success: protocol editor-framework registered
+2019-05-21T13:28:01.738Z - success: protocol app registered
+2019-05-21T13:28:01.738Z - success: protocol theme registered
+2019-05-21T13:28:01.738Z - success: protocol packages registered
+2019-05-21T13:28:01.739Z - success: protocol uuid registerred
+2019-05-21T13:28:01.739Z - success: protocol db registerred
+2019-05-21T13:28:01.739Z - success: protocol thumbnail registerred
+2019-05-21T13:28:01.739Z - success: protocol unpack registerred
+2019-05-21T13:28:01.739Z - success: protocol disable-commonjs registerred
+2019-05-21T13:28:01.937Z - normal: connected!
+2019-05-21T13:28:01.941Z - normal: Check project F:\CocosWorkPlace\diabolo
+2019-05-21T13:28:01.947Z - normal: Initializing project F:\CocosWorkPlace\diabolo
+2019-05-21T13:28:02.670Z - normal: Initializing Cocos2d
+2019-05-21T13:28:03.854Z - normal: Initializing engine extends
+2019-05-21T13:28:03.887Z - success: asset-db-debugger loaded
+2019-05-21T13:28:03.890Z - success: baidu-adapter loaded
+2019-05-21T13:28:03.898Z - success: code-editor loaded
+2019-05-21T13:28:03.904Z - success: color-picker loaded
+2019-05-21T13:28:04.063Z - success: fb-audience-network loaded
+2019-05-21T13:28:04.192Z - success: fb-live-stream loaded
+2019-05-21T13:28:04.204Z - success: google-play-instant loaded
+2019-05-21T13:28:04.222Z - success: huawei-runtime loaded
+2019-05-21T13:28:04.223Z - success: jsb-adapter loaded
+2019-05-21T13:28:04.233Z - success: oppo-runtime loaded
+2019-05-21T13:28:04.240Z - success: package-manager loaded
+2019-05-21T13:28:04.449Z - success: qqplay-adapter loaded
+2019-05-21T13:28:04.453Z - success: runtime-dev-tools loaded
+2019-05-21T13:28:04.460Z - success: sdkbox loaded
+2019-05-21T13:28:04.465Z - success: tester loaded
+2019-05-21T13:28:04.469Z - success: ui-grid loaded
+2019-05-21T13:28:04.472Z - success: ui-kit-preview-extra loaded
+2019-05-21T13:28:04.475Z - success: ui-kit-preview loaded
+2019-05-21T13:28:04.478Z - success: ui-kit loaded
+2019-05-21T13:28:04.481Z - success: ui-tree loaded
+2019-05-21T13:28:04.489Z - success: vivo-runtime loaded
+2019-05-21T13:28:04.490Z - success: weapp-adapter loaded
+2019-05-21T13:28:04.553Z - success: assets loaded
+2019-05-21T13:28:04.556Z - success: builder loaded
+2019-05-21T13:28:05.008Z - success: cocos-services loaded
+2019-05-21T13:28:05.014Z - success: console loaded
+2019-05-21T13:28:05.068Z - success: fb-instant-games loaded
+2019-05-21T13:28:05.070Z - success: google-instant-games loaded
+2019-05-21T13:28:05.077Z - success: hierarchy loaded
+2019-05-21T13:28:05.081Z - success: inspector loaded
+2019-05-21T13:28:05.083Z - success: keystore loaded
+2019-05-21T13:28:05.090Z - success: node-library loaded
+2019-05-21T13:28:05.092Z - success: package-asset loaded
+2019-05-21T13:28:05.094Z - success: preferences loaded
+2019-05-21T13:28:05.096Z - success: project-exporter loaded
+2019-05-21T13:28:05.098Z - success: project-importer loaded
+2019-05-21T13:28:05.101Z - success: project-settings loaded
+2019-05-21T13:28:05.107Z - success: scene loaded
+2019-05-21T13:28:05.110Z - success: simulator-debugger loaded
+2019-05-21T13:28:05.118Z - success: sprite-editor loaded
+2019-05-21T13:28:05.124Z - success: store loaded
+2019-05-21T13:28:05.128Z - success: timeline loaded
+2019-05-21T13:28:07.662Z - normal: Loading packages
+2019-05-21T13:28:07.673Z - normal: Watching packages
+2019-05-21T13:28:08.445Z - info: Cocos Services load base data!
+2019-05-21T13:28:09.090Z - normal: Run Application
+2019-05-21T13:40:19.384Z - error: getComponent: Type must be non-nil
     at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
     at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
     at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
@@ -72,7 +72,7 @@
     at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
     at emitMany (events.js:127:13)
     at EventEmitter.emit (events.js:204:7)
-2019-05-21T12:31:41.189Z - error: getComponent: Type must be non-nil
+2019-05-21T13:42:24.634Z - error: getComponent: Type must be non-nil
     at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
     at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
     at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
@@ -81,7 +81,7 @@
     at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
     at emitMany (events.js:127:13)
     at EventEmitter.emit (events.js:204:7)
-2019-05-21T12:32:08.306Z - error: getComponent: Type must be non-nil
+2019-05-21T13:42:42.836Z - error: getComponent: Type must be non-nil
     at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
     at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
     at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
@@ -90,7 +90,16 @@
     at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
     at emitMany (events.js:127:13)
     at EventEmitter.emit (events.js:204:7)
-2019-05-21T12:39:52.211Z - error: getComponent: Type must be non-nil
+2019-05-21T13:42:46.176Z - error: getComponent: Type must be non-nil
+    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
+    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
+    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
+    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-05-21T13:58:10.099Z - error: getComponent: Type must be non-nil
     at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
     at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
     at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)

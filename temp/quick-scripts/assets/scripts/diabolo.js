@@ -22,10 +22,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: (_properties = {
-        x: 0, //x坐标
-        y: 0, //y坐标
-        x_speed: 0, //x轴方向速度
-        y_speed: 0, //y轴方向速度
+        y: 0,
         isFly: false, //是否正在飞行中
         rigidbody: null, //刚体
         mouseJoint: null,
@@ -64,7 +61,8 @@ cc.Class({
         this.mouseJoint = this.node.getComponent(cc.MouseJoint);
         //绑定物理碰撞
         this.physicsBoxCollider = this.rope.getComponent(cc.PhysicsBoxCollider);
-
+        //如果在绳子上，则空竹y等于绳子的y
+        this.y = this.rope.y;
         //
         this.camera = cc.find("Canvas/Main Camera");
         cc.log(this.rope);
@@ -134,6 +132,7 @@ cc.Class({
 
     //取消左右节点绑定
     cancelLRJoint: function cancelLRJoint() {
+        // this.rope=null
         this.leftJoint.enabled = false;
         this.leftJoint.connectedBody = null;
         this.rightJoint.enabled = false;
@@ -143,6 +142,12 @@ cc.Class({
     },
 
     update: function update(dt) {
+        //如果正在飞行，则y等于节点的y
+        if (this.isFly) {
+            this.y = this.node.y;
+        } else {
+            this.y = this.rope.y;
+        }
 
         if (this.node.isValid) {
             if (this.node.y < this.camera.y - this.camera.parent.height / 2) {
