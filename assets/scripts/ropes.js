@@ -19,6 +19,10 @@ cc.Class({
         ropes:null,
         diabolo:null,
         diaboloComponent:null,
+        camera:{
+            default:null,
+            type:cc.Node
+        },
     },
 
     // // LIFE-CYCLE CALLBACKS:
@@ -35,20 +39,21 @@ cc.Class({
     // },
 
     onLoad () {
+        // this.enabled=false
         this.diabolo=cc.find("Canvas/diabolo")
         this.diaboloComponent=this.diabolo.getComponent("diabolo")
         var ropeList=this.node.children
         var firstrope=ropeList[0]
-        // var prerope=firstrope
-        // for(var i=0;i<10;i++){
-        //     var nextrope=cc.instantiate(prerope)
-        //     // cc.log(random.getRndIntegerUp(-300,300))
-        //     nextrope.y=prerope.y+random.getRndIntegerUp(100,200)
-        //     nextrope.x=prerope.x+random.getRndInteger(-300,300)
-        //     cc.log("prerope:"+prerope.x)
-        //     prerope=nextrope
-        //     this.node.addChild(nextrope)
-        // }
+        var prerope=firstrope
+        for(var i=0;i<10;i++){
+            var nextrope=cc.instantiate(prerope)
+            // cc.log(random.getRndIntegerUp(-300,300))
+            nextrope.y=prerope.y+random.getRndIntegerUp(100,200)
+            nextrope.x=random.getRndIntegerUp(-this.camera.parent.width/2+100,this.camera.parent.width/2-100)
+            // cc.log("prerope:"+prerope.x)
+            prerope=nextrope
+            this.node.addChild(nextrope)
+        }
         var leftNode=firstrope.getChildByName("left")
         var rightNode=firstrope.getChildByName("right")
         //绑定左右distanceJoint组件
@@ -61,20 +66,40 @@ cc.Class({
 
     start () {
         this.ropes=this.node.children
-        // this.ropes=this.node.children
-        // for(var i=0;i<this.ropes.length;i++){
-        //     var rope=this.ropes[i]
-        //     var down=cc.moveBy(10,cc.v2(0,-1000))
-        //     rope.runAction(down)
-        // }
     },
 
     update (dt) {
-        cc.log(this.ropes.length)
-        // for(var i=0;i<this.ropes.length;i++){
-        //     if(this.ropes[i].y<0){
-
-        //     }
-        // }
+        //在摄像机顶部添加绳子
+        // if(Math.abs(this.camera.y)%200==0)
+        // if(this.camera.y+this.camera.parent.height>this.ropes[this.ropes.length-1].y)
+        if(this.camera.y+this.camera.parent.height>this.ropes[this.ropes.length-1].y){
+            //加载prefab预制资源
+            cc.loader.loadRes('rope.prefab', (err, resource)=>{
+                if(err){ return; }
+                // var rope=cc.instantiate(resource)//克隆实例
+                // rope.y=this.camera.y+this.camera.parent.height/2+random.getRndIntegerUp(0,50)//从摄像机顶部开始
+                // rope.x=random.getRndIntegerUp(-this.camera.parent.width/2+100,this.camera.parent.width/2-100)
+                // this.node.addChild(rope)//添加绳子
+                var prerope=this.ropes[this.ropes.length-1]
+                for(var i=0;i<10;i++){
+                    var nextrope=cc.instantiate(prerope)
+                    // cc.log(random.getRndIntegerUp(-300,300))
+                    nextrope.y=prerope.y+random.getRndIntegerUp(100,200)
+                    nextrope.x=random.getRndIntegerUp(-this.camera.parent.width/2+100,this.camera.parent.width/2-100)
+                    // cc.log("prerope:"+prerope.x)
+                    prerope=nextrope
+                    this.node.addChild(nextrope)
+                }
+            });
+        }
+        // cc.log(this.ropes.length)
+        for(var i=0;i<this.ropes.length;i++){
+            if(this.ropes[i].isValid){
+                if(this.ropes[i].y<this.camera.y-this.camera.parent.height/2){//低于摄像机下边界
+                    // cc.log(2)
+                    this.ropes[i].destroy()
+                }
+            }
+        }
     },
 });

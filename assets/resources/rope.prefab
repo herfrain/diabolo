@@ -48,9 +48,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_contentSize": {
@@ -65,8 +65,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 162,
-      "y": -361,
+      "x": 0,
+      "y": 542,
       "z": 0
     },
     "_scale": {
@@ -481,6 +481,8 @@
     "physicsBoxCollider": null,
     "diabolo": null,
     "diaboloComponent": null,
+    "used": false,
+    "camera": null,
     "_id": ""
   },
   {

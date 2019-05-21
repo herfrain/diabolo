@@ -28,24 +28,29 @@ cc.Class({
     onLoad () {
         this.diaboloComponent=this.diabolo.getComponent("diabolo")//获取组件
         this.label=this.node.getComponent(cc.Label)//获取label组件
+        this.label.string=0
     },
 
     start () {
-
+        this.preH=this.diaboloComponent.rope.convertToWorldSpaceAR(cc.v2(0,0)).y
     },
 
     update (dt) {
-        this.node.y++//保持位置
         //当空竹调到一条rope上时，记录高度差，加入高度统计
         if(!this.diaboloComponent.isFly&&this.once){//只进入一次
             this.once=false
             var h=this.diaboloComponent.rope.convertToWorldSpaceAR(cc.v2(0,0)).y-this.preH//高度差，这个绳子高度-之前绳子的高度
             this.height+=h//把高度差相加
             this.preH=this.diaboloComponent.rope.convertToWorldSpaceAR(cc.v2(0,0)).y//这个绳子变为前一个绳子
-            this.label.string=this.height+"m"//更改label的string显示
+            // this.label.string=parseInt(this.height)+"m"//更改label的string显示
             cc.log("height:"+this.height)
         }else if(this.diaboloComponent.isFly&&!this.once){//飞行时，将once改回来
             this.once=true
+        }
+        var labelHeight=parseInt(this.label.string)
+        if(labelHeight<this.height){
+            labelHeight+=11
+            this.label.string=parseInt(labelHeight)+"m"
         }
     },
 });

@@ -57,11 +57,16 @@ cc.Class({
         this.mouseJoint=this.node.getComponent(cc.MouseJoint)
         //绑定物理碰撞
         this.physicsBoxCollider=this.rope.getComponent(cc.PhysicsBoxCollider)
-        this.physicsBoxCollider.enabled=true
+        
         //
         this.camera=cc.find("Canvas/Main Camera")
         cc.log(this.rope)
         cc.log(this.physicsBoxCollider)
+        cc.log("scale:"+this.node.scale)
+    },
+
+    start () {
+        this.physicsBoxCollider.enabled=true
     },
 
     touchBegin:function(event){
@@ -123,6 +128,7 @@ cc.Class({
 
     //取消左右节点绑定
     cancelLRJoint:function(){
+        // this.rope=null
         this.leftJoint.enabled=false
         this.leftJoint.connectedBody=null
         this.rightJoint.enabled=false
@@ -131,65 +137,10 @@ cc.Class({
         this.rightJoint.apply()
     },
 
-    //绑定左右节点
-    bandLRJoint:function(other){
-        //绑定左右连接点
-        this.rope=other.node
-        this.leftNode=this.rope.getChildByName("left")
-        this.rightNode=this.rope.getChildByName("right")
-        //绑定左右distanceJoint组件
-        this.leftJoint=this.leftNode.getComponent(cc.DistanceJoint)
-        this.rightJoint=this.rightNode.getComponent(cc.DistanceJoint)
-        this.leftJoint.connectedBody=this.rigidbody
-        this.rightJoint.connectedBody=this.rigidbody
-        this.leftJoint.enabled=true
-        this.rightJoint.enabled=true
-        this.leftJoint.apply()//修改之后需要apply()才能真正设置完成
-        this.rightJoint.apply()
-    },
-
-
-    //重新绑定mousejoint
-    bandMouseJoint:function(){
-        this.node.addComponent(cc.MouseJoint)//添加组件
-        this.mouseJoint=this.node.getComponent(cc.MouseJoint)
-    },
-
-
-    start () {
-        
-    },
-
-    onCollisionEnter:function(other,self){
-        cc.log('enter')
-    },
-
-    //如果检测到与绳子发生碰撞，则建立两边点的链接，并将绑定mousejoint，飞行状态设为false
-    //结束碰撞时，如果空竹是往下落的，则添加绳子
-    onCollisionExit: function (other, self) {
-        console.log('on collision enter');
-        if(this.rigidbody.linearVelocity.y<0){
-            //绑定左右节点
-            this.bandLRJoint(other)
-            cc.log(this.rope)
-            cc.log(this.leftJoint)
-            //绑定mouseJoint
-            this.bandMouseJoint()
-            // other.enabled=false
-            this.isFly=false//固定在绳子上
-            //关门
-            this.physicsBoxCollider=this.rope.getComponent(cc.PhysicsBoxCollider)
-            this.physicsBoxCollider.enabled=true
-        }
-
-
-    },
+    
 
     update (dt) {
-        // cc.log(this.node.convertToWorldSpaceAR(cc.v2(0,0)))
-        // if(this.node.convertToWorldSpaceAR(cc.v2(0,0))){
 
-        // }
         if(this.node.isValid){
             if(this.node.y<this.camera.y-this.camera.parent.height/2){
                 this.node.destroy()

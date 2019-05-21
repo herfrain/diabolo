@@ -21,16 +21,32 @@ cc.Class({
         diabolo: {
             default: null,
             type: cc.Node
+        },
+        camera: {
+            default: null,
+            type: cc.Node
         }
     },
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad: function onLoad() {
+        // this.enabled=false
+    },
 
-    //
+
+    // //开始游戏
+    // gameStart:function(){
+    //     this.enabled=true
+    //     this.camera.enabled=true
+    //     this.startButton.active=false
+    // },
+
+    //结束游戏
     gameOver: function gameOver() {
-        cc.director.loadScene('game'); //重新加载游戏场景
+        cc.director.loadScene('restart'); //重新加载游戏场景
+        // this.startButton.active=true
+        // this.startButton.x=this.camera.x
     },
 
     start: function start() {},
@@ -38,6 +54,7 @@ cc.Class({
         if (!this.diabolo.isValid) {
             //如果空竹消失，则游戏结束
             this.gameOver();
+            return;
         }
     }
 });

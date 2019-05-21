@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 317.9125061035156,
+                "height": 302.0874938964844,
                 "type": "panel",
                 "width": 241.0625
               },
@@ -27,12 +27,12 @@
                 "children": [
                   "assets"
                 ],
-                "height": 441.88751220703125,
+                "height": 419.1125183105469,
                 "type": "panel",
                 "width": 241.0625
               }
             ],
-            "height": 761.7999877929688,
+            "height": 723.2000122070312,
             "type": "dock-v",
             "width": 241.0625
           },
@@ -43,7 +43,7 @@
                 "children": [
                   "scene"
                 ],
-                "height": 478.5,
+                "height": 454.125,
                 "type": "panel",
                 "width": 843.2250366210938
               },
@@ -53,12 +53,12 @@
                   "console",
                   "timeline"
                 ],
-                "height": 281.2875061035156,
+                "height": 267.07501220703125,
                 "type": "panel",
                 "width": 843.2250366210938
               }
             ],
-            "height": 761.7999877929688,
+            "height": 723.2000122070312,
             "type": "dock-v",
             "width": 843.2250366210938
           },
@@ -68,7 +68,7 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 761.7999877929688,
+            "height": 723.2000122070312,
             "type": "panel",
             "width": 450.1125183105469
           }
@@ -88,21 +88,21 @@
   },
   "panels": {
     "builder": {
-      "x": 32,
-      "y": 56,
-      "width": 672,
-      "height": 740
+      "x": 592,
+      "y": 52,
+      "width": 676,
+      "height": 744
     },
     "sprite-editor": {
-      "x": 352,
-      "y": 136,
+      "x": 404,
+      "y": 188,
       "width": 520,
       "height": 544
     },
     "project-settings": {
       "x": 540,
       "y": 112,
-      "width": 603,
+      "width": 604,
       "height": 568
     },
     "preferences": {
