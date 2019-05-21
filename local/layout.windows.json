@@ -8,70 +8,44 @@
       "x": -8,
       "y": -8,
       "width": 1552,
-      "height": 926,
+      "height": 840,
       "layout": {
         "children": [
           {
             "children": [
               {
+                "active": 0,
                 "children": [
-                  {
-                    "active": 0,
-                    "children": [
-                      "hierarchy"
-                    ],
-                    "height": 386.875,
-                    "type": "panel",
-                    "width": 205.0625
-                  },
-                  {
-                    "active": 0,
-                    "children": [
-                      "assets"
-                    ],
-                    "height": 386.875,
-                    "type": "panel",
-                    "width": 205.0625
-                  }
+                  "hierarchy"
                 ],
-                "height": 386.875,
-                "type": "dock-h",
-                "width": 412.1125183105469
+                "height": 301.1625061035156,
+                "type": "panel",
+                "width": 241.0625
               },
               {
                 "active": 0,
                 "children": [
-                  "node-library"
+                  "assets"
                 ],
-                "height": 372.9125061035156,
+                "height": 417.8374938964844,
                 "type": "panel",
-                "width": 412.1125183105469
+                "width": 241.0625
               }
             ],
-            "height": 761.7999877929688,
+            "height": 721,
             "type": "dock-v",
-            "width": 412.1125183105469
-          },
-          {
-            "active": 0,
-            "children": [
-              "scene"
-            ],
-            "height": 761.7999877929688,
-            "type": "panel",
-            "width": 598.1500244140625
+            "width": 241.0625
           },
           {
             "children": [
               {
                 "active": 0,
                 "children": [
-                  "inspector",
-                  "cocos-services"
+                  "scene"
                 ],
-                "height": 556.9874877929688,
+                "height": 452.7375183105469,
                 "type": "panel",
-                "width": 524.1375122070312
+                "width": 843.2250366210938
               },
               {
                 "active": 0,
@@ -79,14 +53,24 @@
                   "console",
                   "timeline"
                 ],
-                "height": 266,
+                "height": 266.26251220703125,
                 "type": "panel",
-                "width": 524.1375122070312
+                "width": 843.2250366210938
               }
             ],
-            "height": 825,
+            "height": 721,
             "type": "dock-v",
-            "width": 524.1375122070312
+            "width": 843.2250366210938
+          },
+          {
+            "active": 0,
+            "children": [
+              "inspector",
+              "cocos-services"
+            ],
+            "height": 721,
+            "type": "panel",
+            "width": 450.1125183105469
           }
         ],
         "type": "dock-h"
@@ -94,39 +78,44 @@
       "panels": [
         "hierarchy",
         "assets",
-        "node-library",
-        "inspector",
-        "cocos-services",
         "console",
         "timeline",
+        "inspector",
+        "cocos-services",
         "scene"
       ]
     }
   },
   "panels": {
     "builder": {
-      "x": 32,
-      "y": 56,
-      "width": 672,
-      "height": 740
+      "x": 592,
+      "y": 52,
+      "width": 676,
+      "height": 744
     },
     "sprite-editor": {
-      "x": 352,
-      "y": 136,
+      "x": 404,
+      "y": 188,
       "width": 520,
       "height": 544
     },
     "project-settings": {
       "x": 540,
       "y": 112,
-      "width": 601,
-      "height": 566
+      "width": 604,
+      "height": 568
     },
     "preferences": {
       "x": 468,
       "y": 128,
       "width": 596,
       "height": 559
+    },
+    "console": {
+      "x": 636,
+      "y": 96,
+      "width": 848,
+      "height": 344
     }
   }
 }
