@@ -2,7 +2,7 @@
 cc._RF.push(module, '6a4d0yjitpCCJ++b/TO9xVO', 'game');
 // scripts/game.js
 
-'use strict';
+"use strict";
 
 // Learn cc.Class:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/class.html
@@ -44,6 +44,7 @@ cc.Class({
 
     //结束游戏
     gameOver: function gameOver() {
+        cc.log("game over");
         cc.director.loadScene('restart'); //重新加载游戏场景
         // this.startButton.active=true
         // this.startButton.x=this.camera.x

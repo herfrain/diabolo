@@ -37,6 +37,7 @@ cc.Class({
 
     //结束游戏
     gameOver: function () {
+        cc.log("game over")
         cc.director.loadScene('restart');//重新加载游戏场景
         // this.startButton.active=true
         // this.startButton.x=this.camera.x

@@ -2,9 +2,16 @@
   "assets-sort-type": "name",
   "collision-matrix": [
     [
+      false,
+      null,
       true
     ],
     [
+      false,
+      false
+    ],
+    [
+      true,
       false,
       false
     ]
@@ -26,7 +33,8 @@
   "fit-width": false,
   "group-list": [
     "default",
-    "ui"
+    "ui",
+    "diabolo"
   ],
   "last-module-event-record-time": 1558163961776,
   "simulator-orientation": false,
@@ -35,6 +43,5 @@
     "width": 960
   },
   "use-customize-simulator": true,
-  "use-project-simulator-setting": false,
-  "start-scene": "current"
+  "use-project-simulator-setting": false
 }
