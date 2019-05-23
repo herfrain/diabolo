@@ -62,13 +62,15 @@ cc.Class({
         leftJoint.connectedBody=this.diaboloComponent.rigidbody
         rightJoint.connectedBody=this.diaboloComponent.rigidbody
         cc.log(firstrope)
-    },
-
-    start () {
         this.ropes=this.node.children
     },
 
+    start () {
+        
+    },
+
     update (dt) {
+        // cc.log(this.ropes.length)
         //在摄像机顶部添加绳子
         // if(Math.abs(this.camera.y)%200==0)
         // if(this.camera.y+this.camera.parent.height>this.ropes[this.ropes.length-1].y)

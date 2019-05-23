@@ -23,7 +23,7 @@ cc.Class({
         },//空竹对象
         diaboloComponent:null,
         once:true,
-        preH:0,
+        preH:0,//前一个高度
         heightDifference:0,
     },
 

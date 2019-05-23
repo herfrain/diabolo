@@ -44,11 +44,6 @@
     "meta": 1557640891546,
     "relativePath": "scripts\\control.js"
   },
-  "d2524c74-d0d4-4c45-be98-b4f29ccc6c01": {
-    "asset": 1557638238995,
-    "meta": 1557640891264,
-    "relativePath": "scripts\\background.js"
-  },
   "eeb9a9e8-4ee1-4bf2-8963-9e842b00de7a": {
     "asset": 1557638239010,
     "meta": 1557640891717,
@@ -85,8 +80,8 @@
     "relativePath": "label.prefab"
   },
   "980ab8e1-9607-4191-a269-49e5a1b27afa": {
-    "asset": 1558539704111,
-    "meta": 1558539704159,
+    "asset": 1558617998784,
+    "meta": 1558617998831,
     "relativePath": "game.fire"
   },
   "de43d354-197c-4b51-a3dc-95a00ae4aedc": {
@@ -424,11 +419,6 @@
     "meta": 1558447130815,
     "relativePath": "scripts\\label.js"
   },
-  "9cce8fa1-7cd3-42a7-8c83-37ae95442ac0": {
-    "asset": 1558451461998,
-    "meta": 1558451480847,
-    "relativePath": "scripts\\camera.js"
-  },
   "5d1f08a1-245c-4ee5-b896-610d26d5e3c4": {
     "asset": 1558535762187,
     "meta": 1558535764162,
@@ -450,8 +440,28 @@
     "relativePath": "scripts\\gameReStart.js"
   },
   "a41b5773-722a-4f54-b2d8-6e6f32719748": {
-    "asset": 1558539509245,
-    "meta": 1558539510819,
+    "asset": 1558615374231,
+    "meta": 1558615541780,
     "relativePath": "scripts\\ropes.js"
+  },
+  "9cce8fa1-7cd3-42a7-8c83-37ae95442ac0": {
+    "asset": 1558615965243,
+    "meta": 1558616225314,
+    "relativePath": "scripts\\camera.js"
+  },
+  "b8c3d3e1-886b-4156-9b41-ed5486df8675": {
+    "asset": 1558617420595,
+    "meta": 1558617420712,
+    "relativePath": "resources\\background.prefab"
+  },
+  "ff44d30d-141b-49a6-9f6c-5e8642c6c1f8": {
+    "asset": 1558617423295,
+    "meta": 1558617423314,
+    "relativePath": "resources\\background2.prefab"
+  },
+  "d2524c74-d0d4-4c45-be98-b4f29ccc6c01": {
+    "asset": 1558617987317,
+    "meta": 1558617987659,
+    "relativePath": "scripts\\backgrounds.js"
   }
 }

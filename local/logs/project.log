@@ -1,209 +1,66 @@
-2019-05-22T14:13:05.710Z - normal: Load ~/.CocosCreator/settings.json
-2019-05-22T14:13:07.087Z - normal: Initializing Asset Database
-2019-05-22T14:13:07.103Z - normal: checking language setting...
-2019-05-22T14:13:07.103Z - normal: Language: zh
-2019-05-22T14:13:10.781Z - success: preview server running at http://localhost:7456
-2019-05-22T14:13:10.797Z - success: protocol editor-framework registered
-2019-05-22T14:13:10.797Z - success: protocol app registered
-2019-05-22T14:13:10.797Z - success: protocol theme registered
-2019-05-22T14:13:10.797Z - success: protocol packages registered
-2019-05-22T14:13:10.797Z - success: protocol uuid registerred
-2019-05-22T14:13:10.797Z - success: protocol db registerred
-2019-05-22T14:13:10.797Z - success: protocol thumbnail registerred
-2019-05-22T14:13:10.797Z - success: protocol unpack registerred
-2019-05-22T14:13:10.797Z - success: protocol disable-commonjs registerred
-2019-05-22T14:13:10.994Z - normal: connected!
-2019-05-22T14:13:10.994Z - normal: Check project F:\CocosWorkPlace\diabolo
-2019-05-22T14:13:10.994Z - normal: Initializing project F:\CocosWorkPlace\diabolo
-2019-05-22T14:13:12.327Z - normal: Initializing Cocos2d
-2019-05-22T14:13:16.897Z - normal: Initializing engine extends
-2019-05-22T14:13:17.188Z - success: asset-db-debugger loaded
-2019-05-22T14:13:17.195Z - success: baidu-adapter loaded
-2019-05-22T14:13:17.217Z - success: code-editor loaded
-2019-05-22T14:13:17.225Z - success: color-picker loaded
-2019-05-22T14:13:17.573Z - success: fb-audience-network loaded
-2019-05-22T14:13:17.874Z - success: fb-live-stream loaded
-2019-05-22T14:13:17.889Z - success: google-play-instant loaded
-2019-05-22T14:13:17.968Z - success: huawei-runtime loaded
-2019-05-22T14:13:17.968Z - success: jsb-adapter loaded
-2019-05-22T14:13:18.061Z - success: oppo-runtime loaded
-2019-05-22T14:13:18.108Z - success: package-manager loaded
-2019-05-22T14:13:18.921Z - success: qqplay-adapter loaded
-2019-05-22T14:13:18.936Z - success: runtime-dev-tools loaded
-2019-05-22T14:13:19.061Z - success: sdkbox loaded
-2019-05-22T14:13:19.093Z - success: tester loaded
-2019-05-22T14:13:19.093Z - success: ui-grid loaded
-2019-05-22T14:13:19.108Z - success: ui-kit-preview-extra loaded
-2019-05-22T14:13:19.140Z - success: ui-kit-preview loaded
-2019-05-22T14:13:19.155Z - success: ui-kit loaded
-2019-05-22T14:13:19.171Z - success: ui-tree loaded
-2019-05-22T14:13:19.217Z - success: vivo-runtime loaded
-2019-05-22T14:13:19.217Z - success: weapp-adapter loaded
-2019-05-22T14:13:19.343Z - success: assets loaded
-2019-05-22T14:13:19.343Z - success: builder loaded
-2019-05-22T14:13:20.498Z - success: cocos-services loaded
-2019-05-22T14:13:20.529Z - success: console loaded
-2019-05-22T14:13:20.608Z - success: fb-instant-games loaded
-2019-05-22T14:13:20.608Z - success: google-instant-games loaded
-2019-05-22T14:13:20.623Z - success: hierarchy loaded
-2019-05-22T14:13:20.623Z - success: inspector loaded
-2019-05-22T14:13:20.623Z - success: keystore loaded
-2019-05-22T14:13:20.639Z - success: node-library loaded
-2019-05-22T14:13:20.670Z - success: package-asset loaded
-2019-05-22T14:13:20.670Z - success: preferences loaded
-2019-05-22T14:13:20.670Z - success: project-exporter loaded
-2019-05-22T14:13:20.670Z - success: project-importer loaded
-2019-05-22T14:13:20.686Z - success: project-settings loaded
-2019-05-22T14:13:20.686Z - success: scene loaded
-2019-05-22T14:13:20.686Z - success: simulator-debugger loaded
-2019-05-22T14:13:20.686Z - success: sprite-editor loaded
-2019-05-22T14:13:20.701Z - success: store loaded
-2019-05-22T14:13:20.717Z - success: timeline loaded
-2019-05-22T14:13:26.093Z - normal: Loading packages
-2019-05-22T14:13:26.108Z - normal: Watching packages
-2019-05-22T14:13:26.280Z - info: Cocos Services load base data!
-2019-05-22T14:13:27.608Z - normal: Run Application
-2019-05-22T14:37:21.695Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:43:24.782Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:43:27.370Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:43:55.281Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:44:28.192Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:45:17.314Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:47:44.252Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:48:37.671Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:49:17.039Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:58:57.002Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:59:08.151Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:59:49.133Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T14:59:57.898Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T15:01:59.064Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T15:02:21.430Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
-2019-05-22T15:26:08.251Z - error: getComponent: Type must be non-nil
-    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
-    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
-    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
-    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
-    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:204:7)
+2019-05-23T11:11:56.778Z - normal: Load ~/.CocosCreator/settings.json
+2019-05-23T11:11:58.337Z - normal: Initializing Asset Database
+2019-05-23T11:11:58.368Z - normal: checking language setting...
+2019-05-23T11:11:58.368Z - normal: Language: zh
+2019-05-23T11:12:04.736Z - success: preview server running at http://localhost:7456
+2019-05-23T11:12:04.740Z - success: protocol editor-framework registered
+2019-05-23T11:12:04.740Z - success: protocol app registered
+2019-05-23T11:12:04.740Z - success: protocol theme registered
+2019-05-23T11:12:04.740Z - success: protocol packages registered
+2019-05-23T11:12:04.740Z - success: protocol uuid registerred
+2019-05-23T11:12:04.740Z - success: protocol db registerred
+2019-05-23T11:12:04.740Z - success: protocol thumbnail registerred
+2019-05-23T11:12:04.741Z - success: protocol unpack registerred
+2019-05-23T11:12:04.741Z - success: protocol disable-commonjs registerred
+2019-05-23T11:12:04.920Z - normal: connected!
+2019-05-23T11:12:04.922Z - normal: Check project F:\CocosWorkPlace\diabolo
+2019-05-23T11:12:04.925Z - normal: Initializing project F:\CocosWorkPlace\diabolo
+2019-05-23T11:12:08.343Z - normal: Initializing Cocos2d
+2019-05-23T11:12:18.227Z - normal: Initializing engine extends
+2019-05-23T11:12:18.636Z - success: asset-db-debugger loaded
+2019-05-23T11:12:18.645Z - success: baidu-adapter loaded
+2019-05-23T11:12:18.677Z - success: code-editor loaded
+2019-05-23T11:12:18.693Z - success: color-picker loaded
+2019-05-23T11:12:19.011Z - success: fb-audience-network loaded
+2019-05-23T11:12:19.196Z - success: fb-live-stream loaded
+2019-05-23T11:12:19.222Z - success: google-play-instant loaded
+2019-05-23T11:12:19.419Z - success: huawei-runtime loaded
+2019-05-23T11:12:19.431Z - success: jsb-adapter loaded
+2019-05-23T11:12:19.629Z - success: oppo-runtime loaded
+2019-05-23T11:12:19.688Z - success: package-manager loaded
+2019-05-23T11:12:20.465Z - success: qqplay-adapter loaded
+2019-05-23T11:12:20.477Z - success: runtime-dev-tools loaded
+2019-05-23T11:12:20.538Z - success: sdkbox loaded
+2019-05-23T11:12:20.570Z - success: tester loaded
+2019-05-23T11:12:20.582Z - success: ui-grid loaded
+2019-05-23T11:12:20.599Z - success: ui-kit-preview-extra loaded
+2019-05-23T11:12:20.729Z - success: ui-kit-preview loaded
+2019-05-23T11:12:20.737Z - success: ui-kit loaded
+2019-05-23T11:12:20.792Z - success: ui-tree loaded
+2019-05-23T11:12:20.919Z - success: vivo-runtime loaded
+2019-05-23T11:12:20.925Z - success: weapp-adapter loaded
+2019-05-23T11:12:21.057Z - success: assets loaded
+2019-05-23T11:12:21.061Z - success: builder loaded
+2019-05-23T11:12:21.970Z - success: cocos-services loaded
+2019-05-23T11:12:22.240Z - success: console loaded
+2019-05-23T11:12:22.314Z - success: fb-instant-games loaded
+2019-05-23T11:12:22.317Z - success: google-instant-games loaded
+2019-05-23T11:12:22.325Z - success: hierarchy loaded
+2019-05-23T11:12:22.329Z - success: inspector loaded
+2019-05-23T11:12:22.332Z - success: keystore loaded
+2019-05-23T11:12:22.339Z - success: node-library loaded
+2019-05-23T11:12:22.342Z - success: package-asset loaded
+2019-05-23T11:12:22.345Z - success: preferences loaded
+2019-05-23T11:12:22.348Z - success: project-exporter loaded
+2019-05-23T11:12:22.351Z - success: project-importer loaded
+2019-05-23T11:12:22.354Z - success: project-settings loaded
+2019-05-23T11:12:22.365Z - success: scene loaded
+2019-05-23T11:12:22.368Z - success: simulator-debugger loaded
+2019-05-23T11:12:22.371Z - success: sprite-editor loaded
+2019-05-23T11:12:22.377Z - success: store loaded
+2019-05-23T11:12:22.405Z - success: timeline loaded
+2019-05-23T11:12:27.974Z - normal: Loading packages
+2019-05-23T11:12:27.985Z - normal: Watching packages
+2019-05-23T11:12:28.274Z - info: Cocos Services load base data!
+2019-05-23T11:12:29.770Z - normal: Run Application
+2019-05-23T13:18:28.946Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/scripts/background.js.meta
