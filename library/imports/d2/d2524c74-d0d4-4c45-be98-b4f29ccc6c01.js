@@ -58,7 +58,7 @@ cc.Class({
                 _this.node.addChild(bg); //添加背景
             });
         }
-        cc.log(this.backgrounds.length);
+        // cc.log(this.backgrounds.length)
         for (var i = 0; i < this.backgrounds.length; i++) {
             if (this.backgrounds[i].isValid) {
                 if (this.backgrounds[i].y + this.backgrounds[i].height / 2 < this.camera.y - this.camera.parent.height / 2) {

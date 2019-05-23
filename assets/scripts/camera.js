@@ -50,7 +50,7 @@ cc.Class({
         //     this.node.y+=this.diabolo.y-(this.node.y+this.node.parent.height/2)
         // }
 
-        //如果高度差大于0，即往上运动时，摄像机跟随移动
+        // 如果高度差大于0，即往上运动时，摄像机跟随移动
         if(this.diaboloComponent.y-this.preH>0){
             // cc.log(this.diaboloComponent.y)
             var h=this.diaboloComponent.y-this.preH
@@ -61,5 +61,6 @@ cc.Class({
             var moveAction=cc.moveBy(1,cc.v2(0,h)).easing(cc.easeCubicActionOut())
             this.node.runAction(moveAction)
         }
+        // this.node.y=this.diaboloComponent.y
     },
 });

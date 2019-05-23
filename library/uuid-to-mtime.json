@@ -80,8 +80,8 @@
     "relativePath": "label.prefab"
   },
   "980ab8e1-9607-4191-a269-49e5a1b27afa": {
-    "asset": 1558617998784,
-    "meta": 1558617998831,
+    "asset": 1558627142245,
+    "meta": 1558627142283,
     "relativePath": "game.fire"
   },
   "de43d354-197c-4b51-a3dc-95a00ae4aedc": {
@@ -173,11 +173,6 @@
     "asset": 1558246959065,
     "meta": 1558246981307,
     "relativePath": "scripts\\bigStar.js"
-  },
-  "de9a11f6-f3f0-4969-9a30-e01adf47041c": {
-    "asset": 1558248531686,
-    "meta": 1558248664908,
-    "relativePath": "scripts\\diabolo_effect.js"
   },
   "77ceb862-d737-4aa9-8f20-8478be34645b": {
     "asset": 1558248428715,
@@ -424,11 +419,6 @@
     "meta": 1558535764162,
     "relativePath": "scripts\\smallStar.js"
   },
-  "b1ca5256-b013-4d9c-8d83-48da07008e4e": {
-    "asset": 1558536554167,
-    "meta": 1558536555388,
-    "relativePath": "scripts\\diabolo.js"
-  },
   "6a4d0ca3-8ada-4208-9fbe-6ff4cef7154e": {
     "asset": 1558537316235,
     "meta": 1558537317769,
@@ -438,16 +428,6 @@
     "asset": 1558537338742,
     "meta": 1558537340274,
     "relativePath": "scripts\\gameReStart.js"
-  },
-  "a41b5773-722a-4f54-b2d8-6e6f32719748": {
-    "asset": 1558615374231,
-    "meta": 1558615541780,
-    "relativePath": "scripts\\ropes.js"
-  },
-  "9cce8fa1-7cd3-42a7-8c83-37ae95442ac0": {
-    "asset": 1558615965243,
-    "meta": 1558616225314,
-    "relativePath": "scripts\\camera.js"
   },
   "b8c3d3e1-886b-4156-9b41-ed5486df8675": {
     "asset": 1558617420595,
@@ -460,8 +440,33 @@
     "relativePath": "resources\\background2.prefab"
   },
   "d2524c74-d0d4-4c45-be98-b4f29ccc6c01": {
-    "asset": 1558617987317,
-    "meta": 1558617987659,
+    "asset": 1558618688922,
+    "meta": 1558618690488,
     "relativePath": "scripts\\backgrounds.js"
+  },
+  "9cce8fa1-7cd3-42a7-8c83-37ae95442ac0": {
+    "asset": 1558623233536,
+    "meta": 1558623325608,
+    "relativePath": "scripts\\camera.js"
+  },
+  "a41b5773-722a-4f54-b2d8-6e6f32719748": {
+    "asset": 1558625312524,
+    "meta": 1558625313885,
+    "relativePath": "scripts\\ropes.js"
+  },
+  "de9a11f6-f3f0-4969-9a30-e01adf47041c": {
+    "asset": 1558627310953,
+    "meta": 1558627355408,
+    "relativePath": "scripts\\diabolo_effect.js"
+  },
+  "b1ca5256-b013-4d9c-8d83-48da07008e4e": {
+    "asset": 1558627228023,
+    "meta": 1558627355432,
+    "relativePath": "scripts\\diabolo.js"
+  },
+  "70185c9d-508f-42ae-82cd-9a87faba93c4": {
+    "asset": 1558627261533,
+    "meta": 1558627355450,
+    "relativePath": "scripts\\jumpEffect.js"
   }
 }

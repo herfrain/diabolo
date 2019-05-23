@@ -75,6 +75,7 @@ cc.Class({
         // if(Math.abs(this.camera.y)%200==0)
         // if(this.camera.y+this.camera.parent.height>this.ropes[this.ropes.length-1].y)
         if(this.camera.y+this.camera.parent.height>this.ropes[this.ropes.length-1].y){
+            cc.log("create rope")
             var prerope=this.ropes[this.ropes.length-1]
             for(var i=0;i<10;i++){
                 var nextrope=cc.instantiate(prerope)

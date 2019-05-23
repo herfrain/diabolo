@@ -17,6 +17,12 @@ cc.Class({
         big:false,
         small:false,
         smallOrBigTime:0,
+        jump:false,
+        jumpTime:0,
+        ropes:{
+            default:null,
+            type:cc.Node
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -42,6 +48,23 @@ cc.Class({
                 this.big=false
                 this.small=false
                 this.smallOrBigTime=0
+            }
+        }
+        //跳跃监控
+        if(this.jump){
+            if(this.diaboloComponent.rigidbody.linearVelocity.y<0){//如果开始往下落，则在下方自动生成一个绳子
+                cc.log("jump")
+                cc.loader.loadRes('rope.prefab', (err, resource)=>{
+                    if(err){ return; }
+                    var rope=cc.instantiate(resource)//克隆实例
+                    rope.y=this.diabolo.y-200//从最后一个背景的上面
+                    rope.x=this.diabolo.x
+                    this.node.parent.addChild(rope)//添加绳子，3秒后消失
+                    this.scheduleOnce(function(){
+                        rope.destroy()
+                    },3)
+                });
+                this.jump=false
             }
         }
     },

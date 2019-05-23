@@ -143,7 +143,16 @@ cc.Class({
         if(this.isFly){
             this.y=this.node.y
         }else{
-            this.y=this.rope.y
+            if(this.rope.isValid){
+                this.y=this.rope.y
+            } else{//如果所在的绳子消失
+                if(this.mouseJoint!=null){
+                    this.mouseJoint.destroy()//取消拉动
+                    this.mouseJoint=null
+                    //设置为飞行状态
+                    this.isFly=true
+                }
+            }
         }
 
         if(this.node.isValid){
