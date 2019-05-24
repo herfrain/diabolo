@@ -157,7 +157,9 @@
         "__id__": 10
       }
     ],
-    "_prefab": null,
+    "_prefab": {
+      "__id__": 5
+    },
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -310,7 +312,11 @@
     "_parent": {
       "__id__": 3
     },
-    "_children": [],
+    "_children": [
+      {
+        "__id__": 7
+      }
+    ],
     "_active": true,
     "_level": 3,
     "_components": [
@@ -423,7 +429,7 @@
     "_name": "Main Camera",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 2
+      "__id__": 6
     },
     "_children": [
       {
@@ -431,7 +437,7 @@
       }
     ],
     "_active": true,
-    "_level": 2,
+    "_level": 3,
     "_components": [
       {
         "__id__": 40
@@ -611,13 +617,13 @@
         "__id__": 16
       },
       {
-        "__id__": 17
+        "__id__": 13
       },
       {
-        "__id__": 18
+        "__id__": 14
       },
       {
-        "__id__": 19
+        "__id__": 15
       },
       {
         "__id__": 20
@@ -916,7 +922,7 @@
         "__id__": 34
       },
       {
-        "__id__": 35
+        "__id__": 29
       },
       {
         "__id__": 36
@@ -982,10 +988,10 @@
         "__id__": 25
       },
       {
-        "__id__": 26
+        "__id__": 21
       },
       {
-        "__id__": 27
+        "__id__": 22
       }
     ],
     "_prefab": null,
@@ -1503,10 +1509,9 @@
       "width": 0,
       "height": 0
     },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
+    "_enabled": true,
+    "label": {
+      "__id__": 7
     },
     "_position": {
       "__type__": "cc.Vec3",
@@ -1514,20 +1519,24 @@
       "y": 0,
       "z": 0
     },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
+    "diaboloComponent": null,
+    "once": true,
+    "preH": 0,
+    "heightDifference": 0,
+    "_id": "65qw2YyUNL5IfJlXP0cBNk"
+  },
+  {
+    "__type__": "cc.Canvas",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
     },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
+    "_enabled": true,
+    "_designResolution": {
+      "__type__": "cc.Size",
+      "width": 760,
+      "height": 1360
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1543,7 +1552,7 @@
     },
     "_children": [],
     "_active": true,
-    "_level": 3,
+    "_level": 1,
     "_components": [
       {
         "__id__": 44
@@ -1601,7 +1610,7 @@
     "_id": "65otyND4ZCNqTQlMLhqj+0"
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "cc.Graphics",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1667,7 +1676,7 @@
     },
     "_children": [],
     "_active": true,
-    "_level": 3,
+    "_level": 1,
     "_components": [
       {
         "__id__": 48

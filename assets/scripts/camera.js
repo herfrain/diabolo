@@ -61,6 +61,5 @@ cc.Class({
             var moveAction=cc.moveBy(1,cc.v2(0,h)).easing(cc.easeCubicActionOut())
             this.node.runAction(moveAction)
         }
-        // this.node.y=this.diaboloComponent.y
     },
 });

@@ -9,6 +9,8 @@
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
 
+var effects = require("effects")
+
 //ropes 绳子组
 //功能：自动随机生成下一跳的绳子
 var random=require('random')
@@ -62,15 +64,37 @@ cc.Class({
         leftJoint.connectedBody=this.diaboloComponent.rigidbody
         rightJoint.connectedBody=this.diaboloComponent.rigidbody
         cc.log(firstrope)
-        this.ropes=this.node.children
     },
 
     start () {
-        
+        this.ropes=this.node.children
+        console.log(this.ropes.length);
+        //var rope = this.ropes;
+        var ropeX = this.ropes[8].x;
+        var ropeY = this.ropes[8].y;
+        var timeCallback = function (dt) {
+            var randNum = effects.getRandomNum();
+            //获得本次随机生成的道具
+            var item = effects.getItem(randNum);
+            //随机某一根绳子
+            var randRope = Math.random()*11;
+            //加载道具
+            cc.loader.loadRes(item, function(err, prefab) {
+                var newNode = cc.instantiate(prefab);
+                console.log("生成道具");
+                //console.log(this.ropes.length);
+                newNode.parent = cc.director.getScene();
+                // newNode.x = rope[randRope].x;
+                // newNode.y = rope[randRope].y;
+                newNode.x = ropeX;
+                newNode.y = ropeY;
+            });
+        }
+        //if(random.newRndItem) {
+        this.schedule(timeCallback, (Math.random()*30)+30 );
     },
 
     update (dt) {
-        // cc.log(this.ropes.length)
         //在摄像机顶部添加绳子
         // if(Math.abs(this.camera.y)%200==0)
         // if(this.camera.y+this.camera.parent.height>this.ropes[this.ropes.length-1].y)

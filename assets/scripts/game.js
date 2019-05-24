@@ -8,6 +8,8 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
+var effects = require("effects")
+
 cc.Class({
     extends: cc.Component,
 
@@ -20,12 +22,19 @@ cc.Class({
             default:null,
             type:cc.Node
         },
+        effect:{
+            default:null,
+            type:cc.Prefab
+        }
+        // effect:effects.effects,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         // this.enabled=false
+
+        
     },
 
     // //开始游戏
@@ -44,6 +53,30 @@ cc.Class({
     },
 
     start () {
+        // console.log("开始计时");
+        // this.schedule(function() {
+        //     console.log("进入计时函数");
+        //     var randNum = effects.getRandomNum();
+            
+        //     var item = effects.getItem(randNum);
+        //     cc.loader.loadRes(item, function(err, prefab) {
+        //         var newNode = cc.instantiate(prefab);
+        //         console.log("生成道具");
+        //         newNode.parent = cc.director.getScene();
+        //         newNode.x = Math.random()*700;
+        //         newNode.y = Math.random()*700;
+        //         // cc.director.getScene().addChild(newNode);
+
+        //     });
+        // }, (Math.random()*30)+30 );
+    },
+
+    update (dt) {
+        if(!this.diabolo.isValid){//如果空竹消失，则游戏结束
+            // cc.log(this.diabolo.isValid)
+            this.gameOver()
+            return
+        } 
         
     },
 
