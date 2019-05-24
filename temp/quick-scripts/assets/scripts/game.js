@@ -14,36 +14,76 @@ cc._RF.push(module, '6a4d0yjitpCCJ++b/TO9xVO', 'game', __filename);
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
+var effects = require("effects");
+
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
-    },
+        diabolo: {
+            default: null,
+            type: cc.Node
+        },
+        camera: {
+            default: null,
+            type: cc.Node
+        },
+        effect: {
+            default: null,
+            type: cc.Prefab
+            // effect:effects.effects,
+        } },
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad: function onLoad() {
+        // this.enabled=false
 
-    start: function start() {}
-}
 
-// update (dt) {},
-);
+    },
+
+
+    // //开始游戏
+    // gameStart:function(){
+    //     this.enabled=true
+    //     this.camera.enabled=true
+    //     this.startButton.active=false
+    // },
+
+    //结束游戏
+    gameOver: function gameOver() {
+        cc.director.loadScene('restart'); //重新加载游戏场景
+        // this.startButton.active=true
+        // this.startButton.x=this.camera.x
+    },
+
+    start: function start() {
+        // console.log("开始计时");
+        // this.schedule(function() {
+        //     console.log("进入计时函数");
+        //     var randNum = effects.getRandomNum();
+
+        //     var item = effects.getItem(randNum);
+        //     cc.loader.loadRes(item, function(err, prefab) {
+        //         var newNode = cc.instantiate(prefab);
+        //         console.log("生成道具");
+        //         newNode.parent = cc.director.getScene();
+        //         newNode.x = Math.random()*700;
+        //         newNode.y = Math.random()*700;
+        //         // cc.director.getScene().addChild(newNode);
+
+        //     });
+        // }, (Math.random()*30)+30 );
+    },
+    update: function update(dt) {
+        if (!this.diabolo.isValid) {
+            //如果空竹消失，则游戏结束
+            // cc.log(this.diabolo.isValid)
+            this.gameOver();
+            return;
+        }
+    }
+});
 
 cc._RF.pop();
         }

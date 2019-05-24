@@ -5,73 +5,47 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": -8,
-      "y": -8,
+      "x": 340,
+      "y": 90,
       "width": 1552,
-      "height": 926,
+      "height": 840,
       "layout": {
         "children": [
           {
             "children": [
               {
+                "active": 0,
                 "children": [
-                  {
-                    "active": 0,
-                    "children": [
-                      "hierarchy"
-                    ],
-                    "height": 409.88751220703125,
-                    "type": "panel",
-                    "width": 206.0625
-                  },
-                  {
-                    "active": 0,
-                    "children": [
-                      "assets"
-                    ],
-                    "height": 409.88751220703125,
-                    "type": "panel",
-                    "width": 204.0500030517578
-                  }
+                  "hierarchy"
                 ],
-                "height": 409.88751220703125,
-                "type": "dock-h",
-                "width": 412.1125183105469
+                "height": 300.546875,
+                "type": "panel",
+                "width": 240.671875
               },
               {
                 "active": 0,
                 "children": [
-                  "node-library"
+                  "assets"
                 ],
-                "height": 393.8999938964844,
+                "height": 418.453125,
                 "type": "panel",
-                "width": 412.1125183105469
+                "width": 240.671875
               }
             ],
-            "height": 805.7999877929688,
+            "height": 721,
             "type": "dock-v",
-            "width": 412.1125183105469
-          },
-          {
-            "active": 0,
-            "children": [
-              "scene"
-            ],
-            "height": 805.7999877929688,
-            "type": "panel",
-            "width": 598.1500244140625
+            "width": 240.671875
           },
           {
             "children": [
               {
                 "active": 0,
                 "children": [
-                  "inspector",
-                  "cocos-services"
+                  "scene"
                 ],
-                "height": 556.9874877929688,
+                "height": 452.34375,
                 "type": "panel",
-                "width": 524.1375122070312
+                "width": 841.953125
               },
               {
                 "active": 0,
@@ -79,14 +53,24 @@
                   "console",
                   "timeline"
                 ],
-                "height": 266,
+                "height": 266.640625,
                 "type": "panel",
-                "width": 524.1375122070312
+                "width": 841.953125
               }
             ],
-            "height": 825,
+            "height": 721,
             "type": "dock-v",
-            "width": 524.1375122070312
+            "width": 841.953125
+          },
+          {
+            "active": 0,
+            "children": [
+              "inspector",
+              "cocos-services"
+            ],
+            "height": 721,
+            "type": "panel",
+            "width": 449.359375
           }
         ],
         "type": "dock-h"
@@ -94,39 +78,50 @@
       "panels": [
         "hierarchy",
         "assets",
-        "node-library",
-        "inspector",
-        "cocos-services",
         "console",
         "timeline",
+        "inspector",
+        "cocos-services",
         "scene"
       ]
     }
   },
   "panels": {
     "builder": {
-      "x": 32,
-      "y": 56,
-      "width": 672,
-      "height": 740
+      "x": 592,
+      "y": 52,
+      "width": 676,
+      "height": 744
     },
     "sprite-editor": {
-      "x": 352,
-      "y": 136,
+      "x": 404,
+      "y": 188,
       "width": 520,
       "height": 544
     },
     "project-settings": {
       "x": 540,
       "y": 112,
-      "width": 601,
-      "height": 566
+      "width": 604,
+      "height": 568
     },
     "preferences": {
       "x": 468,
       "y": 128,
       "width": 596,
       "height": 559
+    },
+    "console": {
+      "x": 636,
+      "y": 96,
+      "width": 848,
+      "height": 344
+    },
+    "package-asset.export": {
+      "x": 752,
+      "y": 250,
+      "width": 420,
+      "height": 545
     }
   }
 }
