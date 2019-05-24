@@ -31,10 +31,10 @@ cc.Class({
     //检测碰撞（刚进入时
     onCollisionEnter: function (other, self) {
         cc.log("变大")
-        this.diabolo.scale=2
-        this.diaboloComponent.rigidbody.gravityScale=15
-        this.diaboloEffect.big=true
-        this.diaboloEffect.smallOrBigTime=0
+        this.diabolo.scale=2//大小比例
+        this.diaboloComponent.rigidbody.gravityScale=15//重力
+        this.diaboloEffect.big=true//效果赋值
+        this.diaboloEffect.smallOrBigTime=0//从0开始计时
         //让节点变透明，且不再碰撞，但是仍能运作update
         // this.node.opacity=0
         // this.node.getComponent(cc.CircleCollider).enabled=false

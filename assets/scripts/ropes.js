@@ -25,6 +25,10 @@ cc.Class({
             default:null,
             type:cc.Node
         },
+        effectsNode:{
+            default:null,
+            type:cc.Node
+        },
     },
 
     // // LIFE-CYCLE CALLBACKS:
@@ -67,31 +71,35 @@ cc.Class({
     },
 
     start () {
+        var effectsNode=this.effectsNode//effects节点
         this.ropes=this.node.children
         console.log(this.ropes.length);
-        //var rope = this.ropes;
-        var ropeX = this.ropes[8].x;
-        var ropeY = this.ropes[8].y;
-        var timeCallback = function (dt) {
+        // var ropes = this.ropes;
+        // cc.log(ropes)
+        var timeCallback = function () {
+            // cc.log(this.ropes)
             var randNum = effects.getRandomNum();
             //获得本次随机生成的道具
             var item = effects.getItem(randNum);
             //随机某一根绳子
-            var randRope = Math.random()*11;
+            var randRope = 0
+            if(this.ropes.length-5>=0)
+                randRope = random.getRndIntegerUp(this.ropes.length-5,this.ropes.length-1);
+            //该绳子位置
+            var ropeX = this.ropes[randRope].x;
+            var ropeY = this.ropes[randRope].y;
             //加载道具
             cc.loader.loadRes(item, function(err, prefab) {
                 var newNode = cc.instantiate(prefab);
                 console.log("生成道具");
-                //console.log(this.ropes.length);
-                newNode.parent = cc.director.getScene();
-                // newNode.x = rope[randRope].x;
-                // newNode.y = rope[randRope].y;
-                newNode.x = ropeX;
-                newNode.y = ropeY;
+                newNode.parent = effectsNode;//不知道为何，有时会是null？？？
+                newNode.x = ropeX+random.getRndIntegerUp(-80,80);
+                newNode.y = ropeY+random.getRndIntegerUp(-200,200);
+                cc.log("道具数量："+effectsNode.children.length)
             });
         }
         //if(random.newRndItem) {
-        this.schedule(timeCallback, (Math.random()*30)+30 );
+        this.schedule(timeCallback, (Math.random()*10)+10 );
     },
 
     update (dt) {

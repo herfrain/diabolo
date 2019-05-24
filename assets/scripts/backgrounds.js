@@ -30,9 +30,10 @@ cc.Class({
     },
 
     update (dt) {
+        //动态加载背景，达到背景循环的效果
         if(this.camera.y+this.camera.parent.height>this.backgrounds[this.backgrounds.length-1].y){
             
-            // //加载prefab预制资源
+            //第一幅背景
             cc.loader.loadRes('background.prefab', (err, resource)=>{
                 if(err){ return; }
                 var bg=cc.instantiate(resource)//克隆实例
@@ -42,6 +43,7 @@ cc.Class({
                 this.node.addChild(bg)//添加背景
                 
             });
+            //第二幅背景
             cc.loader.loadRes('background2.prefab', (err, resource)=>{
                 if(err){ return; }
                 var bg=cc.instantiate(resource)//克隆实例
@@ -51,7 +53,7 @@ cc.Class({
                 this.node.addChild(bg)//添加背景
             });
         }
-        // cc.log(this.backgrounds.length)
+        //消除背景
         for(var i=0;i<this.backgrounds.length;i++){
             if(this.backgrounds[i].isValid){
                 if(this.backgrounds[i].y+this.backgrounds[i].height/2<this.camera.y-this.camera.parent.height/2){//低于摄像机下边界

@@ -57,10 +57,10 @@ cc.Class({
                 cc.loader.loadRes('rope.prefab', (err, resource)=>{
                     if(err){ return; }
                     var rope=cc.instantiate(resource)//克隆实例
-                    rope.y=this.diabolo.y-200//从最后一个背景的上面
+                    rope.y=this.diabolo.y-200//下方添加绳子
                     rope.x=this.diabolo.x
-                    this.node.parent.addChild(rope)//添加绳子，3秒后消失
-                    this.scheduleOnce(function(){
+                    this.node.parent.addChild(rope)//添加绳子
+                    this.scheduleOnce(function(){//定时器，3秒销毁
                         rope.destroy()
                     },3)
                 });
