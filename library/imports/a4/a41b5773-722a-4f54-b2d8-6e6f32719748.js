@@ -15,6 +15,8 @@ cc._RF.push(module, 'a41b5dzcipPVLLYbm8ycZdI', 'ropes');
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
 
+var effects = require("effects");
+
 //ropes 绳子组
 //功能：自动随机生成下一跳的绳子
 var random = require('random');
@@ -26,6 +28,10 @@ cc.Class({
         diabolo: null,
         diaboloComponent: null,
         camera: {
+            default: null,
+            type: cc.Node
+        },
+        effectsNode: {
             default: null,
             type: cc.Node
         }
@@ -70,35 +76,60 @@ cc.Class({
         cc.log(firstrope);
     },
     start: function start() {
+        var effectsNode = this.effectsNode; //effects节点
         this.ropes = this.node.children;
+        console.log(this.ropes.length);
+        // var ropes = this.ropes;
+        // cc.log(ropes)
+        var timeCallback = function timeCallback() {
+            // cc.log(this.ropes)
+            var randNum = effects.getRandomNum();
+            //获得本次随机生成的道具
+            var item = effects.getItem(randNum);
+            //随机某一根绳子
+            var randRope = 0;
+            if (this.ropes.length - 5 >= 0) randRope = random.getRndIntegerUp(this.ropes.length - 5, this.ropes.length - 1);
+            //该绳子位置
+            var ropeX = this.ropes[randRope].x;
+            var ropeY = this.ropes[randRope].y;
+            //加载道具
+            cc.loader.loadRes(item, function (err, prefab) {
+                var newNode = cc.instantiate(prefab);
+                console.log("生成道具");
+                newNode.parent = effectsNode; //不知道为何，有时会是null？？？
+                newNode.x = ropeX + random.getRndIntegerUp(-80, 80);
+                newNode.y = ropeY + random.getRndIntegerUp(-200, 200);
+                cc.log("道具数量：" + effectsNode.children.length);
+            });
+        };
+        //if(random.newRndItem) {
+        this.schedule(timeCallback, Math.random() * 10 + 10);
     },
     update: function update(dt) {
-        var _this = this;
-
         //在摄像机顶部添加绳子
         // if(Math.abs(this.camera.y)%200==0)
         // if(this.camera.y+this.camera.parent.height>this.ropes[this.ropes.length-1].y)
         if (this.camera.y + this.camera.parent.height > this.ropes[this.ropes.length - 1].y) {
-            //加载prefab预制资源
-            cc.loader.loadRes('rope.prefab', function (err, resource) {
-                if (err) {
-                    return;
-                }
-                // var rope=cc.instantiate(resource)//克隆实例
-                // rope.y=this.camera.y+this.camera.parent.height/2+random.getRndIntegerUp(0,50)//从摄像机顶部开始
-                // rope.x=random.getRndIntegerUp(-this.camera.parent.width/2+100,this.camera.parent.width/2-100)
-                // this.node.addChild(rope)//添加绳子
-                var prerope = _this.ropes[_this.ropes.length - 1];
-                for (var i = 0; i < 10; i++) {
-                    var nextrope = cc.instantiate(prerope);
-                    // cc.log(random.getRndIntegerUp(-300,300))
-                    nextrope.y = prerope.y + random.getRndIntegerUp(100, 200);
-                    nextrope.x = random.getRndIntegerUp(-_this.camera.parent.width / 2 + 100, _this.camera.parent.width / 2 - 100);
-                    // cc.log("prerope:"+prerope.x)
-                    prerope = nextrope;
-                    _this.node.addChild(nextrope);
-                }
-            });
+            cc.log("create rope");
+            var prerope = this.ropes[this.ropes.length - 1];
+            for (var i = 0; i < 10; i++) {
+                var nextrope = cc.instantiate(prerope);
+                // cc.log(random.getRndIntegerUp(-300,300))
+                nextrope.y = prerope.y + random.getRndIntegerUp(100, 200);
+                nextrope.x = random.getRndIntegerUp(-this.camera.parent.width / 2 + 100, this.camera.parent.width / 2 - 100);
+                // cc.log("prerope:"+prerope.x)
+                prerope = nextrope;
+                this.node.addChild(nextrope);
+            }
+            // //加载prefab预制资源
+            // cc.loader.loadRes('rope.prefab', (err, resource)=>{
+            //     if(err){ return; }
+            //     // var rope=cc.instantiate(resource)//克隆实例
+            //     // rope.y=this.camera.y+this.camera.parent.height/2+random.getRndIntegerUp(0,50)//从摄像机顶部开始
+            //     // rope.x=random.getRndIntegerUp(-this.camera.parent.width/2+100,this.camera.parent.width/2-100)
+            //     // this.node.addChild(rope)//添加绳子
+
+            // });
         }
         // cc.log(this.ropes.length)
         for (var i = 0; i < this.ropes.length; i++) {

@@ -1,106 +1,76 @@
-2019-05-24T12:32:09.047Z - normal: Load ~/.CocosCreator/settings.json
-2019-05-24T12:32:10.241Z - normal: Initializing Asset Database
-2019-05-24T12:32:10.245Z - normal: checking language setting...
-2019-05-24T12:32:10.245Z - normal: Language: zh
-2019-05-24T12:32:11.419Z - success: preview server running at http://localhost:7456
-2019-05-24T12:32:11.422Z - success: protocol editor-framework registered
-2019-05-24T12:32:11.422Z - success: protocol app registered
-2019-05-24T12:32:11.422Z - success: protocol theme registered
-2019-05-24T12:32:11.422Z - success: protocol packages registered
-2019-05-24T12:32:11.422Z - success: protocol uuid registerred
-2019-05-24T12:32:11.422Z - success: protocol db registerred
-2019-05-24T12:32:11.422Z - success: protocol thumbnail registerred
-2019-05-24T12:32:11.422Z - success: protocol unpack registerred
-2019-05-24T12:32:11.423Z - success: protocol disable-commonjs registerred
-2019-05-24T12:32:11.644Z - normal: connected!
-2019-05-24T12:32:11.648Z - normal: Check project G:\github repository\diabolo
-2019-05-24T12:32:11.652Z - normal: Initializing project G:\github repository\diabolo
-2019-05-24T12:32:12.366Z - normal: Initializing Cocos2d
-2019-05-24T12:32:13.509Z - normal: Initializing engine extends
-2019-05-24T12:32:13.543Z - success: asset-db-debugger loaded
-2019-05-24T12:32:13.546Z - success: baidu-adapter loaded
-2019-05-24T12:32:13.552Z - success: code-editor loaded
-2019-05-24T12:32:13.558Z - success: color-picker loaded
-2019-05-24T12:32:13.713Z - success: fb-audience-network loaded
-2019-05-24T12:32:13.837Z - success: fb-live-stream loaded
-2019-05-24T12:32:13.849Z - success: google-play-instant loaded
-2019-05-24T12:32:13.865Z - success: huawei-runtime loaded
-2019-05-24T12:32:13.867Z - success: jsb-adapter loaded
-2019-05-24T12:32:13.876Z - success: oppo-runtime loaded
-2019-05-24T12:32:13.882Z - success: package-manager loaded
-2019-05-24T12:32:14.095Z - success: qqplay-adapter loaded
-2019-05-24T12:32:14.098Z - success: runtime-dev-tools loaded
-2019-05-24T12:32:14.104Z - success: sdkbox loaded
-2019-05-24T12:32:14.110Z - success: tester loaded
-2019-05-24T12:32:14.113Z - success: ui-grid loaded
-2019-05-24T12:32:14.116Z - success: ui-kit-preview-extra loaded
-2019-05-24T12:32:14.118Z - success: ui-kit-preview loaded
-2019-05-24T12:32:14.121Z - success: ui-kit loaded
-2019-05-24T12:32:14.123Z - success: ui-tree loaded
-2019-05-24T12:32:14.130Z - success: vivo-runtime loaded
-2019-05-24T12:32:14.132Z - success: weapp-adapter loaded
-2019-05-24T12:32:14.194Z - success: assets loaded
-2019-05-24T12:32:14.196Z - success: builder loaded
-2019-05-24T12:32:14.647Z - success: cocos-services loaded
-2019-05-24T12:32:14.652Z - success: console loaded
-2019-05-24T12:32:14.707Z - success: fb-instant-games loaded
-2019-05-24T12:32:14.709Z - success: google-instant-games loaded
-2019-05-24T12:32:14.717Z - success: hierarchy loaded
-2019-05-24T12:32:14.721Z - success: inspector loaded
-2019-05-24T12:32:14.723Z - success: keystore loaded
-2019-05-24T12:32:14.730Z - success: node-library loaded
-2019-05-24T12:32:14.733Z - success: package-asset loaded
-2019-05-24T12:32:14.735Z - success: preferences loaded
-2019-05-24T12:32:14.738Z - success: project-exporter loaded
-2019-05-24T12:32:14.741Z - success: project-importer loaded
-2019-05-24T12:32:14.744Z - success: project-settings loaded
-2019-05-24T12:32:14.755Z - success: scene loaded
-2019-05-24T12:32:14.758Z - success: simulator-debugger loaded
-2019-05-24T12:32:14.761Z - success: sprite-editor loaded
-2019-05-24T12:32:14.766Z - success: store loaded
-2019-05-24T12:32:14.772Z - success: timeline loaded
-2019-05-24T12:32:15.695Z - failed: [db-task][init] uuid collision, the uuid for G:\github repository\diabolo\assets\scripts\backgrounds.js is already in used by G:\github repository\diabolo\assets\scripts\background.js. Assigning a new uuid.
-2019-05-24T12:32:16.983Z - normal: Loading packages
-2019-05-24T12:32:16.993Z - normal: Watching packages
-2019-05-24T12:32:18.030Z - info: Cocos Services load base data!
-2019-05-24T12:32:18.204Z - normal: Run Application
-2019-05-24T13:23:42.437Z - error: [db-task][delete] Failed to delete asset undefined, messages: Error: Asset G:\github repository\diabolo\assets\resources\.prefab is not exists
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17143
-    at i.each (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17570)
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:181:20
-    at Object.async.forEachOf.async.eachOf (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:233:13)
-    at Object.async.forEach.async.each (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:209:22)
-    at u.delete (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17073)
-    at _tasks.r.queue (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\index.js:1:2264)
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:987:13
-    at Immediate.process (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:953:21)
-    at runCallback (timers.js:672:20)
-    at u.o.error (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\utils.js:1:2250)
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17622
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17141
-    at i.each (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17570)
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:181:20
-    at Object.async.forEachOf.async.eachOf (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:233:13)
-    at Object.async.forEach.async.each (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:209:22)
-    at u.delete (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17073)
-    at _tasks.r.queue (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\index.js:1:2264)
-2019-05-24T13:24:13.187Z - error: [db-task][delete] Failed to delete asset undefined, messages: Error: Asset G:\github repository\diabolo\assets\resources\.prefab is not exists
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17143
-    at i.each (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17570)
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:181:20
-    at Object.async.forEachOf.async.eachOf (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:233:13)
-    at Object.async.forEach.async.each (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:209:22)
-    at u.delete (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17073)
-    at _tasks.r.queue (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\index.js:1:2264)
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:987:13
-    at Immediate.process (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:953:21)
-    at runCallback (timers.js:672:20)
-    at u.o.error (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\utils.js:1:2250)
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17622
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17141
-    at i.each (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17570)
-    at F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:181:20
-    at Object.async.forEachOf.async.eachOf (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:233:13)
-    at Object.async.forEach.async.each (F:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:209:22)
-    at u.delete (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\lib\tasks.js:1:17073)
-    at _tasks.r.queue (F:\Cocos Creator\CocosCreator\resources\app.asar\asset-db\index.js:1:2264)
+2019-05-25T05:59:40.286Z - normal: Load ~/.CocosCreator/settings.json
+2019-05-25T05:59:41.551Z - normal: Initializing Asset Database
+2019-05-25T05:59:41.567Z - normal: checking language setting...
+2019-05-25T05:59:41.567Z - normal: Language: zh
+2019-05-25T05:59:42.702Z - success: preview server running at http://localhost:7456
+2019-05-25T05:59:42.718Z - success: protocol editor-framework registered
+2019-05-25T05:59:42.718Z - success: protocol app registered
+2019-05-25T05:59:42.718Z - success: protocol theme registered
+2019-05-25T05:59:42.718Z - success: protocol packages registered
+2019-05-25T05:59:42.718Z - success: protocol uuid registerred
+2019-05-25T05:59:42.718Z - success: protocol db registerred
+2019-05-25T05:59:42.718Z - success: protocol thumbnail registerred
+2019-05-25T05:59:42.718Z - success: protocol unpack registerred
+2019-05-25T05:59:42.718Z - success: protocol disable-commonjs registerred
+2019-05-25T05:59:42.921Z - normal: connected!
+2019-05-25T05:59:42.937Z - normal: Check project G:\github repository\diabolo
+2019-05-25T05:59:42.937Z - normal: Initializing project G:\github repository\diabolo
+2019-05-25T05:59:43.640Z - normal: Initializing Cocos2d
+2019-05-25T05:59:44.780Z - normal: Initializing engine extends
+2019-05-25T05:59:44.811Z - success: asset-db-debugger loaded
+2019-05-25T05:59:44.811Z - success: baidu-adapter loaded
+2019-05-25T05:59:44.827Z - success: code-editor loaded
+2019-05-25T05:59:44.827Z - success: color-picker loaded
+2019-05-25T05:59:44.983Z - success: fb-audience-network loaded
+2019-05-25T05:59:45.108Z - success: fb-live-stream loaded
+2019-05-25T05:59:45.124Z - success: google-play-instant loaded
+2019-05-25T05:59:45.139Z - success: huawei-runtime loaded
+2019-05-25T05:59:45.139Z - success: jsb-adapter loaded
+2019-05-25T05:59:45.155Z - success: oppo-runtime loaded
+2019-05-25T05:59:45.155Z - success: package-manager loaded
+2019-05-25T05:59:45.342Z - success: qqplay-adapter loaded
+2019-05-25T05:59:45.358Z - success: runtime-dev-tools loaded
+2019-05-25T05:59:45.358Z - success: sdkbox loaded
+2019-05-25T05:59:45.358Z - success: tester loaded
+2019-05-25T05:59:45.374Z - success: ui-grid loaded
+2019-05-25T05:59:45.374Z - success: ui-kit-preview-extra loaded
+2019-05-25T05:59:45.374Z - success: ui-kit-preview loaded
+2019-05-25T05:59:45.374Z - success: ui-kit loaded
+2019-05-25T05:59:45.374Z - success: ui-tree loaded
+2019-05-25T05:59:45.389Z - success: vivo-runtime loaded
+2019-05-25T05:59:45.389Z - success: weapp-adapter loaded
+2019-05-25T05:59:45.452Z - success: assets loaded
+2019-05-25T05:59:45.452Z - success: builder loaded
+2019-05-25T05:59:45.905Z - success: cocos-services loaded
+2019-05-25T05:59:45.905Z - success: console loaded
+2019-05-25T05:59:45.967Z - success: fb-instant-games loaded
+2019-05-25T05:59:45.983Z - success: google-instant-games loaded
+2019-05-25T05:59:45.983Z - success: hierarchy loaded
+2019-05-25T05:59:45.983Z - success: inspector loaded
+2019-05-25T05:59:45.983Z - success: keystore loaded
+2019-05-25T05:59:45.998Z - success: node-library loaded
+2019-05-25T05:59:45.998Z - success: package-asset loaded
+2019-05-25T05:59:45.998Z - success: preferences loaded
+2019-05-25T05:59:45.998Z - success: project-exporter loaded
+2019-05-25T05:59:45.998Z - success: project-importer loaded
+2019-05-25T05:59:46.014Z - success: project-settings loaded
+2019-05-25T05:59:46.014Z - success: scene loaded
+2019-05-25T05:59:46.030Z - success: simulator-debugger loaded
+2019-05-25T05:59:46.030Z - success: sprite-editor loaded
+2019-05-25T05:59:46.030Z - success: store loaded
+2019-05-25T05:59:46.030Z - success: timeline loaded
+2019-05-25T05:59:46.947Z - failed: [db-task][init] uuid collision, the uuid for G:\github repository\diabolo\assets\scripts\backgrounds.js is already in used by G:\github repository\diabolo\assets\scripts\background.js. Assigning a new uuid.
+2019-05-25T05:59:48.140Z - normal: Loading packages
+2019-05-25T05:59:48.155Z - normal: Watching packages
+2019-05-25T05:59:49.327Z - normal: Run Application
+2019-05-25T05:59:49.405Z - info: Cocos Services load base data!
+2019-05-25T06:00:32.487Z - error: getComponent: Type must be non-nil
+    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
+    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
+    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
+    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-05-25T06:01:00.034Z - info: shutdown preview server

@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/scripts/bigStar.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, 'f6dae2emy5NwJf+XzhTLhEN', 'bigStar', __filename);
+cc._RF.push(module, '37810loS1VFfbyFMN7tVYp4', 'bigStar', __filename);
 // scripts/bigStar.js
 
 "use strict";
@@ -38,10 +38,10 @@ cc.Class({
     //检测碰撞（刚进入时
     onCollisionEnter: function onCollisionEnter(other, self) {
         cc.log("变大");
-        this.diabolo.scale = 2;
-        this.diaboloComponent.rigidbody.gravityScale = 15;
-        this.diaboloEffect.big = true;
-        this.diaboloEffect.smallOrBigTime = 0;
+        this.diabolo.scale = 2; //大小比例
+        this.diaboloComponent.rigidbody.gravityScale = 15; //重力
+        this.diaboloEffect.big = true; //效果赋值
+        this.diaboloEffect.smallOrBigTime = 0; //从0开始计时
         //让节点变透明，且不再碰撞，但是仍能运作update
         // this.node.opacity=0
         // this.node.getComponent(cc.CircleCollider).enabled=false
