@@ -32,7 +32,7 @@ cc.Class({
     update (dt) {
         //动态加载背景，达到背景循环的效果
         if(this.camera.y+this.camera.parent.height>this.backgrounds[this.backgrounds.length-1].y){
-            cc.log("创建背景")
+            cc.log("生成背景")
             //第一幅背景
             cc.loader.loadRes('background.prefab', (err, resource)=>{
                 if(err){ return; }

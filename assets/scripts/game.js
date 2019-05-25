@@ -22,10 +22,6 @@ cc.Class({
             default:null,
             type:cc.Node
         },
-        effect:{
-            default:null,
-            type:cc.Prefab
-        }
         // effect:effects.effects,
     },
 

@@ -16,10 +16,7 @@ cc.Class({
         isFly:false,//是否正在飞行中
         rigidbody:null,//刚体
         mouseJoint:null,
-        ropes:{
-            default:null,
-            type:cc.Node
-        },//关联rope的父节点，可以通过这个父节点访问子节点
+        ropes:null,//关联rope的父节点，可以通过这个父节点访问子节点
         rope:null,//空竹所在的绳子
         physicsBoxCollider:null,//物理墙
         leftNode:null,//左连接点
@@ -41,6 +38,7 @@ cc.Class({
         //绑定刚体
         this.rigidbody = this.node.getComponent(cc.RigidBody);
         //绑定左右连接点
+        this.ropes=cc.find("Canvas/ropes")
         var ropeList=this.ropes.children;
         this.rope=ropeList[0]
         this.leftNode=this.rope.getChildByName("left")
@@ -160,6 +158,11 @@ cc.Class({
                 this.node.destroy()
             }
         }
-        
+
+        if((this.rope!=null)&& this.rope.isValid && (this.ropes.convertToNodeSpaceAR(this.node.convertToWorldSpaceAR(cc.v2(0,0))).y >this.rope.y)){
+            // cc.log("sss"+this.ropes.convertToNodeSpaceAR(this.node.convertToWorldSpaceAR(cc.v2(0,0))).y)
+            // cc.log("aaa"+this.rope.y)
+            this.rope = null
+        }
     },
 });

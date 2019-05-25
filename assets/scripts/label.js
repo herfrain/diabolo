@@ -17,21 +17,17 @@ cc.Class({
         heightDifference:0,//每次的高度差
         once:true,//限制只变化一次
         label:null,
-        diabolo:{
-            default:null,
-            type:cc.Node
-        },//空竹对象
+        diabolo:null,//空竹对象
         diaboloComponent:null,//空竹组件
-        camera:{
-            default:null,
-            type:cc.Node
-        },
+        camera:null,
         cameraComponent:null,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        this.diabolo=cc.find("Canvas/diabolo")
+        this.camera=cc.find("Canvas/Main Camera")
         this.diaboloComponent=this.diabolo.getComponent("diabolo")//获取组件
         this.label=this.node.getComponent(cc.Label)//获取label组件
         this.label.string=0

@@ -52,8 +52,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -283,
-      "y": 412,
+      "x": -261,
+      "y": 283,
       "z": 0
     },
     "_scale": {
@@ -145,7 +145,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "88rqvXhLJH6r6Q5K8Y21MZ",
+    "fileId": "95EWKS411J/rXU8/NM58HH",
     "sync": false
   }
 ]

@@ -19,10 +19,6 @@ cc.Class({
         smallOrBigTime:0,
         jump:false,
         jumpTime:0,
-        ropes:{
-            default:null,
-            type:cc.Node
-        }
     },
 
     // LIFE-CYCLE CALLBACKS:
