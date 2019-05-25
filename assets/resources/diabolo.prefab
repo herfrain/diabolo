@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "diabolo",
+    "_name": "",
     "_objFlags": 0,
     "_native": "",
     "data": {
@@ -36,10 +36,13 @@
       },
       {
         "__id__": 7
+      },
+      {
+        "__id__": 8
       }
     ],
     "_prefab": {
-      "__id__": 8
+      "__id__": 9
     },
     "_opacity": 255,
     "_color": {
@@ -61,14 +64,14 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 170,
-      "y": -408,
+      "x": 0,
+      "y": -355,
       "z": 0
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 1.5,
+      "y": 1.5,
       "z": 1
     },
     "_rotationX": 0,
@@ -82,7 +85,7 @@
     },
     "_skewX": 0,
     "_skewY": 0,
-    "groupIndex": 0,
+    "groupIndex": 2,
     "_id": ""
   },
   {
@@ -94,10 +97,10 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "44892ae7-8715-4d7a-bff0-bb8b6fdade6d"
+      "__uuid__": "48ce029a-6682-445d-8a0e-5b8b6c00d660"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -216,10 +219,7 @@
       "__id__": 1
     },
     "_enabled": true,
-    "x": 0,
     "y": 0,
-    "x_speed": 0,
-    "y_speed": 0,
     "isFly": false,
     "rigidbody": null,
     "mouseJoint": null,
@@ -229,6 +229,25 @@
     "leftNode": null,
     "rightNode": null,
     "leftJoint": null,
+    "camera": null,
+    "_id": ""
+  },
+  {
+    "__type__": "de9a1H28/BJaZow4BrfRwQc",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "diabolo": null,
+    "diaboloComponent": null,
+    "big": false,
+    "small": false,
+    "smallOrBigTime": 0,
+    "jump": false,
+    "jumpTime": 0,
+    "ropes": null,
     "_id": ""
   },
   {

@@ -1,70 +1,80 @@
-2019-05-25T05:59:40.286Z - normal: Load ~/.CocosCreator/settings.json
-2019-05-25T05:59:41.551Z - normal: Initializing Asset Database
-2019-05-25T05:59:41.567Z - normal: checking language setting...
-2019-05-25T05:59:41.567Z - normal: Language: zh
-2019-05-25T05:59:42.702Z - success: preview server running at http://localhost:7456
-2019-05-25T05:59:42.718Z - success: protocol editor-framework registered
-2019-05-25T05:59:42.718Z - success: protocol app registered
-2019-05-25T05:59:42.718Z - success: protocol theme registered
-2019-05-25T05:59:42.718Z - success: protocol packages registered
-2019-05-25T05:59:42.718Z - success: protocol uuid registerred
-2019-05-25T05:59:42.718Z - success: protocol db registerred
-2019-05-25T05:59:42.718Z - success: protocol thumbnail registerred
-2019-05-25T05:59:42.718Z - success: protocol unpack registerred
-2019-05-25T05:59:42.718Z - success: protocol disable-commonjs registerred
-2019-05-25T05:59:42.921Z - normal: connected!
-2019-05-25T05:59:42.937Z - normal: Check project G:\github repository\diabolo
-2019-05-25T05:59:42.937Z - normal: Initializing project G:\github repository\diabolo
-2019-05-25T05:59:43.640Z - normal: Initializing Cocos2d
-2019-05-25T05:59:44.780Z - normal: Initializing engine extends
-2019-05-25T05:59:44.811Z - success: asset-db-debugger loaded
-2019-05-25T05:59:44.811Z - success: baidu-adapter loaded
-2019-05-25T05:59:44.827Z - success: code-editor loaded
-2019-05-25T05:59:44.827Z - success: color-picker loaded
-2019-05-25T05:59:44.983Z - success: fb-audience-network loaded
-2019-05-25T05:59:45.108Z - success: fb-live-stream loaded
-2019-05-25T05:59:45.124Z - success: google-play-instant loaded
-2019-05-25T05:59:45.139Z - success: huawei-runtime loaded
-2019-05-25T05:59:45.139Z - success: jsb-adapter loaded
-2019-05-25T05:59:45.155Z - success: oppo-runtime loaded
-2019-05-25T05:59:45.155Z - success: package-manager loaded
-2019-05-25T05:59:45.342Z - success: qqplay-adapter loaded
-2019-05-25T05:59:45.358Z - success: runtime-dev-tools loaded
-2019-05-25T05:59:45.358Z - success: sdkbox loaded
-2019-05-25T05:59:45.358Z - success: tester loaded
-2019-05-25T05:59:45.374Z - success: ui-grid loaded
-2019-05-25T05:59:45.374Z - success: ui-kit-preview-extra loaded
-2019-05-25T05:59:45.374Z - success: ui-kit-preview loaded
-2019-05-25T05:59:45.374Z - success: ui-kit loaded
-2019-05-25T05:59:45.374Z - success: ui-tree loaded
-2019-05-25T05:59:45.389Z - success: vivo-runtime loaded
-2019-05-25T05:59:45.389Z - success: weapp-adapter loaded
-2019-05-25T05:59:45.452Z - success: assets loaded
-2019-05-25T05:59:45.452Z - success: builder loaded
-2019-05-25T05:59:45.905Z - success: cocos-services loaded
-2019-05-25T05:59:45.905Z - success: console loaded
-2019-05-25T05:59:45.967Z - success: fb-instant-games loaded
-2019-05-25T05:59:45.983Z - success: google-instant-games loaded
-2019-05-25T05:59:45.983Z - success: hierarchy loaded
-2019-05-25T05:59:45.983Z - success: inspector loaded
-2019-05-25T05:59:45.983Z - success: keystore loaded
-2019-05-25T05:59:45.998Z - success: node-library loaded
-2019-05-25T05:59:45.998Z - success: package-asset loaded
-2019-05-25T05:59:45.998Z - success: preferences loaded
-2019-05-25T05:59:45.998Z - success: project-exporter loaded
-2019-05-25T05:59:45.998Z - success: project-importer loaded
-2019-05-25T05:59:46.014Z - success: project-settings loaded
-2019-05-25T05:59:46.014Z - success: scene loaded
-2019-05-25T05:59:46.030Z - success: simulator-debugger loaded
-2019-05-25T05:59:46.030Z - success: sprite-editor loaded
-2019-05-25T05:59:46.030Z - success: store loaded
-2019-05-25T05:59:46.030Z - success: timeline loaded
-2019-05-25T05:59:46.947Z - failed: [db-task][init] uuid collision, the uuid for G:\github repository\diabolo\assets\scripts\backgrounds.js is already in used by G:\github repository\diabolo\assets\scripts\background.js. Assigning a new uuid.
-2019-05-25T05:59:48.140Z - normal: Loading packages
-2019-05-25T05:59:48.155Z - normal: Watching packages
-2019-05-25T05:59:49.327Z - normal: Run Application
-2019-05-25T05:59:49.405Z - info: Cocos Services load base data!
-2019-05-25T06:00:32.487Z - error: getComponent: Type must be non-nil
+2019-05-25T10:23:21.356Z - normal: Load ~/.CocosCreator/settings.json
+2019-05-25T10:23:22.622Z - normal: Initializing Asset Database
+2019-05-25T10:23:22.622Z - normal: checking language setting...
+2019-05-25T10:23:22.622Z - normal: Language: zh
+2019-05-25T10:23:24.202Z - success: preview server running at http://localhost:7456
+2019-05-25T10:23:24.205Z - success: protocol editor-framework registered
+2019-05-25T10:23:24.206Z - success: protocol app registered
+2019-05-25T10:23:24.206Z - success: protocol theme registered
+2019-05-25T10:23:24.206Z - success: protocol packages registered
+2019-05-25T10:23:24.206Z - success: protocol uuid registerred
+2019-05-25T10:23:24.206Z - success: protocol db registerred
+2019-05-25T10:23:24.206Z - success: protocol thumbnail registerred
+2019-05-25T10:23:24.206Z - success: protocol unpack registerred
+2019-05-25T10:23:24.206Z - success: protocol disable-commonjs registerred
+2019-05-25T10:23:24.427Z - normal: connected!
+2019-05-25T10:23:24.427Z - normal: Check project G:\github repository\diabolo
+2019-05-25T10:23:24.443Z - normal: Initializing project G:\github repository\diabolo
+2019-05-25T10:23:25.161Z - normal: Initializing Cocos2d
+2019-05-25T10:23:27.778Z - normal: Initializing engine extends
+2019-05-25T10:23:27.825Z - success: asset-db-debugger loaded
+2019-05-25T10:23:27.840Z - success: baidu-adapter loaded
+2019-05-25T10:23:27.856Z - success: code-editor loaded
+2019-05-25T10:23:27.856Z - success: color-picker loaded
+2019-05-25T10:23:28.043Z - success: fb-audience-network loaded
+2019-05-25T10:23:28.168Z - success: fb-live-stream loaded
+2019-05-25T10:23:28.200Z - success: google-play-instant loaded
+2019-05-25T10:23:28.231Z - success: huawei-runtime loaded
+2019-05-25T10:23:28.231Z - success: jsb-adapter loaded
+2019-05-25T10:23:28.262Z - success: oppo-runtime loaded
+2019-05-25T10:23:28.278Z - success: package-manager loaded
+2019-05-25T10:23:28.528Z - success: qqplay-adapter loaded
+2019-05-25T10:23:28.543Z - success: runtime-dev-tools loaded
+2019-05-25T10:23:28.559Z - success: sdkbox loaded
+2019-05-25T10:23:28.574Z - success: tester loaded
+2019-05-25T10:23:28.590Z - success: ui-grid loaded
+2019-05-25T10:23:28.606Z - success: ui-kit-preview-extra loaded
+2019-05-25T10:23:28.606Z - success: ui-kit-preview loaded
+2019-05-25T10:23:28.606Z - success: ui-kit loaded
+2019-05-25T10:23:28.621Z - success: ui-tree loaded
+2019-05-25T10:23:28.653Z - success: vivo-runtime loaded
+2019-05-25T10:23:28.653Z - success: weapp-adapter loaded
+2019-05-25T10:23:28.731Z - success: assets loaded
+2019-05-25T10:23:28.731Z - success: builder loaded
+2019-05-25T10:23:29.168Z - success: cocos-services loaded
+2019-05-25T10:23:29.184Z - success: console loaded
+2019-05-25T10:23:29.231Z - success: fb-instant-games loaded
+2019-05-25T10:23:29.231Z - success: google-instant-games loaded
+2019-05-25T10:23:29.231Z - success: hierarchy loaded
+2019-05-25T10:23:29.246Z - success: inspector loaded
+2019-05-25T10:23:29.246Z - success: keystore loaded
+2019-05-25T10:23:29.246Z - success: node-library loaded
+2019-05-25T10:23:29.246Z - success: package-asset loaded
+2019-05-25T10:23:29.262Z - success: preferences loaded
+2019-05-25T10:23:29.262Z - success: project-exporter loaded
+2019-05-25T10:23:29.262Z - success: project-importer loaded
+2019-05-25T10:23:29.262Z - success: project-settings loaded
+2019-05-25T10:23:29.277Z - success: scene loaded
+2019-05-25T10:23:29.277Z - success: simulator-debugger loaded
+2019-05-25T10:23:29.277Z - success: sprite-editor loaded
+2019-05-25T10:23:29.293Z - success: store loaded
+2019-05-25T10:23:29.293Z - success: timeline loaded
+2019-05-25T10:23:30.678Z - failed: [db-task][init] uuid collision, the uuid for G:\github repository\diabolo\assets\scripts\backgrounds.js is already in used by G:\github repository\diabolo\assets\scripts\background.js. Assigning a new uuid.
+2019-05-25T10:23:32.452Z - normal: Loading packages
+2019-05-25T10:23:32.467Z - normal: Watching packages
+2019-05-25T10:23:32.842Z - info: Cocos Services load base data!
+2019-05-25T10:23:33.779Z - normal: Run Application
+2019-05-25T10:36:18.346Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/scripts/background.js.meta
+2019-05-25T10:38:01.292Z - error: TypeError: Cannot read property 'parent' of null
+    at Object.exports.remove (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\assets\panel\utils\cache.js:1:1888)
+    at Object.exports.remove (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\assets\panel\utils\operation.js:1:2749)
+    at t.forEach.e (eval at s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:933), <anonymous>:1:4240)
+    at Array.forEach (native)
+    at HTMLElement.asset-db:assets-deleted (eval at s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:933), <anonymous>:1:4226)
+    at EventEmitter.i.function.t.on.e (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\panel\frame.js:1:3303)
+    at emitTwo (events.js:111:20)
+    at EventEmitter.emit (events.js:194:7)
+2019-05-25T10:39:04.443Z - error: getComponent: Type must be non-nil
     at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
     at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
     at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
@@ -73,4 +83,133 @@
     at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
     at emitMany (events.js:127:13)
     at EventEmitter.emit (events.js:204:7)
-2019-05-25T06:01:00.034Z - info: shutdown preview server
+2019-05-25T10:41:41.562Z - warn: The Prefab used by node "background" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background"
+Missing uuid: "b8c3d3e1-886b-4156-9b41-ed5486df8675"
+
+2019-05-25T10:41:41.565Z - warn: The Prefab used by node "background2" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background2"
+Missing uuid: "ff44d30d-141b-49a6-9f6c-5e8642c6c1f8"
+
+2019-05-25T10:44:21.464Z - warn: Script attached to "star_big" in prefab "star_big.prefab" is missing or invalid. Detailed information:
+Node path: "star_big"
+Asset url: "db://assets/resources/star_big.prefab"
+Script UUID: "f6daed9e-9b2e-4dc0-97fe-5f38532e110d"
+Class ID: "f6dae2emy5NwJf+XzhTLhEN"
+
+2019-05-25T10:44:52.177Z - warn: Script attached to "star_big" is missing or invalid. Detailed information:
+Node path: "Canvas/effects/star_big"
+Script UUID: "f6daed9e-9b2e-4dc0-97fe-5f38532e110d"
+Class ID: "f6dae2emy5NwJf+XzhTLhEN"
+
+2019-05-25T10:44:52.180Z - warn: The Prefab used by node "background" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background"
+Missing uuid: "b8c3d3e1-886b-4156-9b41-ed5486df8675"
+
+2019-05-25T10:44:52.181Z - warn: The Prefab used by node "background2" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background2"
+Missing uuid: "ff44d30d-141b-49a6-9f6c-5e8642c6c1f8"
+
+2019-05-25T10:45:41.732Z - warn: Script attached to "star_big" in prefab "star_big.prefab" is missing or invalid. Detailed information:
+Node path: "star_big"
+Asset url: "db://assets/resources/star_big.prefab"
+Script UUID: "f6daed9e-9b2e-4dc0-97fe-5f38532e110d"
+Class ID: "f6dae2emy5NwJf+XzhTLhEN"
+
+2019-05-25T10:46:06.391Z - warn: Script attached to "star_big" in prefab "star_big.prefab" is missing or invalid. Detailed information:
+Node path: "star_big"
+Asset url: "db://assets/resources/star_big.prefab"
+Script UUID: "f6daed9e-9b2e-4dc0-97fe-5f38532e110d"
+Class ID: "f6dae2emy5NwJf+XzhTLhEN"
+
+2019-05-25T10:46:17.751Z - warn: The Prefab used by node "background" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background"
+Missing uuid: "b8c3d3e1-886b-4156-9b41-ed5486df8675"
+
+2019-05-25T10:46:17.751Z - warn: The Prefab used by node "background2" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background2"
+Missing uuid: "ff44d30d-141b-49a6-9f6c-5e8642c6c1f8"
+
+2019-05-25T10:46:36.370Z - warn: The Prefab used by node "background" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background"
+Missing uuid: "b8c3d3e1-886b-4156-9b41-ed5486df8675"
+
+2019-05-25T10:46:36.370Z - warn: The Prefab used by node "background2" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background2"
+Missing uuid: "ff44d30d-141b-49a6-9f6c-5e8642c6c1f8"
+
+2019-05-25T10:47:56.156Z - error: getComponent: Type must be non-nil
+    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
+    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
+    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
+    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-05-25T10:49:37.735Z - error: Reference "ropes" of "diabolo<diabolo>" to external scene object "ropes" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-25T10:49:37.739Z - error: Reference "camera" of "diabolo<diabolo>" to external scene object "Main Camera" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-25T10:49:43.987Z - error: Reference "diabolo" of "label<label>" to external scene object "diabolo" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-25T10:49:43.987Z - error: Reference "camera" of "label<label>" to external scene object "Main Camera" can not be saved in prefab asset.
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)
+2019-05-25T10:49:55.287Z - warn: The Prefab used by node "background" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background"
+Missing uuid: "b8c3d3e1-886b-4156-9b41-ed5486df8675"
+
+2019-05-25T10:49:55.288Z - warn: The Prefab used by node "background2" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background2"
+Missing uuid: "ff44d30d-141b-49a6-9f6c-5e8642c6c1f8"
+
+2019-05-25T10:50:00.188Z - warn: The Prefab used by node "background" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background"
+Missing uuid: "b8c3d3e1-886b-4156-9b41-ed5486df8675"
+
+2019-05-25T10:50:00.188Z - warn: The Prefab used by node "background2" is missing. Detailed information:
+Node path: "Canvas/backgrounds/background2"
+Missing uuid: "ff44d30d-141b-49a6-9f6c-5e8642c6c1f8"
+
+2019-05-25T10:51:44.761Z - error: getComponent: Type must be non-nil
+    at Object.cc.errorID (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at getConstructor (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:29:20)
+    at cc_Node.getComponent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\utils\base-node.js:399:35)
+    at HTMLElement.query-node-info (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-query.js:1:1331)
+    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-05-25T10:52:39.650Z - info: shutdown preview server
