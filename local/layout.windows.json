@@ -88,10 +88,10 @@
   },
   "panels": {
     "builder": {
-      "x": 592,
-      "y": 52,
-      "width": 676,
-      "height": 744
+      "x": 793,
+      "y": 36,
+      "width": 677,
+      "height": 745
     },
     "sprite-editor": {
       "x": 404,

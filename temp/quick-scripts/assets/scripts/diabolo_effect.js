@@ -55,7 +55,8 @@ cc.Class({
             if (this.diaboloComponent.rigidbody.linearVelocity.y < 0) {
                 //如果开始往下落，则在下方自动生成一个绳子
                 cc.log("jump");
-                cc.loader.loadRes('rope.prefab', function (err, resource) {
+                cc.loader.loadRes('rope2.prefab', function (err, resource) {
+                    //rope2表示会消失的绳子
                     if (err) {
                         return;
                     }

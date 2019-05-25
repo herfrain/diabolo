@@ -22,6 +22,10 @@ cc.Class({
             default:null,
             type:cc.Node
         },
+        label:{
+            default:null,
+            type:cc.Node
+        },
         // effect:effects.effects,
     },
 
@@ -29,7 +33,7 @@ cc.Class({
 
     onLoad () {
         // this.enabled=false
-
+        cc.game.addPersistRootNode(this.label)
         
     },
 

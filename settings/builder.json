@@ -35,12 +35,12 @@
     "orientation": "portrait",
     "zip": false
   },
-  "startScene": "980ab8e1-9607-4191-a269-49e5a1b27afa",
+  "startScene": "daf032a1-199a-4b40-93ed-9960f7c89f93",
   "title": "diabolo",
   "webOrientation": "portrait",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
+    "appid": "wx4527be1d0d158233",
     "orientation": "portrait",
     "subContext": ""
   },

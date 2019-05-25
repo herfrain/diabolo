@@ -97,9 +97,9 @@ cc.Class({
                 var newNode = cc.instantiate(prefab);
                 console.log("生成道具");
                 // newNode.parent = effectsNode;//不知道为何，有时会是null？？？
-                effectsNode.addChild(newNode);
                 newNode.x = ropeX + random.getRndIntegerUp(-80, 80);
                 newNode.y = ropeY + random.getRndIntegerUp(-200, 200);
+                effectsNode.addChild(newNode);
                 cc.log("道具数量：" + effectsNode.children.length);
             });
         };

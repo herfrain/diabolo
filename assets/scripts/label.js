@@ -8,6 +8,7 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
+var sc=require('score')
 cc.Class({
     extends: cc.Component,
 
@@ -30,8 +31,9 @@ cc.Class({
         this.camera=cc.find("Canvas/Main Camera")
         this.diaboloComponent=this.diabolo.getComponent("diabolo")//获取组件
         this.label=this.node.getComponent(cc.Label)//获取label组件
-        this.label.string=0
+        this.label.string="0m"
         this.cameraComponent=this.camera.getComponent("camera")
+        sc.score=this.height
     },
 
     start () {
@@ -46,6 +48,7 @@ cc.Class({
             this.cameraComponent.heightDifference=h//设置camera里的高度差属性
             // this.node.y+=h//label的高度也要对应改变
             this.height+=h//把高度差相加
+            this.height=parseInt(this.height)
             this.preH=this.diaboloComponent.rope.convertToWorldSpaceAR(cc.v2(0,0)).y//这个绳子变为前一个绳子
             // this.label.string=parseInt(this.height)+"m"//更改label的string显示
             cc.log("height:"+this.height)
@@ -56,6 +59,10 @@ cc.Class({
         if(labelHeight<this.height){
             labelHeight+=11
             this.label.string=parseInt(labelHeight)+"m"
+        }else if(labelHeight>this.height){
+            labelHeight--
+            this.label.string=parseInt(labelHeight)+"m"
         }
+        sc.score=this.height
     },
 });
