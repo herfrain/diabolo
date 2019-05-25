@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "diabolo",
+    "texture": "575f1fe0-5811-49ea-9ee0-30e587dc836a",
+    "atlas": "",
+    "rect": [
+      6,
+      6,
+      301,
+      292
+    ],
+    "offset": [
+      -1,
+      5.5
+    ],
+    "originalSize": [
+      315,
+      315
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
