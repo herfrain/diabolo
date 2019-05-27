@@ -12,7 +12,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "jump",
+    "_name": "fly",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -42,8 +42,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 307,
-      "height": 226
+      "width": 208,
+      "height": 241
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -52,8 +52,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -261,
-      "y": 283,
+      "x": 221,
+      "y": 432,
       "z": 0
     },
     "_scale": {
@@ -85,7 +85,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "cee8a22e-ac84-46ea-99cb-36552ca1d33f"
+      "__uuid__": "d9d70d90-ab70-4db3-94e9-369cd47b498f"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -122,7 +122,7 @@
     "_id": ""
   },
   {
-    "__type__": "70185ydUI9CroLNmof6upPE",
+    "__type__": "fe449ZtqHxJC5OIeX7s6na2",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -135,8 +135,8 @@
     "height": 0,
     "preH": 0,
     "camera": null,
-    "jumpAudio": {
-      "__uuid__": "5d7da806-dab4-4373-967c-3f1646a4d967"
+    "flyAudio": {
+      "__uuid__": "ceb63bd6-d6eb-463f-9e3b-92b4560ec897"
     },
     "_id": ""
   },
@@ -148,7 +148,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "95EWKS411J/rXU8/NM58HH",
+    "fileId": "f6hExrQ5pJBafIYDkOh63F",
     "sync": false
   }
 ]

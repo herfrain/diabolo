@@ -2,7 +2,7 @@
 cc._RF.push(module, '77cebhi1zdKqY8ghHi+NGRb', 'effects');
 // scripts/effects.js
 
-'use strict';
+"use strict";
 
 // Learn cc.Class:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/class.html
@@ -14,6 +14,7 @@ cc._RF.push(module, '77cebhi1zdKqY8ghHi+NGRb', 'effects');
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
+var random = require('random');
 var ItemType = {
     //没有东西
     IT_None: 0,
@@ -33,6 +34,8 @@ var effects = cc.Class({
     properties: {
         effects: null,
         camera: null,
+        ropes: null,
+        ropesNode: null,
 
         //拾取距离
         pickRadius: 0,
@@ -60,12 +63,108 @@ var effects = cc.Class({
 
     onLoad: function onLoad() {
         this.camera = cc.find("Canvas/Main Camera");
+        this.ropesNode = cc.find("Canvas/ropes");
     },
+
+
+    getRandomNum: function getRandomNum() {
+        //生成[0,5)的随机整数
+        var randNum = parseInt(Math.random() * 4) + 1;
+        return randNum;
+    },
+
+    getItem: function getItem(randomNum) {
+        switch (randomNum) {
+            //没有东西
+            case 0:
+                return null;
+            //变大
+            case 1:
+                return 'star_big';
+            //变小
+            case 2:
+                return 'star_small';
+            //画辅助线
+            // case 3:
+            //     return 'pen';
+            //跳高
+            case 3:
+                return 'jump';
+            //上树
+            case 4:
+                return 'fly';
+        }
+    },
+
+    createEffect: function createEffect() {
+        if (this.effects.length > 6) {
+            return;
+        }
+        var effectsNode = this.node;
+        var randNum = this.getRandomNum();
+        //获得本次随机生成的道具
+        var item = this.getItem(randNum);
+        //随机某一根绳子
+        var randRope = 0;
+        if (this.ropes.length - 5 >= 0) randRope = random.getRndIntegerUp(this.ropes.length - 5, this.ropes.length - 1);
+        //该绳子位置
+        var ropeX = this.ropes[randRope].x;
+        var ropeY = this.ropes[randRope].y;
+        //加载道具
+        cc.loader.loadRes(item, function (err, prefab) {
+            var newNode = cc.instantiate(prefab);
+            console.log("生成道具");
+            // newNode.parent = effectsNode;//不知道为何，有时会是null？？？
+            // cc.log(ropeX)
+            newNode.x = ropeX + random.getRndIntegerUp(-80, 80);
+            newNode.y = ropeY + random.getRndIntegerUp(-200, 200);
+            effectsNode.addChild(newNode);
+            cc.log("道具数量：" + effectsNode.children.length);
+        });
+    },
+
     start: function start() {
         this.effects = this.node.children;
+        this.ropes = this.ropesNode.children;
+        // var effectsNode=this.node
+        // var timeCallback = function () {
+        //     // cc.log(this.ropes)
+        //     var randNum = this.getRandomNum();
+        //     //获得本次随机生成的道具
+        //     var item = this.getItem(randNum);
+        //     //随机某一根绳子
+        //     var randRope = 0
+        //     if(this.ropes.length-5>=0)
+        //         randRope = random.getRndIntegerUp(this.ropes.length-5,this.ropes.length-1);
+        //     //该绳子位置
+        //     var ropeX = this.ropes[randRope].x;
+        //     var ropeY = this.ropes[randRope].y;
+        //     //加载道具
+        //     cc.loader.loadRes(item, function(err, prefab) {
+        //         var newNode = cc.instantiate(prefab);
+        //         console.log("生成道具");
+        //         // newNode.parent = effectsNode;//不知道为何，有时会是null？？？
+        //         cc.log(ropeX)
+        //         newNode.x = ropeX+random.getRndIntegerUp(-80,80);
+        //         newNode.y = ropeY+random.getRndIntegerUp(-200,200);
+        //         effectsNode.addChild(newNode)
+        //         cc.log("道具数量："+effectsNode.children.length)
+        //     });
+        // }
+        //if(random.newRndItem) {
+        this.schedule(this.createEffect, Math.random() * 10 + 10);
     },
     update: function update(dt) {
         // cc.log(this.effects.length)
+        // cc.log(this.camera.y+this.camera.parent.height>this.ropes[this.ropes.length-1].y)
+        if (this.camera.y + this.camera.parent.height > this.ropes[this.ropes.length - 1].y) {
+            cc.log(2);
+            var num = random.getRndIntegerUp(0, 2);
+            for (var i = 0; i < num; i++) {
+                this.createEffect();
+            }
+        }
+
         //遍历子节点，如果出界则销毁
         for (var i = 0; i < this.effects.length; i++) {
             if (this.effects[i].isValid) {

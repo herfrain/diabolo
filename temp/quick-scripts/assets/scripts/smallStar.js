@@ -20,9 +20,11 @@ cc.Class({
     properties: {
         diabolo: null, //空竹
         diaboloComponent: null,
-        diaboloEffect: null //空竹效果属性
-        // isEffect:false,//是否生效
-        // time:0,//计时
+        diaboloEffect: null, //空竹效果属性
+        pickUpAudio: {
+            default: null,
+            type: cc.AudioClip
+        } //获得道具音效
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -38,13 +40,10 @@ cc.Class({
     onCollisionEnter: function onCollisionEnter(other, self) {
         cc.log("变小");
         this.diabolo.scale = 1;
-        this.diaboloComponent.rigidbody.gravityScale = 5;
+        this.diaboloComponent.rigidbody.gravityScale = 8;
         this.diaboloEffect.small = true;
         this.diaboloEffect.smallOrBigTime = 0;
-        //让节点变透明，且不再碰撞，但是仍能运作update
-        // this.node.opacity=0
-        // this.node.getComponent(cc.CircleCollider).enabled=false
-        //销毁节点
+        cc.audioEngine.playEffect(this.pickUpAudio, false);
         this.node.destroy();
     },
 

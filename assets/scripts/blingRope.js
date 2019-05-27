@@ -12,37 +12,28 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        diabolo:null,//空竹
-        diaboloComponent:null,
-        diaboloEffect:null,//空竹效果属性
-        pickUpAudio: {
-            default: null,
-            type: cc.AudioClip
-        },//获得道具音效
+        graphics:null,
+        once:true,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        //绑定空竹
-        this.diabolo=cc.find("Canvas/diabolo")
-        this.diaboloComponent=this.diabolo.getComponent("diabolo")
-        this.diaboloEffect=this.diabolo.getComponent("diabolo_effect")
-
-    },
-
-    onCollisionEnter: function (other, self) {
-        cc.log("变小")
-        this.diabolo.scale=1
-        this.diaboloComponent.rigidbody.gravityScale=8
-        this.diaboloEffect.small=true
-        this.diaboloEffect.smallOrBigTime=0
-        cc.audioEngine.playEffect(this.pickUpAudio, false);
-        this.node.destroy()
+        this.graphics = this.getComponent(cc.Graphics);
     },
 
     start () {
-
+        this.schedule(function(){
+            if(this.once){
+                // this.graphics.clear()
+                this.graphics.strokeColor.fromHEX('#FFFFFF')
+                this.once=false
+            }else{
+                // this.graphics.clear()
+                this.graphics.strokeColor.fromHEX('#FF3C3C')
+                this.once=true
+            }
+        },0.5)
     },
 
     update (dt) {

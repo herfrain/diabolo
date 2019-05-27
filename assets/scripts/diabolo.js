@@ -24,13 +24,21 @@ cc.Class({
         leftJoint:null,//左distanceJoint组件
         leftJoint:null,//右distanceJoint组件
         camera:null,
+        popupAudio: {
+            default: null,
+            type: cc.AudioClip
+        },//弹出音效
+        pullAudio: {
+            default: null,
+            type: cc.AudioClip
+        },//拉动音效
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         //注册Touch事件
-        // this.node.on(cc.Node.EventType.TOUCH_START,this.touchBegin,this);
+        this.node.on(cc.Node.EventType.TOUCH_START,this.touchBegin,this);
         this.node.on(cc.Node.EventType.TOUCH_MOVE,this.touchMove,this);
         this.node.on(cc.Node.EventType.TOUCH_END,this.touchEnd,this);//当手指在目标节点区域内离开屏幕时
         this.node.on(cc.Node.EventType.TOUCH_CANCEL,this.touchEnd,this);//当手指在目标节点区域外离开屏幕时
@@ -55,9 +63,9 @@ cc.Class({
         this.y=this.rope.y
         //
         this.camera=cc.find("Canvas/Main Camera")
-        cc.log(this.rope)
-        cc.log(this.physicsBoxCollider)
-        cc.log("scale:"+this.node.scale)
+        // cc.log(this.rope)
+        // cc.log(this.physicsBoxCollider)
+        // cc.log("scale:"+this.node.scale)
     },
 
     start () {
@@ -68,7 +76,9 @@ cc.Class({
 
     touchBegin:function(event){
         console.info("begin")
-       
+       // 调用声音引擎播放声音
+    //    cc.log(cc.audioEngine.getEffectsVolume)
+       cc.audioEngine.play(this.pullAudio, false,2);
     },
 
     touchMove:function(event){
@@ -97,9 +107,9 @@ cc.Class({
         var f2=rightnode_wp.sub(diabolo_wp)
         var result_v2=f1.add(f2)
         result_v2=result_v2.scale(cc.v2(k,k))//乘一个系数，放大作用力
-        cc.log(f1)
-        cc.log(f2)
-        cc.log(result_v2)
+        // cc.log(f1)
+        // cc.log(f2)
+        // cc.log(result_v2)
         return result_v2
     },
 
@@ -118,6 +128,8 @@ cc.Class({
             this.isFly=true
             //开门
             this.physicsBoxCollider.enabled=false
+            // 调用声音引擎播放声音
+            cc.audioEngine.play(this.popupAudio, false,1);
         }
         // this.bandMouseJoint()
         // cc.log(this.mouseJoint)
@@ -141,7 +153,7 @@ cc.Class({
         if(this.isFly){
             this.y=this.node.y
         }else{
-            if(this.rope.isValid){
+            if(this.rope!=null&&this.rope.isValid){
                 this.y=this.rope.y
             } else{//如果所在的绳子消失
                 if(this.mouseJoint!=null){
@@ -154,7 +166,7 @@ cc.Class({
         }
 
         if(this.node.isValid){
-            if(this.node.y<this.camera.y-this.camera.parent.height/2){
+            if(this.node.y<this.camera.y-this.camera.parent.height/2-200){
                 this.node.destroy()
             }
         }

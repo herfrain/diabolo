@@ -18,7 +18,7 @@ cc.Class({
         height:0,
         preH:0,
         camera:null,
-        jumpAudio: {
+        flyAudio: {
             default: null,
             type: cc.AudioClip
         },//跳跃音效
@@ -32,30 +32,33 @@ cc.Class({
         this.diaboloComponent=this.diabolo.getComponent("diabolo")
         this.diaboloEffect=this.diabolo.getComponent("diabolo_effect")
         this.camera=cc.find("Canvas/Main Camera")
-        this.height=3000
+        this.height=10000
     },
 
     onCollisionEnter: function (other, self) {
-        cc.log("弹跳")
+        cc.log("飞行")
         this.diaboloEffect.jump=true
         // this.diaboloEffect.jumpTime=12
         // this.preH=this.diabolo.y
         // this.diaboloComponent.rigidbody.linearVelocity=cc.v2(0,0)
-        // var moveAction=cc.moveBy(10,cc.v2(0,this.height)).easing(cc.easeCubicActionOut())
+        // var moveAction=cc.moveBy(5,cc.v2(0,this.height)).easing(cc.easeCubicActionOut())
+        // this.diabolo.runAction(moveAction)
         // this.diabolo.getComponent(cc.CircleCollider).enabled=false
         // this.diaboloComponent.rigidbody.type=cc.RigidBodyType.Static
-        // this.diabolo.runAction(cc.sequence(moveAction,cc.callFunc(this.callBack(this.diabolo,this.diaboloComponent,this.node))))
-        this.diaboloComponent.rigidbody.linearVelocity=cc.v2(0,this.height)//给一个大的向上的初速度
+        // this.diabolo.runAction(cc.sequence(moveAction,cc.callFunc(this.callBack)))
+        
+        this.diaboloComponent.rigidbody.linearVelocity=cc.v2(0,this.height)
         // cc.log(this.diaboloComponent.rigidbody.linearVelocity)
-        cc.audioEngine.playEffect(this.jumpAudio, false);
+        cc.audioEngine.playEffect(this.flyAudio, false);
         this.node.destroy()
     },
 
-    // callBack:function(diabolo,diaboloComponent,node){
+    // callBack:function(){
     //     cc.log("弹跳完毕")
-    //     diabolo.getComponent(cc.CircleCollider).enabled=true
-    //     diaboloComponent.rigidbody.type=cc.RigidBodyType.Dynamic
-    //     node.destroy()
+    //     // cc.log(this.diabolo)
+    //     that.diabolo.getComponent(cc.CircleCollider).enabled=true
+    //     // that.diaboloComponent.rigidbody.type=cc.RigidBodyType.Dynamic
+    //     // this.node.destroy()
     // },
 
     start () {

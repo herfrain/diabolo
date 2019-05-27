@@ -20,10 +20,15 @@ cc.Class({
         this.graphics = this.getComponent(cc.Graphics);  //初始化画图工具
         // this.graphics.lineWidth = 5
         // this.graphics.strokeColor.fromHEX('#D2691E');
+        this.drawLine()
     },
     //画绳子
     drawLine: function(){
-        
+        this.graphics.clear()
+        this.graphics.moveTo(this.leftNode.x, this.leftNode.y);
+        this.graphics.lineTo(this.rightNode.x, this.rightNode.y);
+        this.graphics.close()
+        this.graphics.stroke() 
     },
     // called every frame, uncomment this function to activate update callback
      update: function (dt) {
@@ -36,12 +41,12 @@ cc.Class({
             this.graphics.lineTo(this.diaboloComponent.rightNode.x, this.diaboloComponent.rightNode.y);
             this.graphics.stroke()
         }
-        else{//如果空竹没在绳子上，则只需画一次
-            this.graphics.clear()
-            this.graphics.moveTo(this.leftNode.x, this.leftNode.y);
-            this.graphics.lineTo(this.rightNode.x, this.rightNode.y);
-            this.graphics.close()
-            this.graphics.stroke() 
-        }
+        // else{//如果空竹没在绳子上，则只需画一次
+        //     this.graphics.clear()
+        //     this.graphics.moveTo(this.leftNode.x, this.leftNode.y);
+        //     this.graphics.lineTo(this.rightNode.x, this.rightNode.y);
+        //     this.graphics.close()
+        //     this.graphics.stroke() 
+        // }
      },
 });

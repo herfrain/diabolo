@@ -12,7 +12,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "rope",
+    "_name": "rope2",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -43,10 +43,13 @@
       },
       {
         "__id__": 17
+      },
+      {
+        "__id__": 18
       }
     ],
     "_prefab": {
-      "__id__": 18
+      "__id__": 19
     },
     "_opacity": 255,
     "_color": {
@@ -494,6 +497,7 @@
     "leftNode": null,
     "rightNode": null,
     "leftJoint": null,
+    "downToRopeAudio": null,
     "_id": ""
   },
   {
@@ -537,6 +541,19 @@
     "diabolo": null,
     "diaboloComponent": null,
     "graphics": null,
+    "once": true,
+    "_id": ""
+  },
+  {
+    "__type__": "69b87/RK0JOzJTf0pHPQbJH",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "graphics": null,
+    "once": true,
     "_id": ""
   },
   {

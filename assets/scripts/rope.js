@@ -21,6 +21,10 @@ cc.Class({
         rightNode:null,//右连接点
         leftJoint:null,//左distanceJoint组件
         leftJoint:null,//右distanceJoint组件
+        downToRopeAudio: {
+            default: null,
+            type: cc.AudioClip
+        },//落在绳子上音效
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -86,7 +90,9 @@ cc.Class({
             // other.enabled=false
             this.diaboloComponent.isFly=false//固定在绳子上
             //关门
-            this.physicsBoxCollider.enabled=true
+            // this.physicsBoxCollider.enabled=true
+            // 调用声音引擎播放声音
+            // cc.audioEngine.playEffect(this.downToRopeAudio, false);
         }
 
 

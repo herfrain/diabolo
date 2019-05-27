@@ -2,7 +2,7 @@
 cc._RF.push(module, 'a41b5dzcipPVLLYbm8ycZdI', 'ropes', __filename);
 // scripts/ropes.js
 
-"use strict";
+'use strict';
 
 // Learn cc.Class:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/class.html
@@ -15,10 +15,9 @@ cc._RF.push(module, 'a41b5dzcipPVLLYbm8ycZdI', 'ropes', __filename);
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
 
-var effects = require("effects");
-
 //ropes 绳子组
 //功能：自动随机生成下一跳的绳子
+var sc = require('score');
 var random = require('random');
 cc.Class({
     extends: cc.Component,
@@ -57,7 +56,7 @@ cc.Class({
         var ropeList = this.node.children;
         var firstrope = ropeList[0];
         var prerope = firstrope;
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 5; i++) {
             var nextrope = cc.instantiate(prerope);
             // cc.log(random.getRndIntegerUp(-300,300))
             nextrope.y = prerope.y + random.getRndIntegerUp(100, 200);
@@ -76,35 +75,7 @@ cc.Class({
         cc.log(firstrope);
     },
     start: function start() {
-        var effectsNode = this.effectsNode; //effects节点
         this.ropes = this.node.children;
-        console.log(this.ropes.length);
-        // var ropes = this.ropes;
-        // cc.log(ropes)
-        var timeCallback = function timeCallback() {
-            // cc.log(this.ropes)
-            var randNum = effects.getRandomNum();
-            //获得本次随机生成的道具
-            var item = effects.getItem(randNum);
-            //随机某一根绳子
-            var randRope = 0;
-            if (this.ropes.length - 5 >= 0) randRope = random.getRndIntegerUp(this.ropes.length - 5, this.ropes.length - 1);
-            //该绳子位置
-            var ropeX = this.ropes[randRope].x;
-            var ropeY = this.ropes[randRope].y;
-            //加载道具
-            cc.loader.loadRes(item, function (err, prefab) {
-                var newNode = cc.instantiate(prefab);
-                console.log("生成道具");
-                // newNode.parent = effectsNode;//不知道为何，有时会是null？？？
-                newNode.x = ropeX + random.getRndIntegerUp(-80, 80);
-                newNode.y = ropeY + random.getRndIntegerUp(-200, 200);
-                effectsNode.addChild(newNode);
-                cc.log("道具数量：" + effectsNode.children.length);
-            });
-        };
-        //if(random.newRndItem) {
-        this.schedule(timeCallback, Math.random() * 10 + 10);
     },
     update: function update(dt) {
         //在摄像机顶部添加绳子
@@ -113,10 +84,18 @@ cc.Class({
         if (this.camera.y + this.camera.parent.height > this.ropes[this.ropes.length - 1].y) {
             cc.log("create rope");
             var prerope = this.ropes[this.ropes.length - 1];
-            for (var i = 0; i < 10; i++) {
+
+            for (var i = 0; i < 5; i++) {
                 var nextrope = cc.instantiate(prerope);
                 // cc.log(random.getRndIntegerUp(-300,300))
-                nextrope.y = prerope.y + random.getRndIntegerUp(100, 200);
+                if (sc.score < 10000) {
+                    //按分数来增加难度
+                    nextrope.y = prerope.y + random.getRndIntegerUp(100, 200);
+                } else if (sc.score < 30000) {
+                    nextrope.y = prerope.y + random.getRndIntegerUp(200, 300);
+                } else {
+                    nextrope.y = prerope.y + random.getRndIntegerUp(300, 400);
+                }
                 nextrope.x = random.getRndIntegerUp(-this.camera.parent.width / 2 + 100, this.camera.parent.width / 2 - 100);
                 // cc.log("prerope:"+prerope.x)
                 prerope = nextrope;
