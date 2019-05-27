@@ -115,7 +115,6 @@ cc.Class({
 
     touchEnd:function(event){
         console.info("end")
-
         if(!this.isFly){
             //给个初速度向量，相当于射出去
             this.rigidbody.linearVelocity=this.calV2()
@@ -150,12 +149,14 @@ cc.Class({
 
     update (dt) {
         //如果正在飞行，则y等于节点的y
-        if(this.isFly){
+        if(this.isFly&&this.node.y>this.camera.y+this.camera.parent.height/2){
             this.y=this.node.y
-        }else{
+        }
+        else if(!this.isFly){
+            // this.rope!=null&&
             if(this.rope!=null&&this.rope.isValid){
                 this.y=this.rope.y
-            } else{//如果所在的绳子消失
+            } else if(!this.rope.isValid){//如果所在的绳子消失
                 if(this.mouseJoint!=null){
                     this.mouseJoint.destroy()//取消拉动
                     this.mouseJoint=null
@@ -166,11 +167,11 @@ cc.Class({
         }
 
         if(this.node.isValid){
-            if(this.node.y<this.camera.y-this.camera.parent.height/2-200){
+            if(this.node.y<this.camera.y-this.camera.parent.height/2-10){
                 this.node.destroy()
             }
         }
-
+        // cc.log(this.rope)
         if((this.rope!=null)&& this.rope.isValid && (this.ropes.convertToNodeSpaceAR(this.node.convertToWorldSpaceAR(cc.v2(0,0))).y >this.rope.y)){
             // cc.log("sss"+this.ropes.convertToNodeSpaceAR(this.node.convertToWorldSpaceAR(cc.v2(0,0))).y)
             // cc.log("aaa"+this.rope.y)

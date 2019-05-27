@@ -20,19 +20,15 @@ cc.Class({
         label:null,
         diabolo:null,//空竹对象
         diaboloComponent:null,//空竹组件
-        camera:null,
-        cameraComponent:null,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         this.diabolo=cc.find("Canvas/diabolo")
-        this.camera=cc.find("Canvas/Main Camera")
         this.diaboloComponent=this.diabolo.getComponent("diabolo")//获取组件
         this.label=this.node.getComponent(cc.Label)//获取label组件
-        this.label.string="0m"
-        this.cameraComponent=this.camera.getComponent("camera")
+        this.label.string="0"
         sc.score=this.height
     },
 
@@ -45,8 +41,6 @@ cc.Class({
         if(!this.diaboloComponent.isFly&&this.once){//只进入一次
             this.once=false
             var h=this.diaboloComponent.rope.convertToWorldSpaceAR(cc.v2(0,0)).y-this.preH//高度差，这个绳子高度-之前绳子的高度
-            this.cameraComponent.heightDifference=h//设置camera里的高度差属性
-            // this.node.y+=h//label的高度也要对应改变
             this.height+=h//把高度差相加
             this.height=parseInt(this.height)
             this.preH=this.diaboloComponent.rope.convertToWorldSpaceAR(cc.v2(0,0)).y//这个绳子变为前一个绳子
@@ -58,10 +52,10 @@ cc.Class({
         var labelHeight=parseInt(this.label.string)
         if(labelHeight<this.height){
             labelHeight+=11
-            this.label.string=parseInt(labelHeight)+"m"
+            this.label.string=parseInt(labelHeight)
         }else if(labelHeight>this.height){
             labelHeight--
-            this.label.string=parseInt(labelHeight)+"m"
+            this.label.string=parseInt(labelHeight)
         }
         sc.score=this.height
     },

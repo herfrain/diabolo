@@ -8,20 +8,40 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
-var sc=require('score')
+
 cc.Class({
     extends: cc.Component,
 
     properties: {
+        label:null,
+        labelComponent:null,
+        pickUpAudio: {
+            default: null,
+            type: cc.AudioClip
+        },//获得道具音效
     },
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        this.label=cc.find("Canvas/Main Camera/label")
+        this.labelComponent=this.label.getComponent('label')
+        this.diabolo=cc.find("Canvas/diabolo")
+        this.diaboloComponent=this.diabolo.getComponent("diabolo")
+    },
+
+    //检测碰撞（刚进入时
+    onCollisionEnter: function (other, self) {
+        if(this.diaboloComponent.isFly){
+            cc.log("加分")
+            this.labelComponent.height+=2000
+            cc.audioEngine.playEffect(this.pickUpAudio, false);
+            this.node.destroy()
+        }
+    },
 
     start () {
-        cc.log(sc.score)
-        this.node.getComponent(cc.Label).string=sc.score
+
     },
 
     // update (dt) {},

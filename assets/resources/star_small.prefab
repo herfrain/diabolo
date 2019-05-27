@@ -132,6 +132,9 @@
     "diabolo": null,
     "diaboloComponent": null,
     "diaboloEffect": null,
+    "pickUpAudio": {
+      "__uuid__": "f980acb8-2b3f-47be-9119-fe8419b446f5"
+    },
     "_id": ""
   },
   {

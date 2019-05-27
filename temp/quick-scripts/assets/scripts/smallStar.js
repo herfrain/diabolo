@@ -38,18 +38,22 @@ cc.Class({
 
 
     onCollisionEnter: function onCollisionEnter(other, self) {
-        cc.log("变小");
-        this.diabolo.scale = 1;
-        this.diaboloComponent.rigidbody.gravityScale = 8;
-        this.diaboloEffect.small = true;
-        this.diaboloEffect.smallOrBigTime = 0;
-        cc.audioEngine.playEffect(this.pickUpAudio, false);
-        this.node.destroy();
+        if (this.diaboloComponent.isFly) {
+            cc.log("变小");
+            this.diabolo.scale = 1;
+            this.diaboloComponent.rigidbody.gravityScale = 8;
+            this.diaboloEffect.small = true;
+            // this.diaboloEffect.smallOrBigTime=5
+            cc.audioEngine.playEffect(this.pickUpAudio, false);
+            this.node.destroy();
+        }
     },
 
-    start: function start() {},
-    update: function update(dt) {}
-});
+    start: function start() {}
+}
+
+// update (dt) {},
+);
 
 cc._RF.pop();
         }

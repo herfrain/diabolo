@@ -39,18 +39,23 @@ cc.Class({
 
     //检测碰撞（刚进入时
     onCollisionEnter: function onCollisionEnter(other, self) {
-        cc.log("变大");
-        this.diabolo.scale = 2; //大小比例
-        this.diaboloComponent.rigidbody.gravityScale = 12; //重力
-        this.diaboloEffect.big = true; //效果赋值
-        this.diaboloEffect.smallOrBigTime = 0; //从0开始计时
-        cc.audioEngine.playEffect(this.pickUpAudio, false);
-        this.node.destroy();
+        if (this.diaboloComponent.isFly) {
+            cc.log("变大");
+            this.diabolo.scale = 2; //大小比例
+            this.diaboloComponent.rigidbody.gravityScale = 12; //重力
+            this.diaboloEffect.big = true; //效果赋值
+            // cc.log(this.diaboloEffect.smallOrBigTime)
+            // this.diaboloEffect.smallOrBigTime=5//从0开始计时
+            cc.audioEngine.playEffect(this.pickUpAudio, false);
+            this.node.destroy();
+        }
     },
 
-    start: function start() {},
-    update: function update(dt) {}
-});
+    start: function start() {}
+}
+
+// update (dt) {},
+);
 
 cc._RF.pop();
         }

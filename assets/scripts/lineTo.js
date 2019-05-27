@@ -41,12 +41,12 @@ cc.Class({
             this.graphics.lineTo(this.diaboloComponent.rightNode.x, this.diaboloComponent.rightNode.y);
             this.graphics.stroke()
         }
-        // else{//如果空竹没在绳子上，则只需画一次
-        //     this.graphics.clear()
-        //     this.graphics.moveTo(this.leftNode.x, this.leftNode.y);
-        //     this.graphics.lineTo(this.rightNode.x, this.rightNode.y);
-        //     this.graphics.close()
-        //     this.graphics.stroke() 
-        // }
+        else{//如果空竹没在绳子上，则只需画一次
+            this.graphics.clear()
+            this.graphics.moveTo(this.leftNode.x, this.leftNode.y);
+            this.graphics.lineTo(this.rightNode.x, this.rightNode.y);
+            this.graphics.close()
+            this.graphics.stroke() 
+        }
      },
 });

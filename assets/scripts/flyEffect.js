@@ -36,6 +36,7 @@ cc.Class({
     },
 
     onCollisionEnter: function (other, self) {
+        if(this.diaboloComponent.isFly){
         cc.log("飞行")
         this.diaboloEffect.jump=true
         // this.diaboloEffect.jumpTime=12
@@ -51,6 +52,7 @@ cc.Class({
         // cc.log(this.diaboloComponent.rigidbody.linearVelocity)
         cc.audioEngine.playEffect(this.flyAudio, false);
         this.node.destroy()
+        }
     },
 
     // callBack:function(){

@@ -43,7 +43,7 @@
                 "children": [
                   "scene"
                 ],
-                "height": 454.38751220703125,
+                "height": 454.125,
                 "type": "panel",
                 "width": 749.7125244140625
               },
@@ -53,7 +53,7 @@
                   "console",
                   "timeline"
                 ],
-                "height": 266.8125,
+                "height": 267.07501220703125,
                 "type": "panel",
                 "width": 749.7125244140625
               }
@@ -84,14 +84,15 @@
         "cocos-services",
         "scene"
       ]
-    }
+    },
+    "window-1558971272549": {}
   },
   "panels": {
     "builder": {
-      "x": 792,
-      "y": 36,
-      "width": 680,
-      "height": 748
+      "x": 644,
+      "y": 40,
+      "width": 684,
+      "height": 752
     },
     "sprite-editor": {
       "x": 404,
@@ -100,10 +101,10 @@
       "height": 544
     },
     "project-settings": {
-      "x": 406,
-      "y": 131,
+      "x": 404,
+      "y": 128,
       "width": 608,
-      "height": 572
+      "height": 576
     },
     "preferences": {
       "x": 468,

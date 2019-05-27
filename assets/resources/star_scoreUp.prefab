@@ -12,7 +12,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "star_big",
+    "_name": "star_scoreUp",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -42,8 +42,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 292,
-      "height": 268
+      "width": 60,
+      "height": 66
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -52,14 +52,14 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 151,
-      "y": 1,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.3,
-      "y": 0.3,
+      "x": 1,
+      "y": 1,
       "z": 1
     },
     "_rotationX": 0,
@@ -85,7 +85,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "8ea0cb17-4dae-41c2-bc5f-5e38d13f3f31"
+      "__uuid__": "4339a6af-b6ba-41d6-8083-4e766f301279"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -118,20 +118,19 @@
       "x": 0,
       "y": 0
     },
-    "_radius": 100,
+    "_radius": 20,
     "_id": ""
   },
   {
-    "__type__": "f6dae2emy5NwJf+XzhTLhEN",
+    "__type__": "3ffa8FIcWhECK9qUA0zzSG9",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "diabolo": null,
-    "diaboloComponent": null,
-    "diaboloEffect": null,
+    "label": null,
+    "labelComponent": null,
     "pickUpAudio": {
       "__uuid__": "f980acb8-2b3f-47be-9119-fe8419b446f5"
     },
@@ -145,7 +144,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "b5nD+9TpZADKzz2mSGVruA",
+    "fileId": "21BoQrQZxJPYFP5rq6Jf6G",
     "sync": false
   }
 ]

@@ -35,15 +35,16 @@ cc.Class({
     update (dt) {
         //变大和变小效果，不是相互独立的，只能同时存在一种
         if(this.big||this.small){
-            this.smallOrBigTime++
+            // this.smallOrBigTime++
             // cc.log(this.smallOrBigTime)
-            if(this.smallOrBigTime>=300){
+
+            if(this.smallOrBigTime<=0){//使用次数用完后，变回去
                 cc.log("变回原来大小")
                 this.diabolo.scale=1.5//变回原来大小
                 this.diaboloComponent.rigidbody.gravityScale=10
                 this.big=false
                 this.small=false
-                this.smallOrBigTime=0
+                this.smallOrBigTime=5//可用5次
             }
         }
         //跳跃监控
