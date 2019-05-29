@@ -72,7 +72,7 @@ cc.Class({
         var rightJoint = rightNode.getComponent(cc.DistanceJoint);
         leftJoint.connectedBody = this.diaboloComponent.rigidbody;
         rightJoint.connectedBody = this.diaboloComponent.rigidbody;
-        cc.log(firstrope);
+        // cc.log(firstrope)
     },
     start: function start() {
         this.ropes = this.node.children;
@@ -82,7 +82,7 @@ cc.Class({
         // if(Math.abs(this.camera.y)%200==0)
         // if(this.camera.y+this.camera.parent.height>this.ropes[this.ropes.length-1].y)
         if (this.camera.y + this.camera.parent.height > this.ropes[this.ropes.length - 1].y) {
-            cc.log("create rope");
+            // cc.log("create rope")
             var prerope = this.ropes[this.ropes.length - 1];
 
             for (var i = 0; i < 5; i++) {

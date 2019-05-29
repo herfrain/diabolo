@@ -45,7 +45,7 @@ cc.Class({
             this.height=parseInt(this.height)
             this.preH=this.diaboloComponent.rope.convertToWorldSpaceAR(cc.v2(0,0)).y//这个绳子变为前一个绳子
             // this.label.string=parseInt(this.height)+"m"//更改label的string显示
-            cc.log("height:"+this.height)
+            // cc.log("height:"+this.height)
         }else if(this.diaboloComponent.isFly&&!this.once){//飞行时，将once改回来
             this.once=true
         }

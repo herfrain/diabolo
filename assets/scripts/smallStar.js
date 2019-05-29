@@ -33,7 +33,7 @@ cc.Class({
 
     onCollisionEnter: function (other, self) {
         if(this.diaboloComponent.isFly){
-            cc.log("变小")
+            // cc.log("变小")
             this.diabolo.scale=1
             this.diaboloComponent.rigidbody.gravityScale=8
             this.diaboloEffect.small=true

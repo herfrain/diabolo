@@ -12,7 +12,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "star_scoreUp",
+    "_name": "lantern_scoreUp",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -42,8 +42,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 60,
-      "height": 66
+      "width": 128,
+      "height": 214
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -58,8 +58,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 0.6,
+      "y": 0.6,
       "z": 1
     },
     "_rotationX": 0,
@@ -85,7 +85,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "4339a6af-b6ba-41d6-8083-4e766f301279"
+      "__uuid__": "5ef4cadf-5a10-4f1d-afcf-876409048bf2"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -118,7 +118,7 @@
       "x": 0,
       "y": 0
     },
-    "_radius": 20,
+    "_radius": 50,
     "_id": ""
   },
   {

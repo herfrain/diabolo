@@ -50,7 +50,7 @@ cc.Class({
 
     //结束游戏
     gameOver: function () {
-        cc.log("game over")
+        // cc.log("game over")
         cc.audioEngine.playEffect(this.gameOverAudio, false);
         cc.director.loadScene('restart');//重新加载游戏场景
         // this.startButton.active=true

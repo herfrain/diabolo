@@ -13,6 +13,14 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        bestScore:{
+            default:null,
+            type:cc.Label
+        },
+        nowScore:{
+            default:null,
+            type:cc.Label
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -20,8 +28,19 @@ cc.Class({
     // onLoad () {},
 
     start () {
-        cc.log(sc.score)
-        this.node.getComponent(cc.Label).string=sc.score
+        // console.info(sc.score)
+        // cc.sys.localStorage.setItem("score", 0)
+        // console.info("bestScore:"+cc.sys.localStorage.getItem("score"))
+        var s = cc.sys.localStorage.getItem("score")
+        var n = ""
+        if(s==""||(parseInt(s) < parseInt(sc.score))){
+            // console.info("空")
+            cc.sys.localStorage.setItem("score", sc.score);
+            s=sc.score
+            n = " NEW !"
+        }
+        this.bestScore.string=s
+        this.nowScore.string=sc.score+n
     },
 
     // update (dt) {},

@@ -24,7 +24,9 @@ cc.Class({
         small: false,
         smallOrBigTime: 0,
         jump: false,
-        jumpTime: 0
+        jumpTime: 0,
+        ropesNode: null,
+        ropes: null
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -32,6 +34,8 @@ cc.Class({
     onLoad: function onLoad() {
         this.diabolo = cc.find("Canvas/diabolo");
         this.diaboloComponent = this.diabolo.getComponent("diabolo");
+        this.ropesNode = cc.find("Canvas/ropes");
+        this.ropes = this.ropesNode.children;
     },
     start: function start() {},
     update: function update(dt) {
@@ -44,7 +48,7 @@ cc.Class({
 
             if (this.smallOrBigTime <= 0) {
                 //使用次数用完后，变回去
-                cc.log("变回原来大小");
+                // cc.log("变回原来大小")
                 this.diabolo.scale = 1.5; //变回原来大小
                 this.diaboloComponent.rigidbody.gravityScale = 10;
                 this.big = false;
@@ -56,14 +60,21 @@ cc.Class({
         if (this.jump) {
             if (this.diaboloComponent.rigidbody.linearVelocity.y < 0) {
                 //如果开始往下落，则在下方自动生成一个绳子
-                cc.log("jump");
+                // cc.log("jump")
+                for (var i = 0; i < this.ropes.length; i++) {
+                    //将空竹以下的绳子都清空
+                    if (this.ropes[i].y < this.diabolo.y + 30) {
+                        var ropeComponent = this.ropes[i].getComponent('rope');
+                        ropeComponent.isDisappear = true;
+                    }
+                }
                 cc.loader.loadRes('rope2.prefab', function (err, resource) {
                     //rope2表示会消失的绳子
                     if (err) {
                         return;
                     }
                     var rope = cc.instantiate(resource); //克隆实例
-                    rope.y = _this.diabolo.y - 200; //下方添加绳子
+                    rope.y = _this.diabolo.y - 100; //下方添加绳子
                     rope.x = _this.diabolo.x;
                     _this.node.parent.addChild(rope); //添加绳子
                     _this.scheduleOnce(function () {

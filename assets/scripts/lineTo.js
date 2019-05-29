@@ -32,9 +32,9 @@ cc.Class({
     },
     // called every frame, uncomment this function to activate update callback
      update: function (dt) {
-         //获取空竹位置
-        var diaboloV2 = this.node.convertToNodeSpaceAR(this.diabolo.convertToWorldSpaceAR(cc.v2(0,0)))         
+        //获取空竹位置
         if(this.node == this.diaboloComponent.rope){
+            var diaboloV2 = this.node.convertToNodeSpaceAR(this.diabolo.convertToWorldSpaceAR(cc.v2(0,0)))
             this.graphics.clear();
             this.graphics.moveTo(this.diaboloComponent.leftNode.x, this.diaboloComponent.leftNode.y)
             this.graphics.lineTo(diaboloV2.x, diaboloV2.y);

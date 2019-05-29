@@ -33,7 +33,7 @@ cc.Class({
     //检测碰撞（刚进入时
     onCollisionEnter: function (other, self) {
         if(this.diaboloComponent.isFly){
-            cc.log("加分")
+            // cc.log("加分")
             this.labelComponent.height+=2000
             cc.audioEngine.playEffect(this.pickUpAudio, false);
             this.node.destroy()

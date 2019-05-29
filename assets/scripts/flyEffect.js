@@ -37,7 +37,7 @@ cc.Class({
 
     onCollisionEnter: function (other, self) {
         if(this.diaboloComponent.isFly){
-        cc.log("飞行")
+        // cc.log("飞行")
         this.diaboloEffect.jump=true
         // this.diaboloEffect.jumpTime=12
         // this.preH=this.diabolo.y

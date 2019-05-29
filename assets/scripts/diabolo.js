@@ -75,14 +75,14 @@ cc.Class({
     },
 
     touchBegin:function(event){
-        console.info("begin")
+        // console.info("begin")
        // 调用声音引擎播放声音
     //    cc.log(cc.audioEngine.getEffectsVolume)
        cc.audioEngine.play(this.pullAudio, false,2);
     },
 
     touchMove:function(event){
-        console.info("move")
+        // console.info("move")
         //如果空竹比绳子高，则不能往上拉动
     },
 
@@ -114,7 +114,7 @@ cc.Class({
     },
 
     touchEnd:function(event){
-        console.info("end")
+        // console.info("end")
         if(!this.isFly){
             //给个初速度向量，相当于射出去
             this.rigidbody.linearVelocity=this.calV2()

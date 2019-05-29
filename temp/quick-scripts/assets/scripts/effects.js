@@ -94,7 +94,7 @@ var effects = cc.Class({
             case 4:
                 return 'fly';
             case 5:
-                return 'star_scoreUp';
+                return 'lantern_scoreUp';
         }
     },
 
@@ -121,7 +121,7 @@ var effects = cc.Class({
             newNode.x = ropeX + random.getRndIntegerUp(-80, 80);
             newNode.y = ropeY + random.getRndIntegerUp(-200, 200);
             effectsNode.addChild(newNode);
-            cc.log("道具数量：" + effectsNode.children.length);
+            // cc.log("道具数量："+effectsNode.children.length)
         });
     },
 

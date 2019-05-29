@@ -26,6 +26,7 @@ cc.Class({
             default: null,
             type: cc.AudioClip
         },//落在绳子上音效
+        isDisappear:false,//是否逐渐消失
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -53,7 +54,7 @@ cc.Class({
 
     //绑定左右节点
     bandLRJoint:function(){
-        cc.log("bandLRJoint")
+        // cc.log("bandLRJoint")
         //连接
         this.leftJoint.connectedBody=this.diaboloComponent.rigidbody
         this.rightJoint.connectedBody=this.diaboloComponent.rigidbody
@@ -76,14 +77,14 @@ cc.Class({
         this.diaboloComponent.mouseJoint=this.diabolo.getComponent(cc.MouseJoint)
     },
 
-    onCollisionEnter:function(other,self){
-        cc.log('enter')
-    },
+    // onCollisionEnter:function(other,self){
+    //     cc.log('enter')
+    // },
 
     //如果检测到与绳子发生碰撞，则建立两边点的链接，并将绑定mousejoint，飞行状态设为false
     //结束碰撞时，如果空竹是往下落的，则添加绳子
     onCollisionExit: function (other, self) {
-        console.log('on collision exit');
+        // console.log('on collision exit');
         
 
         if(this.diaboloComponent.rigidbody.linearVelocity.y<0&&this.diaboloComponent.isFly){
@@ -112,23 +113,18 @@ cc.Class({
 
     },
 
-    update (dt) {
-        //如果空竹在上面，则开门
-        //空竹弹出后，开门
-        //其他情况，关门
-        //cc.log(this.diabolo.isFly)
-        //if(this.on)
-        // cc.log(this.node.isValid)
+    // disappear:function(){
+    //     this.node.opacity--
+    // },
 
-        // if(this.node.isValid){//如果还存在
-        //     if(this.node.y<this.diabolo.y&&this.physicsBoxCollider.enabled&&this.diaboloComponent.isFly){
-        //         //cc.log(1)
-        //         this.physicsBoxCollider.enabled=false
-        //     }
-        //     else if(!this.diaboloComponent.isFly&&!this.physicsBoxCollider.enabled){
-        //         this.physicsBoxCollider.enabled=true
-        //     }
-        // }
+    update (dt) {
+        if(this.isDisappear){
+            this.node.opacity-=35//透明度减少
+            if(this.node.opacity<=0){
+                this.node.destroy()
+            }
+        }
+
         
     },
 });
