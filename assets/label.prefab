@@ -17,7 +17,7 @@
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 2,
+    "_level": 3,
     "_components": [
       {
         "__id__": 2
@@ -70,7 +70,7 @@
     },
     "_skewX": 0,
     "_skewY": 0,
-    "groupIndex": 0,
+    "groupIndex": 1,
     "_id": ""
   },
   {
@@ -108,10 +108,13 @@
     "_enabled": true,
     "height": 0,
     "preH": 0,
+    "heightDifference": 0,
     "once": true,
     "label": null,
     "diabolo": null,
     "diaboloComponent": null,
+    "camera": null,
+    "cameraComponent": null,
     "_id": ""
   },
   {

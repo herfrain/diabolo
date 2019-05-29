@@ -16,10 +16,7 @@ cc.Class({
         isFly:false,//是否正在飞行中
         rigidbody:null,//刚体
         mouseJoint:null,
-        ropes:{
-            default:null,
-            type:cc.Node
-        },//关联rope的父节点，可以通过这个父节点访问子节点
+        ropes:null,//关联rope的父节点，可以通过这个父节点访问子节点
         rope:null,//空竹所在的绳子
         physicsBoxCollider:null,//物理墙
         leftNode:null,//左连接点
@@ -27,13 +24,21 @@ cc.Class({
         leftJoint:null,//左distanceJoint组件
         leftJoint:null,//右distanceJoint组件
         camera:null,
+        popupAudio: {
+            default: null,
+            type: cc.AudioClip
+        },//弹出音效
+        pullAudio: {
+            default: null,
+            type: cc.AudioClip
+        },//拉动音效
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         //注册Touch事件
-        // this.node.on(cc.Node.EventType.TOUCH_START,this.touchBegin,this);
+        this.node.on(cc.Node.EventType.TOUCH_START,this.touchBegin,this);
         this.node.on(cc.Node.EventType.TOUCH_MOVE,this.touchMove,this);
         this.node.on(cc.Node.EventType.TOUCH_END,this.touchEnd,this);//当手指在目标节点区域内离开屏幕时
         this.node.on(cc.Node.EventType.TOUCH_CANCEL,this.touchEnd,this);//当手指在目标节点区域外离开屏幕时
@@ -41,6 +46,7 @@ cc.Class({
         //绑定刚体
         this.rigidbody = this.node.getComponent(cc.RigidBody);
         //绑定左右连接点
+        this.ropes=cc.find("Canvas/ropes")
         var ropeList=this.ropes.children;
         this.rope=ropeList[0]
         this.leftNode=this.rope.getChildByName("left")
@@ -48,8 +54,7 @@ cc.Class({
         //绑定左右distanceJoint组件
         this.leftJoint=this.leftNode.getComponent(cc.DistanceJoint)
         this.rightJoint=this.rightNode.getComponent(cc.DistanceJoint)
-        // this.leftJoint.connectedBody=this.rigidbody
-        // this.rightJoint.connectedBody=this.rigidbody
+       
         //绑定mouseJoint
         this.mouseJoint=this.node.getComponent(cc.MouseJoint)
         //绑定物理碰撞
@@ -58,18 +63,22 @@ cc.Class({
         this.y=this.rope.y
         //
         this.camera=cc.find("Canvas/Main Camera")
-        cc.log(this.rope)
-        cc.log(this.physicsBoxCollider)
-        cc.log("scale:"+this.node.scale)
+        // cc.log(this.rope)
+        // cc.log(this.physicsBoxCollider)
+        // cc.log("scale:"+this.node.scale)
     },
 
     start () {
+        this.leftJoint.connectedBody=this.rigidbody
+        this.rightJoint.connectedBody=this.rigidbody
         this.physicsBoxCollider.enabled=true
     },
 
     touchBegin:function(event){
         console.info("begin")
-       
+       // 调用声音引擎播放声音
+    //    cc.log(cc.audioEngine.getEffectsVolume)
+       cc.audioEngine.play(this.pullAudio, false,2);
     },
 
     touchMove:function(event){
@@ -98,15 +107,14 @@ cc.Class({
         var f2=rightnode_wp.sub(diabolo_wp)
         var result_v2=f1.add(f2)
         result_v2=result_v2.scale(cc.v2(k,k))//乘一个系数，放大作用力
-        cc.log(f1)
-        cc.log(f2)
-        cc.log(result_v2)
+        // cc.log(f1)
+        // cc.log(f2)
+        // cc.log(result_v2)
         return result_v2
     },
 
     touchEnd:function(event){
         console.info("end")
-
         if(!this.isFly){
             //给个初速度向量，相当于射出去
             this.rigidbody.linearVelocity=this.calV2()
@@ -119,6 +127,8 @@ cc.Class({
             this.isFly=true
             //开门
             this.physicsBoxCollider.enabled=false
+            // 调用声音引擎播放声音
+            cc.audioEngine.play(this.popupAudio, false,1);
         }
         // this.bandMouseJoint()
         // cc.log(this.mouseJoint)
@@ -139,17 +149,33 @@ cc.Class({
 
     update (dt) {
         //如果正在飞行，则y等于节点的y
-        if(this.isFly){
+        if(this.isFly&&this.node.y>this.camera.y+this.camera.parent.height/2){
             this.y=this.node.y
-        }else{
-            this.y=this.rope.y
+        }
+        else if(!this.isFly){
+            // this.rope!=null&&
+            if(this.rope!=null&&this.rope.isValid){
+                this.y=this.rope.y
+            } else if(!this.rope.isValid){//如果所在的绳子消失
+                if(this.mouseJoint!=null){
+                    this.mouseJoint.destroy()//取消拉动
+                    this.mouseJoint=null
+                    //设置为飞行状态
+                    this.isFly=true
+                }
+            }
         }
 
         if(this.node.isValid){
-            if(this.node.y<this.camera.y-this.camera.parent.height/2){
+            if(this.node.y<this.camera.y-this.camera.parent.height/2-10){
                 this.node.destroy()
             }
         }
-        
+        // cc.log(this.rope)
+        if((this.rope!=null)&& this.rope.isValid && (this.ropes.convertToNodeSpaceAR(this.node.convertToWorldSpaceAR(cc.v2(0,0))).y >this.rope.y)){
+            // cc.log("sss"+this.ropes.convertToNodeSpaceAR(this.node.convertToWorldSpaceAR(cc.v2(0,0))).y)
+            // cc.log("aaa"+this.rope.y)
+            this.rope = null
+        }
     },
 });

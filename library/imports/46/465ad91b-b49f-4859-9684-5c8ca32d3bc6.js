@@ -4,6 +4,8 @@ cc._RF.push(module, '465adkbtJ9IWZaEXIyjLTvG', 'rope');
 
 "use strict";
 
+var _properties;
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 // Learn cc.Class:
@@ -19,15 +21,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 cc.Class({
     extends: cc.Component,
 
-    properties: _defineProperty({
+    properties: (_properties = {
         physicsBoxCollider: null, //物理碰撞
         diabolo: null, //空竹
         diaboloComponent: null,
+        diaboloEffect: null, //道具效果
         used: false, //是否使用过
         camera: null,
         leftNode: null, //左连接点
         rightNode: null, //右连接点
-        leftJoint: null }, "leftJoint", null),
+        leftJoint: null }, _defineProperty(_properties, "leftJoint", null), _defineProperty(_properties, "downToRopeAudio", {
+        default: null,
+        type: cc.AudioClip
+    }), _properties),
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -37,6 +43,7 @@ cc.Class({
         this.physicsBoxCollider = this.node.getComponent(cc.PhysicsBoxCollider);
         //
         this.diaboloComponent = this.diabolo.getComponent("diabolo");
+        this.diaboloEffect = this.diabolo.getComponent('diabolo_effect');
         this.camera = cc.find("Canvas/Main Camera");
 
         this.leftNode = this.node.getChildByName("left");
@@ -82,7 +89,18 @@ cc.Class({
     //结束碰撞时，如果空竹是往下落的，则添加绳子
     onCollisionExit: function onCollisionExit(other, self) {
         console.log('on collision exit');
+
         if (this.diaboloComponent.rigidbody.linearVelocity.y < 0 && this.diaboloComponent.isFly) {
+            //变大或变小后，需要跳跃两次未跳到过的绳子上才能解除
+            if (!this.used) {
+                // cc.log("使用过")
+                if (this.diaboloEffect.big || this.diaboloEffect.small) {
+                    this.diaboloEffect.smallOrBigTime--;
+                }
+                // cc.log(this.diaboloEffect.smallOrBigTime)
+                //设置已使用
+                this.used = true;
+            }
             //绑定左右节点
             this.bandLRJoint();
             //绑定mouseJoint
@@ -91,6 +109,8 @@ cc.Class({
             this.diaboloComponent.isFly = false; //固定在绳子上
             //关门
             this.physicsBoxCollider.enabled = true;
+            // 调用声音引擎播放声音
+            // cc.audioEngine.playEffect(this.downToRopeAudio, false);
         }
     },
 

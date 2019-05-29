@@ -4,6 +4,8 @@ cc._RF.push(module, '6a4d0yjitpCCJ++b/TO9xVO', 'game');
 
 "use strict";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // Learn cc.Class:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/class.html
 //  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/class.html
@@ -16,7 +18,7 @@ cc._RF.push(module, '6a4d0yjitpCCJ++b/TO9xVO', 'game');
 
 var effects = require("effects");
 
-cc.Class({
+cc.Class(_defineProperty({
     extends: cc.Component,
 
     properties: {
@@ -28,18 +30,22 @@ cc.Class({
             default: null,
             type: cc.Node
         },
-        effect: {
+        label: {
             default: null,
-            type: cc.Prefab
-            // effect:effects.effects,
-        } },
+            type: cc.Node
+        },
+        gameOverAudio: {
+            default: null,
+            type: cc.AudioClip
+        } //死亡音效
+        // effect:effects.effects,
+    },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad: function onLoad() {
         // this.enabled=false
-
-
+        cc.game.addPersistRootNode(this.label);
     },
 
 
@@ -52,6 +58,8 @@ cc.Class({
 
     //结束游戏
     gameOver: function gameOver() {
+        cc.log("game over");
+        cc.audioEngine.playEffect(this.gameOverAudio, false);
         cc.director.loadScene('restart'); //重新加载游戏场景
         // this.startButton.active=true
         // this.startButton.x=this.camera.x
@@ -83,6 +91,13 @@ cc.Class({
             return;
         }
     }
-});
+}, "update", function update(dt) {
+    if (!this.diabolo.isValid) {
+        //如果空竹消失，则游戏结束
+        // cc.log(this.diabolo.isValid)
+        this.gameOver();
+        return;
+    }
+}));
 
 cc._RF.pop();

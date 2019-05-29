@@ -2,16 +2,49 @@
   "assets-sort-type": "name",
   "collision-matrix": [
     [
+      false,
+      null,
       true
     ],
     [
+      false,
+      false
+    ],
+    [
+      true,
       false,
       false
     ]
   ],
   "design-resolution-height": 640,
   "design-resolution-width": 960,
-  "excluded-modules": [],
+  "excluded-modules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "AudioSource",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Native Socket"
+  ],
   "facebook": {
     "appID": "",
     "audience": {
@@ -26,9 +59,10 @@
   "fit-width": false,
   "group-list": [
     "default",
-    "ui"
+    "ui",
+    "diabolo"
   ],
-  "last-module-event-record-time": 1558163961776,
+  "last-module-event-record-time": 1558799103592,
   "simulator-orientation": false,
   "simulator-resolution": {
     "height": 640,

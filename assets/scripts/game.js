@@ -22,10 +22,14 @@ cc.Class({
             default:null,
             type:cc.Node
         },
-        effect:{
+        label:{
             default:null,
-            type:cc.Prefab
-        }
+            type:cc.Node
+        },
+        gameOverAudio: {
+            default: null,
+            type: cc.AudioClip
+        },//死亡音效
         // effect:effects.effects,
     },
 
@@ -33,7 +37,7 @@ cc.Class({
 
     onLoad () {
         // this.enabled=false
-
+        cc.game.addPersistRootNode(this.label)
         
     },
 
@@ -46,6 +50,8 @@ cc.Class({
 
     //结束游戏
     gameOver: function () {
+        cc.log("game over")
+        cc.audioEngine.playEffect(this.gameOverAudio, false);
         cc.director.loadScene('restart');//重新加载游戏场景
         // this.startButton.active=true
         // this.startButton.x=this.camera.x
@@ -79,4 +85,11 @@ cc.Class({
         
     },
 
+    update (dt) {
+        if(!this.diabolo.isValid){//如果空竹消失，则游戏结束
+            // cc.log(this.diabolo.isValid)
+            this.gameOver()
+            return
+        }
+    },
 });
