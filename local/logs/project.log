@@ -1,69 +1,86 @@
-2019-05-29T12:46:13.252Z - normal: Load ~/.CocosCreator/settings.json
-2019-05-29T12:46:14.529Z - normal: Initializing Asset Database
-2019-05-29T12:46:14.533Z - normal: checking language setting...
-2019-05-29T12:46:14.533Z - normal: Language: zh
-2019-05-29T12:46:16.831Z - success: preview server running at http://localhost:7456
-2019-05-29T12:46:16.834Z - success: protocol editor-framework registered
-2019-05-29T12:46:16.834Z - success: protocol app registered
-2019-05-29T12:46:16.834Z - success: protocol theme registered
-2019-05-29T12:46:16.834Z - success: protocol packages registered
-2019-05-29T12:46:16.835Z - success: protocol uuid registerred
-2019-05-29T12:46:16.835Z - success: protocol db registerred
-2019-05-29T12:46:16.835Z - success: protocol thumbnail registerred
-2019-05-29T12:46:16.835Z - success: protocol unpack registerred
-2019-05-29T12:46:16.835Z - success: protocol disable-commonjs registerred
-2019-05-29T12:46:17.017Z - normal: connected!
-2019-05-29T12:46:17.018Z - normal: Check project F:\CocosWorkPlace\diabolo
-2019-05-29T12:46:17.021Z - normal: Initializing project F:\CocosWorkPlace\diabolo
-2019-05-29T12:46:17.915Z - normal: Initializing Cocos2d
-2019-05-29T12:46:19.109Z - normal: Initializing engine extends
-2019-05-29T12:46:19.170Z - success: asset-db-debugger loaded
-2019-05-29T12:46:19.180Z - success: baidu-adapter loaded
-2019-05-29T12:46:19.199Z - success: code-editor loaded
-2019-05-29T12:46:19.204Z - success: color-picker loaded
-2019-05-29T12:46:19.526Z - success: fb-audience-network loaded
-2019-05-29T12:46:19.666Z - success: fb-live-stream loaded
-2019-05-29T12:46:19.694Z - success: google-play-instant loaded
-2019-05-29T12:46:19.733Z - success: huawei-runtime loaded
-2019-05-29T12:46:19.738Z - success: jsb-adapter loaded
-2019-05-29T12:46:19.823Z - success: oppo-runtime loaded
-2019-05-29T12:46:19.885Z - success: package-manager loaded
-2019-05-29T12:46:21.161Z - success: qqplay-adapter loaded
-2019-05-29T12:46:21.170Z - success: runtime-dev-tools loaded
-2019-05-29T12:46:21.218Z - success: sdkbox loaded
-2019-05-29T12:46:21.230Z - success: tester loaded
-2019-05-29T12:46:21.242Z - success: ui-grid loaded
-2019-05-29T12:46:21.252Z - success: ui-kit-preview-extra loaded
-2019-05-29T12:46:21.265Z - success: ui-kit-preview loaded
-2019-05-29T12:46:21.272Z - success: ui-kit loaded
-2019-05-29T12:46:21.280Z - success: ui-tree loaded
-2019-05-29T12:46:21.379Z - success: vivo-runtime loaded
-2019-05-29T12:46:21.380Z - success: weapp-adapter loaded
-2019-05-29T12:46:21.467Z - success: assets loaded
-2019-05-29T12:46:21.471Z - success: builder loaded
-2019-05-29T12:46:22.140Z - success: cocos-services loaded
-2019-05-29T12:46:22.148Z - success: console loaded
-2019-05-29T12:46:22.198Z - success: fb-instant-games loaded
-2019-05-29T12:46:22.200Z - success: google-instant-games loaded
-2019-05-29T12:46:22.207Z - success: hierarchy loaded
-2019-05-29T12:46:22.210Z - success: inspector loaded
-2019-05-29T12:46:22.212Z - success: keystore loaded
-2019-05-29T12:46:22.218Z - success: node-library loaded
-2019-05-29T12:46:22.221Z - success: package-asset loaded
-2019-05-29T12:46:22.223Z - success: preferences loaded
-2019-05-29T12:46:22.225Z - success: project-exporter loaded
-2019-05-29T12:46:22.227Z - success: project-importer loaded
-2019-05-29T12:46:22.230Z - success: project-settings loaded
-2019-05-29T12:46:22.235Z - success: scene loaded
-2019-05-29T12:46:22.237Z - success: simulator-debugger loaded
-2019-05-29T12:46:22.239Z - success: sprite-editor loaded
-2019-05-29T12:46:22.249Z - success: store loaded
-2019-05-29T12:46:22.260Z - success: timeline loaded
-2019-05-29T12:46:26.391Z - normal: Loading packages
-2019-05-29T12:46:26.400Z - normal: Watching packages
-2019-05-29T12:46:26.879Z - info: Cocos Services load base data!
-2019-05-29T12:46:27.796Z - normal: Run Application
-2019-05-29T12:47:05.421Z - normal: Start building with options : {
+2019-06-06T13:20:39.337Z - normal: Load ~/.CocosCreator/settings.json
+2019-06-06T13:20:40.960Z - normal: Initializing Asset Database
+2019-06-06T13:20:41.009Z - normal: checking language setting...
+2019-06-06T13:20:41.009Z - normal: Language: zh
+2019-06-06T13:20:46.581Z - success: preview server running at http://localhost:7456
+2019-06-06T13:20:46.584Z - success: protocol editor-framework registered
+2019-06-06T13:20:46.584Z - success: protocol app registered
+2019-06-06T13:20:46.584Z - success: protocol theme registered
+2019-06-06T13:20:46.584Z - success: protocol packages registered
+2019-06-06T13:20:46.585Z - success: protocol uuid registerred
+2019-06-06T13:20:46.585Z - success: protocol db registerred
+2019-06-06T13:20:46.585Z - success: protocol thumbnail registerred
+2019-06-06T13:20:46.585Z - success: protocol unpack registerred
+2019-06-06T13:20:46.585Z - success: protocol disable-commonjs registerred
+2019-06-06T13:20:46.753Z - normal: connected!
+2019-06-06T13:20:46.753Z - normal: Check project F:\CocosWorkPlace\diabolo
+2019-06-06T13:20:46.753Z - normal: Initializing project F:\CocosWorkPlace\diabolo
+2019-06-06T13:20:48.400Z - normal: Initializing Cocos2d
+2019-06-06T13:20:53.437Z - normal: Initializing engine extends
+2019-06-06T13:20:54.002Z - success: asset-db-debugger loaded
+2019-06-06T13:20:54.023Z - success: baidu-adapter loaded
+2019-06-06T13:20:54.061Z - success: code-editor loaded
+2019-06-06T13:20:54.072Z - success: color-picker loaded
+2019-06-06T13:20:54.408Z - success: fb-audience-network loaded
+2019-06-06T13:20:54.605Z - success: fb-live-stream loaded
+2019-06-06T13:20:54.648Z - success: google-play-instant loaded
+2019-06-06T13:20:54.729Z - success: huawei-runtime loaded
+2019-06-06T13:20:54.735Z - success: jsb-adapter loaded
+2019-06-06T13:20:54.801Z - success: oppo-runtime loaded
+2019-06-06T13:20:54.841Z - success: package-manager loaded
+2019-06-06T13:20:56.041Z - success: qqplay-adapter loaded
+2019-06-06T13:20:56.072Z - success: runtime-dev-tools loaded
+2019-06-06T13:20:56.134Z - success: sdkbox loaded
+2019-06-06T13:20:56.150Z - success: tester loaded
+2019-06-06T13:20:56.181Z - success: ui-grid loaded
+2019-06-06T13:20:56.181Z - success: ui-kit-preview-extra loaded
+2019-06-06T13:20:56.213Z - success: ui-kit-preview loaded
+2019-06-06T13:20:56.213Z - success: ui-kit loaded
+2019-06-06T13:20:56.228Z - success: ui-tree loaded
+2019-06-06T13:20:56.303Z - success: vivo-runtime loaded
+2019-06-06T13:20:56.309Z - success: weapp-adapter loaded
+2019-06-06T13:20:56.386Z - success: assets loaded
+2019-06-06T13:20:56.386Z - success: builder loaded
+2019-06-06T13:20:57.309Z - success: cocos-services loaded
+2019-06-06T13:20:57.345Z - success: console loaded
+2019-06-06T13:20:57.398Z - success: fb-instant-games loaded
+2019-06-06T13:20:57.400Z - success: google-instant-games loaded
+2019-06-06T13:20:57.407Z - success: hierarchy loaded
+2019-06-06T13:20:57.411Z - success: inspector loaded
+2019-06-06T13:20:57.414Z - success: keystore loaded
+2019-06-06T13:20:57.420Z - success: node-library loaded
+2019-06-06T13:20:57.431Z - success: package-asset loaded
+2019-06-06T13:20:57.433Z - success: preferences loaded
+2019-06-06T13:20:57.435Z - success: project-exporter loaded
+2019-06-06T13:20:57.438Z - success: project-importer loaded
+2019-06-06T13:20:57.441Z - success: project-settings loaded
+2019-06-06T13:20:57.451Z - success: scene loaded
+2019-06-06T13:20:57.453Z - success: simulator-debugger loaded
+2019-06-06T13:20:57.455Z - success: sprite-editor loaded
+2019-06-06T13:20:57.472Z - success: store loaded
+2019-06-06T13:20:57.478Z - success: timeline loaded
+2019-06-06T13:21:03.120Z - normal: Loading packages
+2019-06-06T13:21:03.131Z - normal: Watching packages
+2019-06-06T13:21:03.392Z - info: Cocos Services load base data!
+2019-06-06T13:21:04.867Z - normal: Run Application
+2019-06-06T13:48:20.679Z - warn: Failed to set property infoes<Button> to [object Object] at target, TypeError: Cannot read property 'off' of null
+    at cc_Button._unregisterTargetEvent (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\components\CCButton.js:372:27)
+    at cc_Button.notify (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\components\CCButton.js:189:34)
+    at cc_Button.val.set [as target] (F:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:44:28)
+    at n (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:1373)
+    at u (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:1991)
+    at y (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:3802)
+    at Object.b [as setPropertyByPath] (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\set-property-by-path.js:1:5028)
+    at Object.setProperty (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:8276)
+    at HTMLElement.set-property (F:\Cocos Creator\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:782)
+    at Object.e._dispatch (F:\Cocos Creator\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+2019-06-06T13:56:26.183Z - success: huawei-runtime unloaded
+2019-06-06T13:56:26.185Z - success: oppo-runtime unloaded
+2019-06-06T13:56:26.186Z - success: vivo-runtime unloaded
+2019-06-06T13:56:26.192Z - success: huawei-runtime loaded
+2019-06-06T13:56:26.192Z - success: oppo-runtime loaded
+2019-06-06T13:56:26.192Z - success: vivo-runtime loaded
+2019-06-06T13:56:54.469Z - normal: Start building with options : {
   "actualPlatform": "wechatgame",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -160,21 +177,31 @@
   "projectName": "diabolo",
   "debugBuildWorker": false
 }
-2019-05-29T12:47:05.426Z - normal: Building F:\CocosWorkPlace\diabolo
-2019-05-29T12:47:05.426Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
-2019-05-29T12:47:05.607Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
-2019-05-29T12:47:10.039Z - normal: Start building assets
-2019-05-29T12:47:10.039Z - normal: Start spawn build-worker
-2019-05-29T12:47:11.291Z - normal: Finish spawn build-worker
-2019-05-29T12:47:11.292Z - normal: Start init build-worker
-2019-05-29T12:47:16.162Z - normal: Finish init build-worker
-2019-05-29T12:47:16.162Z - normal: Start build-assets in worker
-2019-05-29T12:47:17.021Z - normal: Finish build-assets in worker
-2019-05-29T12:47:17.030Z - normal: Finish building assets
-2019-05-29T12:47:17.057Z - normal: Start building plugin scripts
-2019-05-29T12:47:17.070Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
-2019-05-29T12:47:19.025Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
-2019-05-29T13:00:07.145Z - normal: Start building with options : {
+2019-06-06T13:56:54.472Z - normal: Building F:\CocosWorkPlace\diabolo
+2019-06-06T13:56:54.472Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
+2019-06-06T13:56:55.228Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
+2019-06-06T13:57:00.297Z - normal: Start building assets
+2019-06-06T13:57:00.297Z - normal: Start spawn build-worker
+2019-06-06T13:57:01.527Z - normal: Finish spawn build-worker
+2019-06-06T13:57:01.527Z - normal: Start init build-worker
+2019-06-06T13:57:06.469Z - normal: Finish init build-worker
+2019-06-06T13:57:06.469Z - normal: Start build-assets in worker
+2019-06-06T13:57:07.522Z - normal: Finish build-assets in worker
+2019-06-06T13:57:07.531Z - normal: Finish building assets
+2019-06-06T13:57:07.564Z - normal: Start building plugin scripts
+2019-06-06T13:57:07.602Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
+2019-06-06T13:57:08.610Z - success: weapp-adapter unloaded
+2019-06-06T13:57:08.624Z - success: weapp-adapter loaded
+2019-06-06T13:57:09.000Z - success: weapp-adapter unloaded
+2019-06-06T13:57:09.073Z - success: weapp-adapter loaded
+2019-06-06T13:57:09.087Z - success: weapp-adapter unloaded
+2019-06-06T13:57:09.107Z - success: weapp-adapter loaded
+2019-06-06T13:57:09.305Z - success: weapp-adapter unloaded
+2019-06-06T13:57:09.306Z - success: weapp-adapter loaded
+2019-06-06T13:57:09.519Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T13:57:09.535Z - success: weapp-adapter unloaded
+2019-06-06T13:57:09.538Z - success: weapp-adapter loaded
+2019-06-06T14:11:22.764Z - normal: Start building with options : {
   "actualPlatform": "wechatgame",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -271,21 +298,21 @@
   "projectName": "diabolo",
   "debugBuildWorker": false
 }
-2019-05-29T13:00:07.148Z - normal: Building F:\CocosWorkPlace\diabolo
-2019-05-29T13:00:07.149Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
-2019-05-29T13:00:07.150Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
-2019-05-29T13:00:10.384Z - normal: Start building assets
-2019-05-29T13:00:10.384Z - normal: Start spawn build-worker
-2019-05-29T13:00:11.471Z - normal: Finish spawn build-worker
-2019-05-29T13:00:11.471Z - normal: Start init build-worker
-2019-05-29T13:00:15.781Z - normal: Finish init build-worker
-2019-05-29T13:00:15.781Z - normal: Start build-assets in worker
-2019-05-29T13:00:16.426Z - normal: Finish build-assets in worker
-2019-05-29T13:00:16.437Z - normal: Finish building assets
-2019-05-29T13:00:16.464Z - normal: Start building plugin scripts
-2019-05-29T13:00:16.480Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
-2019-05-29T13:00:17.900Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
-2019-05-29T13:04:05.190Z - normal: Start building with options : {
+2019-06-06T14:11:22.768Z - normal: Building F:\CocosWorkPlace\diabolo
+2019-06-06T14:11:22.768Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
+2019-06-06T14:11:22.770Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
+2019-06-06T14:11:26.495Z - normal: Start building assets
+2019-06-06T14:11:26.495Z - normal: Start spawn build-worker
+2019-06-06T14:11:27.668Z - normal: Finish spawn build-worker
+2019-06-06T14:11:27.668Z - normal: Start init build-worker
+2019-06-06T14:11:32.296Z - normal: Finish init build-worker
+2019-06-06T14:11:32.296Z - normal: Start build-assets in worker
+2019-06-06T14:11:33.207Z - normal: Finish build-assets in worker
+2019-06-06T14:11:33.217Z - normal: Finish building assets
+2019-06-06T14:11:33.249Z - normal: Start building plugin scripts
+2019-06-06T14:11:33.256Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
+2019-06-06T14:11:34.706Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T14:12:44.524Z - normal: Start building with options : {
   "actualPlatform": "wechatgame",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -382,33 +409,21 @@
   "projectName": "diabolo",
   "debugBuildWorker": false
 }
-2019-05-29T13:04:05.194Z - normal: Building F:\CocosWorkPlace\diabolo
-2019-05-29T13:04:05.194Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
-2019-05-29T13:04:05.196Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
-2019-05-29T13:04:08.796Z - normal: Start building assets
-2019-05-29T13:04:08.796Z - normal: Start spawn build-worker
-2019-05-29T13:04:09.808Z - normal: Finish spawn build-worker
-2019-05-29T13:04:09.808Z - normal: Start init build-worker
-2019-05-29T13:04:14.082Z - normal: Finish init build-worker
-2019-05-29T13:04:14.083Z - normal: Start build-assets in worker
-2019-05-29T13:04:14.758Z - normal: Finish build-assets in worker
-2019-05-29T13:04:14.771Z - normal: Finish building assets
-2019-05-29T13:04:14.797Z - normal: Start building plugin scripts
-2019-05-29T13:04:14.806Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
-2019-05-29T13:04:16.180Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
-2019-05-29T13:10:02.628Z - success: huawei-runtime unloaded
-2019-05-29T13:10:02.630Z - success: oppo-runtime unloaded
-2019-05-29T13:10:02.631Z - success: vivo-runtime unloaded
-2019-05-29T13:10:02.667Z - success: huawei-runtime loaded
-2019-05-29T13:10:02.668Z - success: oppo-runtime loaded
-2019-05-29T13:10:02.668Z - success: vivo-runtime loaded
-2019-05-29T13:10:02.692Z - success: huawei-runtime unloaded
-2019-05-29T13:10:02.693Z - success: oppo-runtime unloaded
-2019-05-29T13:10:02.693Z - success: vivo-runtime unloaded
-2019-05-29T13:10:02.697Z - success: huawei-runtime loaded
-2019-05-29T13:10:02.697Z - success: oppo-runtime loaded
-2019-05-29T13:10:02.698Z - success: vivo-runtime loaded
-2019-05-29T13:10:05.205Z - normal: Start building with options : {
+2019-06-06T14:12:44.528Z - normal: Building F:\CocosWorkPlace\diabolo
+2019-06-06T14:12:44.528Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
+2019-06-06T14:12:44.530Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
+2019-06-06T14:12:48.434Z - normal: Start building assets
+2019-06-06T14:12:48.434Z - normal: Start spawn build-worker
+2019-06-06T14:12:49.503Z - normal: Finish spawn build-worker
+2019-06-06T14:12:49.503Z - normal: Start init build-worker
+2019-06-06T14:12:54.249Z - normal: Finish init build-worker
+2019-06-06T14:12:54.249Z - normal: Start build-assets in worker
+2019-06-06T14:12:55.237Z - normal: Finish build-assets in worker
+2019-06-06T14:12:55.250Z - normal: Finish building assets
+2019-06-06T14:12:55.286Z - normal: Start building plugin scripts
+2019-06-06T14:12:55.291Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
+2019-06-06T14:12:57.023Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T14:38:29.584Z - normal: Start building with options : {
   "actualPlatform": "wechatgame",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -505,17 +520,706 @@
   "projectName": "diabolo",
   "debugBuildWorker": false
 }
-2019-05-29T13:10:05.208Z - normal: Building F:\CocosWorkPlace\diabolo
-2019-05-29T13:10:05.208Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
-2019-05-29T13:10:05.209Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
-2019-05-29T13:10:08.540Z - normal: Start building assets
-2019-05-29T13:10:08.540Z - normal: Start spawn build-worker
-2019-05-29T13:10:09.497Z - normal: Finish spawn build-worker
-2019-05-29T13:10:09.498Z - normal: Start init build-worker
-2019-05-29T13:10:13.751Z - normal: Finish init build-worker
-2019-05-29T13:10:13.751Z - normal: Start build-assets in worker
-2019-05-29T13:10:14.374Z - normal: Finish build-assets in worker
-2019-05-29T13:10:14.386Z - normal: Finish building assets
-2019-05-29T13:10:14.410Z - normal: Start building plugin scripts
-2019-05-29T13:10:14.421Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
-2019-05-29T13:10:15.708Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T14:38:29.588Z - normal: Building F:\CocosWorkPlace\diabolo
+2019-06-06T14:38:29.588Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
+2019-06-06T14:38:29.589Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
+2019-06-06T14:38:35.517Z - normal: Start building assets
+2019-06-06T14:38:35.517Z - normal: Start spawn build-worker
+2019-06-06T14:38:36.573Z - normal: Finish spawn build-worker
+2019-06-06T14:38:36.573Z - normal: Start init build-worker
+2019-06-06T14:38:41.276Z - normal: Finish init build-worker
+2019-06-06T14:38:41.276Z - normal: Start build-assets in worker
+2019-06-06T14:38:42.180Z - normal: Finish build-assets in worker
+2019-06-06T14:38:42.191Z - normal: Finish building assets
+2019-06-06T14:38:42.232Z - normal: Start building plugin scripts
+2019-06-06T14:38:42.244Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
+2019-06-06T14:38:42.722Z - success: weapp-adapter unloaded
+2019-06-06T14:38:42.751Z - success: weapp-adapter loaded
+2019-06-06T14:38:44.175Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T14:40:33.388Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "F:\\CocosWorkPlace\\diabolo\\build",
+  "debug": false,
+  "dest": "F:\\CocosWorkPlace\\diabolo\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "AudioSource",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Native Socket"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": true,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.diabolo",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "daf032a1-199a-4b40-93ed-9960f7c89f93",
+    "a4a70947-abc8-40de-a823-c54830cd3481"
+  ],
+  "sourceMaps": false,
+  "startScene": "daf032a1-199a-4b40-93ed-9960f7c89f93",
+  "template": "link",
+  "title": "diabolo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx59c1d2979ae576ff",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "ba22af17-d17e-40",
+  "zipCompressJs": true,
+  "project": "F:\\CocosWorkPlace\\diabolo",
+  "projectName": "diabolo",
+  "debugBuildWorker": false
+}
+2019-06-06T14:40:33.392Z - normal: Building F:\CocosWorkPlace\diabolo
+2019-06-06T14:40:33.392Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
+2019-06-06T14:40:33.394Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
+2019-06-06T14:40:37.183Z - normal: Start building assets
+2019-06-06T14:40:37.183Z - normal: Start spawn build-worker
+2019-06-06T14:40:38.251Z - normal: Finish spawn build-worker
+2019-06-06T14:40:38.251Z - normal: Start init build-worker
+2019-06-06T14:40:42.913Z - normal: Finish init build-worker
+2019-06-06T14:40:42.913Z - normal: Start build-assets in worker
+2019-06-06T14:40:43.605Z - normal: Finish build-assets in worker
+2019-06-06T14:40:43.616Z - normal: Finish building assets
+2019-06-06T14:40:43.649Z - normal: Start building plugin scripts
+2019-06-06T14:40:43.656Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
+2019-06-06T14:40:44.998Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T14:42:48.632Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "F:\\CocosWorkPlace\\diabolo\\build",
+  "debug": false,
+  "dest": "F:\\CocosWorkPlace\\diabolo\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "AudioSource",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Native Socket"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": true,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.diabolo",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "daf032a1-199a-4b40-93ed-9960f7c89f93",
+    "a4a70947-abc8-40de-a823-c54830cd3481"
+  ],
+  "sourceMaps": false,
+  "startScene": "daf032a1-199a-4b40-93ed-9960f7c89f93",
+  "template": "link",
+  "title": "diabolo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx59c1d2979ae576ff",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "ba22af17-d17e-40",
+  "zipCompressJs": true,
+  "project": "F:\\CocosWorkPlace\\diabolo",
+  "projectName": "diabolo",
+  "debugBuildWorker": false
+}
+2019-06-06T14:42:48.636Z - normal: Building F:\CocosWorkPlace\diabolo
+2019-06-06T14:42:48.637Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
+2019-06-06T14:42:48.638Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
+2019-06-06T14:42:52.299Z - normal: Start building assets
+2019-06-06T14:42:52.299Z - normal: Start spawn build-worker
+2019-06-06T14:42:53.582Z - normal: Finish spawn build-worker
+2019-06-06T14:42:53.582Z - normal: Start init build-worker
+2019-06-06T14:42:58.679Z - normal: Finish init build-worker
+2019-06-06T14:42:58.679Z - normal: Start build-assets in worker
+2019-06-06T14:42:59.370Z - normal: Finish build-assets in worker
+2019-06-06T14:42:59.380Z - normal: Finish building assets
+2019-06-06T14:42:59.409Z - normal: Start building plugin scripts
+2019-06-06T14:42:59.417Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
+2019-06-06T14:43:00.944Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T14:45:15.665Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "F:\\CocosWorkPlace\\diabolo\\build",
+  "debug": false,
+  "dest": "F:\\CocosWorkPlace\\diabolo\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "AudioSource",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Native Socket"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": true,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.diabolo",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "daf032a1-199a-4b40-93ed-9960f7c89f93",
+    "a4a70947-abc8-40de-a823-c54830cd3481"
+  ],
+  "sourceMaps": false,
+  "startScene": "daf032a1-199a-4b40-93ed-9960f7c89f93",
+  "template": "link",
+  "title": "diabolo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx59c1d2979ae576ff",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "ba22af17-d17e-40",
+  "zipCompressJs": true,
+  "project": "F:\\CocosWorkPlace\\diabolo",
+  "projectName": "diabolo",
+  "debugBuildWorker": false
+}
+2019-06-06T14:45:15.669Z - normal: Building F:\CocosWorkPlace\diabolo
+2019-06-06T14:45:15.669Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
+2019-06-06T14:45:15.670Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
+2019-06-06T14:45:19.424Z - normal: Start building assets
+2019-06-06T14:45:19.424Z - normal: Start spawn build-worker
+2019-06-06T14:45:20.782Z - normal: Finish spawn build-worker
+2019-06-06T14:45:20.782Z - normal: Start init build-worker
+2019-06-06T14:45:25.830Z - normal: Finish init build-worker
+2019-06-06T14:45:25.830Z - normal: Start build-assets in worker
+2019-06-06T14:45:26.521Z - normal: Finish build-assets in worker
+2019-06-06T14:45:26.532Z - normal: Finish building assets
+2019-06-06T14:45:26.561Z - normal: Start building plugin scripts
+2019-06-06T14:45:26.567Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
+2019-06-06T14:45:27.906Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T15:01:05.131Z - success: huawei-runtime unloaded
+2019-06-06T15:01:05.151Z - success: oppo-runtime unloaded
+2019-06-06T15:01:05.168Z - success: vivo-runtime unloaded
+2019-06-06T15:01:05.203Z - success: huawei-runtime loaded
+2019-06-06T15:01:05.204Z - success: oppo-runtime loaded
+2019-06-06T15:01:05.204Z - success: vivo-runtime loaded
+2019-06-06T15:01:05.260Z - success: huawei-runtime unloaded
+2019-06-06T15:01:05.261Z - success: oppo-runtime unloaded
+2019-06-06T15:01:05.262Z - success: vivo-runtime unloaded
+2019-06-06T15:01:05.266Z - success: huawei-runtime loaded
+2019-06-06T15:01:05.267Z - success: oppo-runtime loaded
+2019-06-06T15:01:05.267Z - success: vivo-runtime loaded
+2019-06-06T15:01:12.599Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "F:\\CocosWorkPlace\\diabolo\\build",
+  "debug": false,
+  "dest": "F:\\CocosWorkPlace\\diabolo\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "AudioSource",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Native Socket"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": true,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.diabolo",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "daf032a1-199a-4b40-93ed-9960f7c89f93",
+    "a4a70947-abc8-40de-a823-c54830cd3481"
+  ],
+  "sourceMaps": false,
+  "startScene": "daf032a1-199a-4b40-93ed-9960f7c89f93",
+  "template": "link",
+  "title": "diabolo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx59c1d2979ae576ff",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "ba22af17-d17e-40",
+  "zipCompressJs": true,
+  "project": "F:\\CocosWorkPlace\\diabolo",
+  "projectName": "diabolo",
+  "debugBuildWorker": false
+}
+2019-06-06T15:01:12.603Z - normal: Building F:\CocosWorkPlace\diabolo
+2019-06-06T15:01:12.603Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
+2019-06-06T15:01:12.605Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
+2019-06-06T15:01:17.475Z - normal: Start building assets
+2019-06-06T15:01:17.476Z - normal: Start spawn build-worker
+2019-06-06T15:01:18.841Z - normal: Finish spawn build-worker
+2019-06-06T15:01:18.841Z - normal: Start init build-worker
+2019-06-06T15:01:24.768Z - normal: Finish init build-worker
+2019-06-06T15:01:24.768Z - normal: Start build-assets in worker
+2019-06-06T15:01:26.602Z - normal: Finish build-assets in worker
+2019-06-06T15:01:26.616Z - normal: Finish building assets
+2019-06-06T15:01:26.675Z - normal: Start building plugin scripts
+2019-06-06T15:01:26.721Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
+2019-06-06T15:01:27.595Z - success: weapp-adapter unloaded
+2019-06-06T15:01:27.624Z - success: weapp-adapter loaded
+2019-06-06T15:01:27.711Z - success: weapp-adapter unloaded
+2019-06-06T15:01:27.713Z - success: weapp-adapter loaded
+2019-06-06T15:01:28.166Z - success: weapp-adapter unloaded
+2019-06-06T15:01:28.179Z - success: weapp-adapter loaded
+2019-06-06T15:01:28.632Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T15:01:28.642Z - success: weapp-adapter unloaded
+2019-06-06T15:01:28.644Z - success: weapp-adapter loaded
+2019-06-06T15:03:18.624Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "F:\\CocosWorkPlace\\diabolo\\build",
+  "debug": false,
+  "dest": "F:\\CocosWorkPlace\\diabolo\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "AudioSource",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Native Socket"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": true,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.diabolo",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "daf032a1-199a-4b40-93ed-9960f7c89f93",
+    "a4a70947-abc8-40de-a823-c54830cd3481"
+  ],
+  "sourceMaps": false,
+  "startScene": "daf032a1-199a-4b40-93ed-9960f7c89f93",
+  "template": "link",
+  "title": "diabolo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx59c1d2979ae576ff",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "ba22af17-d17e-40",
+  "zipCompressJs": true,
+  "project": "F:\\CocosWorkPlace\\diabolo",
+  "projectName": "diabolo",
+  "debugBuildWorker": false
+}
+2019-06-06T15:03:18.628Z - normal: Building F:\CocosWorkPlace\diabolo
+2019-06-06T15:03:18.628Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
+2019-06-06T15:03:18.629Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
+2019-06-06T15:03:22.982Z - normal: Start building assets
+2019-06-06T15:03:22.982Z - normal: Start spawn build-worker
+2019-06-06T15:03:24.250Z - normal: Finish spawn build-worker
+2019-06-06T15:03:24.251Z - normal: Start init build-worker
+2019-06-06T15:03:29.485Z - normal: Finish init build-worker
+2019-06-06T15:03:29.485Z - normal: Start build-assets in worker
+2019-06-06T15:03:30.489Z - normal: Finish build-assets in worker
+2019-06-06T15:03:30.500Z - normal: Finish building assets
+2019-06-06T15:03:30.532Z - normal: Start building plugin scripts
+2019-06-06T15:03:30.540Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
+2019-06-06T15:03:32.190Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T15:06:01.490Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "F:\\CocosWorkPlace\\diabolo\\build",
+  "debug": false,
+  "dest": "F:\\CocosWorkPlace\\diabolo\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "AudioSource",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Native Socket"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": true,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.diabolo",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "daf032a1-199a-4b40-93ed-9960f7c89f93",
+    "a4a70947-abc8-40de-a823-c54830cd3481"
+  ],
+  "sourceMaps": false,
+  "startScene": "daf032a1-199a-4b40-93ed-9960f7c89f93",
+  "template": "link",
+  "title": "diabolo",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx59c1d2979ae576ff",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "ba22af17-d17e-40",
+  "zipCompressJs": true,
+  "project": "F:\\CocosWorkPlace\\diabolo",
+  "projectName": "diabolo",
+  "debugBuildWorker": false
+}
+2019-06-06T15:06:01.494Z - normal: Building F:\CocosWorkPlace\diabolo
+2019-06-06T15:06:01.494Z - normal: Destination F:\CocosWorkPlace\diabolo\build\wechatgame
+2019-06-06T15:06:01.496Z - normal: Delete F:\CocosWorkPlace\diabolo\build\wechatgame\subpackages/**/*,F:\CocosWorkPlace\diabolo\build\wechatgame\**\*
+2019-06-06T15:06:05.858Z - normal: Start building assets
+2019-06-06T15:06:05.858Z - normal: Start spawn build-worker
+2019-06-06T15:06:06.960Z - normal: Finish spawn build-worker
+2019-06-06T15:06:06.961Z - normal: Start init build-worker
+2019-06-06T15:06:11.983Z - normal: Finish init build-worker
+2019-06-06T15:06:11.983Z - normal: Start build-assets in worker
+2019-06-06T15:06:13.150Z - normal: Finish build-assets in worker
+2019-06-06T15:06:13.168Z - normal: Finish building assets
+2019-06-06T15:06:13.220Z - normal: Start building plugin scripts
+2019-06-06T15:06:13.229Z - normal: Generating main.js from F:\Cocos Creator\CocosCreator\resources\static\build-templates\shares\main.js
+2019-06-06T15:06:15.245Z - normal: Built to "F:\CocosWorkPlace\diabolo\build\wechatgame" successfully
+2019-06-06T15:09:21.200Z - info: shutdown preview server

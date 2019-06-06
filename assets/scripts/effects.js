@@ -9,21 +9,8 @@
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
 var random=require('random')
-var ItemType = 
-{
-    //没有东西
-    IT_None:0,
-    //变大
-    IT_BigStar:1,
-    //变小
-    IT_SmallStar:2,
-    //画辅助线
-    IT_Pen:3,
-    //跳高
-    IT_Jump:4,
-};
 
-var effects = cc.Class({
+cc.Class({
     extends: cc.Component,
 
     properties: {
@@ -31,29 +18,6 @@ var effects = cc.Class({
         camera:null,
         ropes:null,
         ropesNode:null,
-
-        //拾取距离
-        pickRadius:0,
-
-       //物品Prefab列表
-       ItemPrefabList:
-       {
-           default: [],  
-           type: [cc.Prefab],
-       },
-
-       //概率列表
-       ItemRateList:
-       {
-           default:[],
-           type: [cc.Integer],                    
-       },
-
-       //随机的基数
-       _RandBaseNum : 100,
-       _RandRateList: [],
-       //物品池
-       _ItemPoolList: [],
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -112,7 +76,7 @@ var effects = cc.Class({
         //加载道具
         cc.loader.loadRes(item, function(err, prefab) {
             var newNode = cc.instantiate(prefab);
-            console.log("生成道具");
+            // console.log("生成道具");
             // newNode.parent = effectsNode;//不知道为何，有时会是null？？？
             // cc.log(ropeX)
             newNode.x = ropeX+random.getRndIntegerUp(-80,80);

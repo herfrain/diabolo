@@ -18,35 +18,16 @@ cc.Class({
 
     properties: {
         ropes:null,
-        diabolo:null,
-        diaboloComponent:null,
         camera:{
-            default:null,
-            type:cc.Node
-        },
-        effectsNode:{
             default:null,
             type:cc.Node
         },
     },
 
-    // // LIFE-CYCLE CALLBACKS:
-    // getRndInteger:function(min, max) {
-    //     if(Math.random()<0.5){//左边
-    //         return Math.floor(Math.random() * (-this.m - min + 1) ) + min;
-    //     }else{
-    //         return Math.floor(Math.random() * (max - this.m + 1) ) + this.m;
-    //     }
-    // },
-
-    // getRndIntegerUp:function(min, max) {
-    //     return Math.floor(Math.random() * (max - min + 1) ) + min;
-    // },
-
     onLoad () {
         // this.enabled=false
-        this.diabolo=cc.find("Canvas/diabolo")
-        this.diaboloComponent=this.diabolo.getComponent("diabolo")
+        var diabolo=cc.find("Canvas/diabolo")
+        var diaboloComponent=diabolo.getComponent("diabolo")
         var ropeList=this.node.children
         var firstrope=ropeList[0]
         var prerope=firstrope
@@ -64,8 +45,8 @@ cc.Class({
         //绑定左右distanceJoint组件
         var leftJoint=leftNode.getComponent(cc.DistanceJoint)
         var rightJoint=rightNode.getComponent(cc.DistanceJoint)
-        leftJoint.connectedBody=this.diaboloComponent.rigidbody
-        rightJoint.connectedBody=this.diaboloComponent.rigidbody
+        leftJoint.connectedBody=diaboloComponent.rigidbody
+        rightJoint.connectedBody=diaboloComponent.rigidbody
         // cc.log(firstrope)
     },
 
@@ -96,15 +77,6 @@ cc.Class({
                 prerope=nextrope
                 this.node.addChild(nextrope)
             }
-            // //加载prefab预制资源
-            // cc.loader.loadRes('rope.prefab', (err, resource)=>{
-            //     if(err){ return; }
-            //     // var rope=cc.instantiate(resource)//克隆实例
-            //     // rope.y=this.camera.y+this.camera.parent.height/2+random.getRndIntegerUp(0,50)//从摄像机顶部开始
-            //     // rope.x=random.getRndIntegerUp(-this.camera.parent.width/2+100,this.camera.parent.width/2-100)
-            //     // this.node.addChild(rope)//添加绳子
-                
-            // });
         }
         // cc.log(this.ropes.length)
         for(var i=0;i<this.ropes.length;i++){

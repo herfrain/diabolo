@@ -17,15 +17,14 @@ cc.Class({
         diaboloComponent:null,
         diaboloEffect:null,//道具效果
         used:false,//是否使用过
-        camera:null,
         leftNode:null,//左连接点
         rightNode:null,//右连接点
         leftJoint:null,//左distanceJoint组件
         leftJoint:null,//右distanceJoint组件
-        downToRopeAudio: {
-            default: null,
-            type: cc.AudioClip
-        },//落在绳子上音效
+        // downToRopeAudio: {
+        //     default: null,
+        //     type: cc.AudioClip
+        // },//落在绳子上音效
         isDisappear:false,//是否逐渐消失
     },
 
@@ -38,7 +37,6 @@ cc.Class({
         //
         this.diaboloComponent=this.diabolo.getComponent("diabolo")
         this.diaboloEffect=this.diabolo.getComponent('diabolo_effect')
-        this.camera=cc.find("Canvas/Main Camera")
 
         this.leftNode=this.node.getChildByName("left")
         this.rightNode=this.node.getChildByName("right")

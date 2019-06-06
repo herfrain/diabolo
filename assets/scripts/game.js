@@ -30,66 +30,53 @@ cc.Class({
             default: null,
             type: cc.AudioClip
         },//死亡音效
-        // effect:effects.effects,
+        infoes:{
+            default: null,
+            type: cc.Node
+        },//道具图
+        once:true,//控制只加载一次restart场景
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         // this.enabled=false
-        cc.game.addPersistRootNode(this.label)
-        
+        // cc.game.addPersistRootNode(this.label)
+        this.infoes.active=false
+        var firstGame=cc.sys.localStorage.getItem("firstGame")
+        // console.info(firstGame)//微信小程序上显示是空
+        // console.info(firstGame=="")
+        // console.info(firstGame==null)
+        if(firstGame==""||firstGame==null){//如果是第一次玩
+            cc.sys.localStorage.setItem("firstGame", "false");
+            this.infoes.active=true//显示道具图
+            // console.info("showInfo")
+        }
     },
 
-    // //开始游戏
-    // gameStart:function(){
-    //     this.enabled=true
-    //     this.camera.enabled=true
-    //     this.startButton.active=false
-    // },
+    //隐藏道具图
+    hideInfo:function(){
+        this.infoes.active=false
+        cc.log("hide")
+    },
 
     //结束游戏
     gameOver: function () {
         // cc.log("game over")
         cc.audioEngine.playEffect(this.gameOverAudio, false);
         cc.director.loadScene('restart');//重新加载游戏场景
-        // this.startButton.active=true
-        // this.startButton.x=this.camera.x
     },
 
     start () {
-        // console.log("开始计时");
-        // this.schedule(function() {
-        //     console.log("进入计时函数");
-        //     var randNum = effects.getRandomNum();
-            
-        //     var item = effects.getItem(randNum);
-        //     cc.loader.loadRes(item, function(err, prefab) {
-        //         var newNode = cc.instantiate(prefab);
-        //         console.log("生成道具");
-        //         newNode.parent = cc.director.getScene();
-        //         newNode.x = Math.random()*700;
-        //         newNode.y = Math.random()*700;
-        //         // cc.director.getScene().addChild(newNode);
-
-        //     });
-        // }, (Math.random()*30)+30 );
     },
 
     update (dt) {
-        if(!this.diabolo.isValid){//如果空竹消失，则游戏结束
+        if(!this.diabolo.isValid&&this.once){//如果空竹消失，则游戏结束
             // cc.log(this.diabolo.isValid)
             this.gameOver()
-            return
+            this.once=false
+            // this.node.destroy()
         } 
         
-    },
-
-    update (dt) {
-        if(!this.diabolo.isValid){//如果空竹消失，则游戏结束
-            // cc.log(this.diabolo.isValid)
-            this.gameOver()
-            return
-        }
     },
 });

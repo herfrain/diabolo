@@ -16,11 +16,11 @@ cc.Class({
         bestScore:{
             default:null,
             type:cc.Label
-        },
+        },//最好记录
         nowScore:{
             default:null,
             type:cc.Label
-        },
+        },//本次记录
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -33,7 +33,7 @@ cc.Class({
         // console.info("bestScore:"+cc.sys.localStorage.getItem("score"))
         var s = cc.sys.localStorage.getItem("score")
         var n = ""
-        if(s==""||(parseInt(s) < parseInt(sc.score))){
+        if(s==""||s==null||(parseInt(s) < parseInt(sc.score))){
             // console.info("空")
             cc.sys.localStorage.setItem("score", sc.score);
             s=sc.score

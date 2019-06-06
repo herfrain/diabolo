@@ -40,7 +40,7 @@ cc.Class({
     //检测碰撞（刚进入时
     onCollisionEnter: function onCollisionEnter(other, self) {
         if (this.diaboloComponent.isFly) {
-            cc.log("变大");
+            // cc.log("变大")
             this.diabolo.scale = 2; //大小比例
             this.diaboloComponent.rigidbody.gravityScale = 12; //重力
             this.diaboloEffect.big = true; //效果赋值
